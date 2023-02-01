@@ -1,8 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+   
 }
-img{
+body{
+    background-color: #F8F8CA;
+}
+.side-img{
    
   float: left;
    margin-left: 50%;
@@ -17,4 +21,53 @@ img{
 .user-login{
     max-width: 50%;
   
+}
+.img-logo{
+position: absolute;
+width: 222px;
+height: 244px;
+left: 244px;
+top: 63px;
+}
+form{
+box-sizing: border-box;
+
+position: absolute;
+width: 527px;
+height: 252px;
+left: 92px;
+top: 465px;
+
+background: #F8F8CA;
+border: 1px solid #FDAF17;
+border-radius: 0px 0px 12px 12px;
+}
+.div--center{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+.input--large{
+    width: 25rem;
+    height: 2rem;
+    border: solid #FDAF17;
+}
+.bttn{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 19px;
+    gap: 28px;
+    
+    
+    width: 79px;
+    height: 38px;
+   
+   
+    
+    background: #B72025;
+    box-shadow: 0px 1px 2px rgba(15, 23, 42, 0.08);
+    border-radius: 4px;
+color: white;
 }

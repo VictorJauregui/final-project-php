@@ -8,25 +8,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header> 
+        <img class="img-logo" src="img/grifLogo1.png" alt="">
+    </header>
     
     <div class="user-login">
         <div class="img-login">
-            <img src="img/grifndor.png" alt="">
+            <img class="side-img"src="img/grifndor.png" alt="">
         </div>
-        <form action="">
-            <label for="">
+        
+            <form action="">
+            
+            <div class=div--center>
+            <label >
                 User <br>
-                <input type="text">
+                <input class="input--large" type="text">
+                <br>
                 <br>
             </label>
-            <label for=""> 
+            <label > 
                 Passwords <br>
-                <input type="password">
+                <input class="input--large" type="password">
+                <br><br>
                 
             </label>
             <br>
-            <button>Log in</button>
+            <button class="bttn">Log in</button>
+            </div>
         </form>
     </div>
+    
+    
 </body>
 </html>
