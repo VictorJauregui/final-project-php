@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-   
+   font-family:  'Inria Serif';
 }
 body{
     background-color: #F8F8CA;
@@ -24,23 +24,23 @@ body{
 }
 .img-logo{
 position: absolute;
-width: 222px;
-height: 244px;
-left: 244px;
-top: 63px;
+width:13.875rem;
+height: 15.25rem;
+left: 15.25rem;
+top: 3.938rem;
 }
 form{
 box-sizing: border-box;
 
 position: absolute;
-width: 527px;
-height: 252px;
-left: 92px;
-top: 465px;
+width: 32.938rem;
+height: 15.75rem;
+left: 5.75rem;
+top: 29.063rem;
 
 background: #F8F8CA;
 border: 1px solid #FDAF17;
-border-radius: 0px 0px 12px 12px;
+border-radius: 0 0 0.75rem 0.75rem;
 }
 .div--center{
     display:flex;
@@ -57,17 +57,77 @@ border-radius: 0px 0px 12px 12px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 8px 19px;
-    gap: 28px;
+    padding: 0.5rem 1.188rem;
+    gap: 1.75rem;
     
     
-    width: 79px;
-    height: 38px;
+    width: 4.938rem;
+    height: 2.375rem;
    
    
     
     background: #B72025;
-    box-shadow: 0px 1px 2px rgba(15, 23, 42, 0.08);
-    border-radius: 4px;
+    box-shadow: 0 0.063rem 0.125rem rgba(15, 23, 42, 0.08);
+    border-radius: 0.25rem;
 color: white;
+}
+.text{
+    
+    position: absolute;
+width: 16.563rem;
+height: 3.25rem;
+left:5.75rem;
+top: 25.813rem;
+color: #B72025;
+background: linear-gradient(0deg, #FDAF17, #FDAF17), #8F8E8E;
+border-radius: 0.5rem 0.5rem 0px 0px;
+text-align: center;
+
+}
+.text2{
+    position: absolute;
+    width: 16.375rem;
+    height: 3.25rem;
+    left: 22.313rem;
+    top: 25.813rem;
+    color: #B72025;
+    background: rgba(255, 169, 0, 0.32);
+    border-radius: 0.5rem 0.5rem 0px 0px;
+    text-align: center;
+}
+.t{
+    position: absolute;
+width: 7rem;
+height: 1.375rem;
+left: 4.813rem;
+top: 0.938rem;
+
+font-family: 'Inria Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 1.188rem;
+line-height: 1.375rem;
+
+
+text-align: center;
+
+color: #B72025;
+}
+.p{
+    position: absolute;
+width: 7.625rem;
+height: 2.75rem;
+left: 4.25rem;
+top: 0.938rem;
+
+font-family: 'Inria Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 1.188rem;
+line-height: 1.375rem;
+
+
+text-align: center;
+
+color: #B72025;
 }

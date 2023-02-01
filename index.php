@@ -16,26 +16,31 @@
         <div class="img-login">
             <img class="side-img"src="img/grifndor.png" alt="">
         </div>
-        
-            <form action="">
+            <div>
+                <div class="text">
+                    <p class="t">I´m  Teacher </p></div>
+                <div class="text2"><p class="p">Future wizard</p></div>
+                    <form action="">
+                    
+                    <div class=div--center>
+                    <label >
+                        User <br>
+                        <input class="input--large" type="text">
+                        <br>
+                        <br>
+                    </label>
+                    <label > 
+                        Passwords <br>
+                        <input class="input--large" type="password">
+                        <br><br>
+                        
+                    </label>
+                    <br>
+                    <button class="bttn">Log in</button>
+                </form>
             
-            <div class=div--center>
-            <label >
-                User <br>
-                <input class="input--large" type="text">
-                <br>
-                <br>
-            </label>
-            <label > 
-                Passwords <br>
-                <input class="input--large" type="password">
-                <br><br>
-                
-            </label>
-            <br>
-            <button class="bttn">Log in</button>
+                </div>
             </div>
-        </form>
     </div>
     
     
