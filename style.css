@@ -1,0 +1,65 @@
+
+*{
+    font-family: 'IM Fell Great Primer SC', serif;
+    font-family: 'Inria Serif', serif;
+    background-color: #F8F8CA;
+}
+
+.div-logo{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #B72025;
+    margin: 0 3rem;
+}
+
+.div-logo__image{
+    width: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.full-screen{
+    display: flex;
+    height: 70vh;
+}
+
+.sidebar{
+    width: 15%;
+    border-right: 1px solid #B72025 ;
+    margin-top: 2rem;
+}
+
+.content-area{
+    width: 85%;
+}
+
+.title-and-subjects{
+    margin: 1rem 3rem;
+    margin-right: 1rem;
+    color: #B72025;
+    border: 1px solid #FDAF17;
+    padding: 0 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* .types-of-subjects{
+    margin-left: 1rem;
+}
+
+.types-of-subjects__subject{
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.types-of-subjects__subject:hover{
+    background-color: #FDAF17;
+} */
+
+
+.title-and-subjects:hover{
+    background-color: red;
+}
+
+
