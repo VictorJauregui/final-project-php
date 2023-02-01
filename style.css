@@ -1,0 +1,13 @@
+
+#loginBody{
+display: flex;
+position: absolute;
+width: 527px;
+height: 252px;
+left: 92px;
+top: 465px;
+
+background: #F8F8CA;
+border: 1px solid #FDAF17;
+border-radius: 0px 0px 12px 12px;
+}
