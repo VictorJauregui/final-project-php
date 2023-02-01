@@ -27,6 +27,9 @@
     width: 15%;
     border-right: 1px solid #B72025 ;
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
 }
 
 .content-area{
@@ -42,6 +45,7 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
 
 /* .types-of-subjects{
     margin-left: 1rem;
@@ -62,4 +66,141 @@
     background-color: red;
 }
 
+.sidebar-bottom{
+    display: flex;
+}
 
+.div-sidebar-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 60vh;
+}
+
+.teacher{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1000px;
+    margin-left: 3rem;
+    margin-right: 1.5rem;
+    border: 1px solid grey
+
+}
+
+.type-admin{
+    color: grey;
+}
+
+/* CONTENT AREA */
+
+.content-area__title{
+    font-size: 5rem;
+    color: #B72025;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.work-area{
+    background-color: white;
+    border: 1px solid #FDAF17;
+    border-radius: 10px;
+    height: 55vh;
+    margin: 0 5rem;
+
+}
+
+.subtitles{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+    background-color: white;
+    color: #868686;
+    border-bottom: 1px solid #BBBBBB;
+    margin: 0 2rem ;
+    padding: 0.5rem 0;
+
+
+}
+
+.data-student{
+    display: grid;
+    grid-template-columns: 1% 24% 25% 25% 22% 3%;
+    color: #868686;
+    background-color: white;
+    margin: 0 1rem;
+}
+
+.data-student__info-each-student{
+    padding: 0 3px;
+    margin: 10px 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.number-id{
+    border: transparent;
+}
+
+.califications {
+    display: flex;
+    justify-content: center;
+    border: transparent;
+}
+
+.trimester{
+    margin: 0 1.5rem;
+}
+
+.trimester p{
+    border: 0.1px solid black;
+    padding: 0.6rem;
+}
+
+.icon-trush{
+    width: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.div-btn-create-wizard{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.btn-create-wizard{
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #FDAF17;
+    color: #B72025;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-create-wizard:hover{
+    background-color:#FDAF17;
+}
+
+.div-btn-save{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 30vh;
+    background-color: white;
+}
+
+.btn-save{
+    background-color: #FDAF17;
+    padding: 0.5rem 3rem;
+    margin-right: 1.5rem;
+    border-radius: 5px;
+    color: #B72025;
+    font-size: 20px;
+    border: transparent;
+}

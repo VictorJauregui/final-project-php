@@ -17,7 +17,7 @@
     <div class="full-screen">
         <div class="sidebar">
             <div class="title-and-subjects">
-                <h2 id="subject">Subjects</h2>
+                <h2 class="h2-subject" id="subject">Subjects</h2>
                 <!-- <div class="types-of-subjects">
                     <p class="types-of-subjects__subject" id="astronomy">Astronomy</p>
                     <p class="types-of-subjects__subject" id="incatations">Incatations</p>
@@ -30,14 +30,18 @@
             <div class="title-and-subjects">
                 <h2 class="h2-sidebar" id="calendary">Calendary</h2>
             </div>
-            <div>
-                <img src="" alt="">
-                <p class="name-admin">Dambledor</p>
-                <p class="type-admin">Teacher</p>
+            <div class="div-sidebar-bottom">
+                <div class="sidebar-bottom">
+                    <img class="teacher"src="assets/dumbledore.png" alt="dumbledore">
+                    <div>
+                        <p class="name-admin">Dambledor</p>
+                        <p class="type-admin">Teacher</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content-area">
-            <h2>Title</h2>
+            <h2 class="content-area__title">Title</h2>
             <div class="work-area">
                 <div class="subtitles">
                     <h3 class="subtitles__h3">Name</h3>
@@ -46,7 +50,7 @@
                     <h3 class="subtitles__h3">Califications</h3>
                 </div>
                 <div class="data-student">
-                    <div class="data-student__info-each-student" id="id-number">
+                    <div class="data-student__info-each-student number-id" id="id-number">
                         <p>1</p>
                     </div>
                     <div class="data-student__info-each-student" id="student-name">
@@ -56,19 +60,32 @@
                         <p>Potter</p>
                     </div>
                     <div class="data-student__info-each-student" id="email">
-                        <p>email</p>
+                        <p>giorgipotter@hotmail.com</p>
                     </div>
-                    <div class="data-student__info-each-student" id="califications">
-                        <div class="trimester"></div>
-                        <div class="trimester"></div>
-                        <div class="trimester"></div>
+                    <div class="data-student__info-each-student califications" id="califications">
+                        <div class="trimester">
+                            <p>8</p>
+                        </div>
+                        <div class="trimester">
+                            <p>6</p>
+                        </div>
+                        <div class="trimester">
+                            <p>9</p>
+                        </div>
                     </div>
-                    <div class="info-each-student" id="">
+                    <div class="data-student__info-each-student" id="email">
+                        <img class="icon-trush" src="assets/trush.png" alt="trush">
+                    </div>
+                    <!-- <div class="info-each-student" id="">
                         <img src="" alt="">
-                    </div>
+                    </div> -->
                 </div>
-                <button class="btn-create-wizard">Create a new Wizard</button>
-                <button class="btn-save">Save</button>
+                <div class="div-btn-create-wizard">
+                    <button class="btn-create-wizard">Create a new Wizard</button>
+                </div>
+                <div class="div-btn-save">
+                    <button class="btn-save">Save</button>
+                </div>
             </div>
 
 
