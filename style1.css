@@ -6,7 +6,24 @@
 body{
     background-color: #F8F8CA;
 }
+
+.full-screen{
+    display: flex;
+}
+
+.left-part{
+    width: 50%;
+}
+
+.right-part{
+    width: 50%;
+}
+
 .side-img{
+    width: 100%;   
+    height: 100vh;
+}
+/* .side-img{
    
   float: left;
    margin-left: 50%;
@@ -138,4 +155,4 @@ color: #B72025;
     border-bottom:  1px solid  #B72025;
     color:  #B72025;
     cursor: pointer;
-}
+} */
