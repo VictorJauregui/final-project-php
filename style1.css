@@ -152,3 +152,7 @@ color: #B72025;
     color:  #B72025;
     cursor: pointer;
 } 
+
+.login-form{
+    display: none;
+}

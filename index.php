@@ -11,7 +11,7 @@
     <div class="full-screen">
         <div class="left-part">
             <img class="img-logo" src="img/logo.png" alt="logo grifindor">
-            <div>
+            <div class="login-form">
                 <div class="text">
                     <p class="t">I´m  Teacher </p></div>
                 <div class="text2"><p class="p">Future wizard</p></div>
