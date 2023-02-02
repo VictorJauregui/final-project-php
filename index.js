@@ -7,12 +7,23 @@ const btnCancel = document.querySelector(".btn-cancel-modal-delete");
 const btnCW = document.querySelector(".btn-create-wizard");
 const creationModal = document.querySelector(".modal-creation");
 const closeCreationModal = document.querySelector(".icon-close-modal");
+const firstTrimester = document.querySelector(".student-trimester1");
+const secondTrimester = document.querySelector(".student-trimester2");
+const thirdTrimester = document.querySelector(".student-trimester3");
+const logOutBtn = document.querySelector(".btn-logOut");
+const singOutModal = document.querySelector(".modal-sing-out");
 
 btnCancel.addEventListener("click", cancelDelete);
 btnDelete.addEventListener("click", iconDelete);
 typesSubjects.addEventListener("click", subjectsSidebar);
 btnCW.addEventListener("click", btnCreateWizard);
 closeCreationModal.addEventListener("click", closeModalCreation);
+firstTrimester.addEventListener("click", goToFirstTrimester);
+secondTrimester.addEventListener("click", goToSecondTrimester);
+logOutBtn.addEventListener("click", singOut);
+
+    
+
 
 
 function subjectsSidebar(){
@@ -64,4 +75,33 @@ function closeModalCreation(){
     if(creationModal.classList.contains("modal-creation-show")){
         creationModal.classList.replace("modal-creation-show", "modal-creation")
     }
+}
+
+function goToFirstTrimester(){
+    firstTrimester.style.backgroundColor = "#FDAF17";
+    secondTrimester.style.backgroundColor = "#fdb0174a";
+    thirdTrimester.style.backgroundColor = "#fdb0174a";
+}
+
+function goToSecondTrimester(){
+    firstTrimester.style.backgroundColor = "#fdb0174a";
+    secondTrimester.style.backgroundColor = "#FDAF17";
+    thirdTrimester.style.backgroundColor = "#fdb0174a";
+}
+
+function goTothirdTrimester(){
+    firstTrimester.style.backgroundColor = "#fdb0174a";
+    secondTrimester.style.backgroundColor = "#fdb0174a";
+    thirdTrimester.style.backgroundColor = "#FDAF17";
+}
+
+function singOut(){
+        if(fullModal.classList.contains("modal-full")){
+            fullModal.classList.replace("modal-full", "modal-full-show")
+        }
+
+        if(singOutModal.classList.contains("modal-sing-out")){
+            singOutModal.classList.replace("modal-sing-out", "modal-sing-out-show")
+        }
+
 }

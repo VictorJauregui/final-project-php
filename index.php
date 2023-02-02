@@ -51,8 +51,14 @@
                 </div>
             </div>
             <button class="btn-create-wizard-2">Create</button>
-
-
+        </div>
+        <div class="modal-sing-out">
+            <img class="logo-modal" src="assets/Gryffindor-Logo.png" alt="logo escuela de grifindor">
+            <p>Would you like to sing?</p>
+            <div class="btns-modal-sign-out">
+                <button class="btn-cancel-modal-sign-out">Cancel</button>
+                <button class="btn-delete-modal-sign-out">Confirm</button>
+            </div>
         </div>
         
     </div>
@@ -265,11 +271,15 @@
             </div>
             <div class="div-sidebar-bottom">
                 <div class="sidebar-bottom">
-                    <img class="teacher"src="assets/dumbledore.png" alt="dumbledore">
+                    <img class="img-user" src="assets/harry-potter.png" alt="dumbledore">
                     <div>
-                        <p class="name-admin">Dambledor</p>
-                        <p class="type-admin">Teacher</p>
+                        <p class="name-admin">Harry Potter</p>
+                        <p class="type-admin">Future Wizard</p>
                     </div>
+                    
+                </div>
+                <div class="div-btn-logOut">
+                    <button class="btn-logOut">Log out</button>
                 </div>
             </div>
         </div>

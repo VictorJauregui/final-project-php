@@ -100,7 +100,7 @@ body{
     height: 60vh;
 }
 
-.teacher{
+.img-user{
     width: 4rem;
     height: 4rem;
     border-radius: 1000px;
@@ -229,10 +229,40 @@ body{
     border: transparent;
 }
 
+.div-btn-logOut{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.btn-logOut{
+    margin-right: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid grey;
+    padding: 0.2rem 0.6rem;
+}
+.btn-logOut:hover{
+    background-color: #B72025;
+    color: white;
+}
+
 /* MODAL DELETE */
 
 .modal-full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9999;
     display: none;
+    
   }
 
   .modal-full-show {
@@ -253,7 +283,24 @@ body{
     display: none;
   }
 
+
   .modal-delete-show {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #B72025;
+    color: #B72025;
+  }
+
+  .modal-sing-out{
+    display: none;
+  }
+
+  .modal-sing-out-show {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -275,7 +322,7 @@ body{
 .btns-modal{
     margin: 1.5rem 0;
 }
-.btn-delete-modal-delete{
+.btn-delete-modal-delete, .btn-delete-modal-sign-out{
     background-color: #B72025;
     color: white;
     padding: 0.5rem 2rem;
@@ -286,7 +333,7 @@ body{
     transition: 0.2s;
 }
 
-.btn-cancel-modal-delete{
+.btn-cancel-modal-delete , .btn-cancel-modal-sign-out{
     background-color: #D9D9D9;
     color: white;
     padding: 0.5rem 2rem;
@@ -295,7 +342,10 @@ body{
     margin-right: 1rem;
     cursor: pointer; 
     transition: 0.2s; 
+
 }
+
+
 
 .btn-delete-modal-delete:hover{
     box-shadow: 5px 5px 5px #D9D9D9;;
@@ -384,34 +434,38 @@ body{
 
   /* Student Area */
   .content-area-student{
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
 }
   .content-area-student__title{
     font-size: 3rem;
     color: #B72025;
     margin-top: 2rem;
     margin-bottom: 1rem;
+
 }
 .content-area-student__subtitle{
     font-size: 1.5rem;
     color: #B72025;
     margin-top: 1rem;
     margin-bottom: 1rem;
+
 }
 .work-area-student{
     background-color: white;
     background: url("assets/castel.png");
     background-size: cover;
-    border: 1px solid #FDAF17;
+    border: 2px solid #FDAF17;
     border-radius: 10px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+
 }
 .student-trimesters{
     display: flex;
     justify-content: space-around;
     margin-top: 3rem;
+
 }
 .student-trimester{
     background-color:#FDAF17 ;
@@ -421,14 +475,19 @@ body{
     border-top-right-radius: 5px;
     display: flex;
     justify-content: center;
-    margin: 0 2px;
     font-size: 1.3rem;
+    cursor: pointer;
     
 }
 .student-trimester2, .student-trimester3{
     background-color:#fdb0174a ;
     
 }
+
+.student-trimester2{
+    margin: 0 3px;
+}
+
 .mark-calification{
     display: flex;
     border-bottom: 0.5px solid #86868647;
