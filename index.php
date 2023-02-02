@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
     <header> 
@@ -37,11 +37,13 @@
                     </label>
                     <br>
                     <button class="bttn">Log in</button>
-                </form>
+                </form><br>
             
+                are you not register yet?<p class="click__here--btnn" >Click Here</p>
+                
                 </div>
             </div>
-    </div>
+    </div>  
     
     
 </body>

@@ -10,7 +10,7 @@ body{
    
   float: left;
    margin-left: 50%;
-   height: 100%;
+   
    width: 60rem;
   
 }
@@ -52,6 +52,7 @@ border-radius: 0 0 0.75rem 0.75rem;
     width: 25rem;
     height: 2rem;
     border: solid #FDAF17;
+    cursor: pointer;
 }
 .bttn{
     display: flex;
@@ -63,7 +64,7 @@ border-radius: 0 0 0.75rem 0.75rem;
     
     width: 4.938rem;
     height: 2.375rem;
-   
+   cursor: pointer;
    
     
     background: #B72025;
@@ -82,6 +83,7 @@ color: #B72025;
 background: linear-gradient(0deg, #FDAF17, #FDAF17), #8F8E8E;
 border-radius: 0.5rem 0.5rem 0px 0px;
 text-align: center;
+cursor: pointer;
 
 }
 .text2{
@@ -94,6 +96,7 @@ text-align: center;
     background: rgba(255, 169, 0, 0.32);
     border-radius: 0.5rem 0.5rem 0px 0px;
     text-align: center;
+    cursor: pointer;
 }
 .t{
     position: absolute;
@@ -110,7 +113,7 @@ line-height: 1.375rem;
 
 
 text-align: center;
-
+cursor: pointer;
 color: #B72025;
 }
 .p{
@@ -128,6 +131,11 @@ line-height: 1.375rem;
 
 
 text-align: center;
-
+cursor: pointer;
 color: #B72025;
+}
+.click__here--btnn{
+    border-bottom:  1px solid  #B72025;
+    color:  #B72025;
+    cursor: pointer;
 }
