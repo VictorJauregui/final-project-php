@@ -46,28 +46,30 @@
    
     </div>
     
-    <div >
+    <div class="full-screen-1" >
         <form action="">
+            <div class="checkbox-position">
             <label >
-                <input type="checkbox">Teacher
+                <input  type="checkbox" >Teacher
             </label>
             <label >
-                <input type="checkbox">Future wizard
+                <input type="checkbox" >Future wizard
             </label>
+            </div>
             <br>
             <label >Name*<br>
-                <input type="text"><br>
+                <input type="text" class="input--large-1"><br>
             </label>
             <label >Last Name*<br>
-                <input type="text"><br>
+                <input type="text" class="input--large-1"><br>
             </label>
             <label >Email*<br>
-                <input type="text"><br>
+                <input type="text" class="input--large-1"><br>
             </label>
             <label >Password*<br>
-                <input type="password"><br>
+                <input type="password" class="input--large-1"><br>
             </label>
-            <button type="submit">Create account</button>
+            <button type="submit" class="bttn">Create account</button>
         </form>
     </div>
 </body>

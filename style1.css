@@ -156,3 +156,14 @@ color: #B72025;
 .login-form{
     display: none;
 }
+
+.input--large-1{
+    width: 25rem;
+    height: 2rem;
+    border: solid #FDAF17;
+    cursor: pointer;
+}
+.checkbox-position{
+    display: flex;
+    justify-content: space-evenly;
+}
