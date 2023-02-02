@@ -12,6 +12,50 @@
     <title>Gryfindor</title>
 </head>
 <body>
+    <div class="modal-full">
+        <div class="modal-delete">
+            <img class="logo-modal" src="assets/Gryffindor-Logo.png" alt="logo escuela de grifindor">
+            <p>Are you sure that you want to delete this wizard?</p>
+            <div class="btns-modal-delete">
+                <button class="btn-cancel-modal-delete">Cancel</button>
+                <button class="btn-delete-modal-delete">Delete</button>
+            </div>
+        </div>
+        <div class="modal-creation">
+            <div class="div-icon-close-modal">
+                <img class="icon-close-modal" src="assets/icon-close-modal.png" alt="">
+            </div>
+            <img class="logo-modal logo-creation" src="assets/Gryffindor-Logo.png" alt="logo escuela de grifindor">
+            <h2>Create future wizard</h2>
+            <label>Name</label><br>
+            <input type="text" id="name-wizard"><br>
+            <label>Last Name</label><br>
+            <input type="text" id="lastName-wizard"><br>
+            <label>Email</label><br>
+            <input type="text" id="email-wizard"><br>
+            <p>Califications</p>
+            <div class="div-califications-for-trimester">
+                <div class="califications-for-trimester">
+                    <div class="trimester trimester-1">
+                        <label>1st</label>
+                        <input type=text id="calification-1st">
+                    </div>
+                    <div class="trimester trimester-2">
+                        <label>2nd</label>
+                        <input type=text id="calification-2nd">
+                    </div>
+                    <div class="trimester trimester-3">
+                        <label>3rd</label>
+                        <input type=text id="calification-3rd">
+                    </div>
+                </div>
+            </div>
+            <button class="btn-create-wizard-2">Create</button>
+
+
+        </div>
+        
+    </div>
     <div class="div-logo">
         <img class="div-logo__image" src="assets/Gryffindor-Logo.png" alt="logo escuela de grifindor">
     </div>
@@ -42,7 +86,7 @@
             </div>
         </div>
         <div class="content-area">
-            <h2 class="content-area__title">Title</h2>
+            <h2 class="content-area__title">Score</h2>
             <div class="work-area">
                 <div class="subtitles">
                     <h3 class="subtitles__h3">Name</h3>
@@ -77,17 +121,130 @@
                     <div class="data-student__info-each-student" id="email">
                         <img class="icon-trush" src="assets/trush.png" alt="trush">
                     </div>
-                    <!-- <div class="info-each-student" id="">
-                        <img src="" alt="">
-                    </div> -->
                 </div>
+                <div class="data-student">
+                    <div class="data-student__info-each-student number-id" id="id-number">
+                        <p>1</p>
+                    </div>
+                    <div class="data-student__info-each-student student-name" id="student-name">
+                        <p>Giorgi</p>
+                    </div>
+                    <div class="data-student__info-each-student" id="student-lastName">
+                        <p>Potter</p>
+                    </div>
+                    <div class="data-student__info-each-student" id="email">
+                        <p>giorgipotter@hotmail.com</p>
+                    </div>
+                    <div class="data-student__info-each-student califications" id="califications">
+                        <div class="trimester">
+                            <p>8</p>
+                        </div>
+                        <div class="trimester">
+                            <p>6</p>
+                        </div>
+                        <div class="trimester">
+                            <p>9</p>
+                        </div>
+                    </div>
+                    <div class="data-student__info-each-student" id="email">
+                        <img class="icon-trush" src="assets/trush.png" alt="trush">
+                    </div>
+                </div>
+                <div class="data-student">
+                    <div class="data-student__info-each-student number-id" id="id-number">
+                        <p>1</p>
+                    </div>
+                    <div class="data-student__info-each-student student-name" id="student-name">
+                        <p>Giorgi</p>
+                    </div>
+                    <div class="data-student__info-each-student" id="student-lastName">
+                        <p>Potter</p>
+                    </div>
+                    <div class="data-student__info-each-student" id="email">
+                        <p>giorgipotter@hotmail.com</p>
+                    </div>
+                    <div class="data-student__info-each-student califications" id="califications">
+                        <div class="trimester">
+                            <p>8</p>
+                        </div>
+                        <div class="trimester">
+                            <p>6</p>
+                        </div>
+                        <div class="trimester">
+                            <p>9</p>
+                        </div>
+                    </div>
+                    <div class="data-student__info-each-student" id="email">
+                        <img class="icon-trush" src="assets/trush.png" alt="trush">
+                    </div>
+                </div>
+                <div class="data-student">
+                    <div class="data-student__info-each-student number-id" id="id-number">
+                        <p>1</p>
+                    </div>
+                    <div class="data-student__info-each-student student-name" id="student-name">
+                        <p>Giorgi</p>
+                    </div>
+                    <div class="data-student__info-each-student" id="student-lastName">
+                        <p>Potter</p>
+                    </div>
+                    <div class="data-student__info-each-student" id="email">
+                        <p>giorgipotter@hotmail.com</p>
+                    </div>
+                    <div class="data-student__info-each-student califications" id="califications">
+                        <div class="trimester">
+                            <p>8</p>
+                        </div>
+                        <div class="trimester">
+                            <p>6</p>
+                        </div>
+                        <div class="trimester">
+                            <p>9</p>
+                        </div>
+                    </div>
+                    <div class="data-student__info-each-student" id="email">
+                        <img class="icon-trush" src="assets/trush.png" alt="trush">
+                    </div>
+                </div>
+                <div class="data-student">
+                    <div class="data-student__info-each-student number-id" id="id-number">
+                        <p>1</p>
+                    </div>
+                    <div class="data-student__info-each-student student-name" id="student-name">
+                        <p>Giorgi</p>
+                    </div>
+                    <div class="data-student__info-each-student" id="student-lastName">
+                        <p>Potter</p>
+                    </div>
+                    <div class="data-student__info-each-student" id="email">
+                        <p>giorgipotter@hotmail.com</p>
+                    </div>
+                    <div class="data-student__info-each-student califications" id="califications">
+                        <div class="trimester">
+                            <p>8</p>
+                        </div>
+                        <div class="trimester">
+                            <p>6</p>
+                        </div>
+                        <div class="trimester">
+                            <p>9</p>
+                        </div>
+                    </div>
+                    <div class="data-student__info-each-student" id="email">
+                        <img class="icon-trush" src="assets/trush.png" alt="trush">
+                    </div>
+                </div>
+                
+                
+                
                 <div class="div-btn-create-wizard">
                     <button class="btn-create-wizard">Create a new Wizard</button>
                 </div>
-                <div class="div-btn-save">
+                <!-- <div class="div-btn-save">
                     <button class="btn-save">Save</button>
-                </div>
+                </div> -->
             </div>
+            
 
 
         </div>
