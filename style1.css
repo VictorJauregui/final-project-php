@@ -229,3 +229,9 @@ color: #B72025;
 #not-hidden{
     display: block;
 }
+.login-form-notShow{ 
+    display: none;
+}
+#login-form{
+    display: block;
+}

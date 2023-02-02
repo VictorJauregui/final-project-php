@@ -39,14 +39,14 @@ function wizardSelection(){
 
 
 function registerPage(){
-    const logInPage=document.getElementById("login-form");
+    const logInPage=document.querySelector("#login-form");
     const registerPage=document.getElementById("hidden2");
-    logInPage.classList.toggle("hidden-login");
-    registerPage.classList.toggle("not-hidden");
+    // logInPage.classList.toggle("hidden-login");
+    // registerPage.classList.toggle("not-hidden");
    
-//     if(logInPage.classList.contains("hidden-login")) {  
-//     registerPage.classList.replace("hidden2","not-hidden");
-// }
+    if(logInPage.classList.contains("login-form")) {  
+    logInPage.classList.replace("login-form","login-form-notShow");
+}
 
 }
 

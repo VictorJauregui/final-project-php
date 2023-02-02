@@ -17,7 +17,7 @@
                     <p class="t">I´m  Teacher </p>
                 </div>
                 <div id="wizard-btn"><p class="p">Future wizard</p>
-            </div>
+                </div>
                     <form action="" class="form-login">
                     
                     <div class=div--center>
@@ -37,7 +37,7 @@
                     <button class="bttn">Log in</button>
                 </form><br>
             
-                Are you not register yet?<p class="click__here--btnn" id="change-to-next-form" >Click Here</p>
+                <p>Are you not register yet?</p><p class="click__here--btnn" id="change-to-next-form" >Click Here</p>
                 
                 </div>
             </div>
