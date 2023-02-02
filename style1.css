@@ -32,7 +32,7 @@ body{
   
 }
 .img-logo{
-margin-left: 32.5%;
+margin-left: 34%;
 width:13.875rem;
 height: 15.25rem;
 margin-top: 5%;
@@ -41,7 +41,7 @@ top: 3.938rem;
 }
 form{
 box-sizing: border-box;
-
+margin-left: 4%;
 position: absolute;
 width: 32.938rem;
 height: 14.75rem;
@@ -86,6 +86,7 @@ color: white;
 .text{
     
     position: absolute;
+    margin-left: 4%;
 width: 16.563rem;
 height: 3.25rem;
 left:5.75rem;
@@ -99,6 +100,7 @@ cursor: pointer;
 }
 .text2{
     position: absolute;
+    margin-left: 4%;
     width: 16.375rem;
     height: 3.25rem;
     left: 22.313rem;
