@@ -24,25 +24,19 @@ body{
     width: 100%;   
     height: 100vh;
 }
-.img-login{
-    position: absolute;
-    margin-left: 15rem;
-}
-.user-login{
-    max-width: 50%;
-  
-}
+
+
 .img-logo{
-margin-left: 34%;
-width:13.875rem;
-height: 15.25rem;
-margin-top: 5%;
-left: 15.25rem;
-top: 3.938rem;
+display: flex;
+justify-content: center;
+margin: auto;
+margin-top: 4vh;
 }
 .form-login{
+   
 box-sizing: border-box;
-margin-left: 4%;
+margin-left: auto;
+
 position: absolute;
 width: 32.938rem;
 height: 14.75rem;
@@ -87,7 +81,7 @@ color: white;
 #teacher-btn{
     
     position: absolute;
-    margin-left: 4%;
+    margin-left: auto;
 width: 16.563rem;
 height: 3.25rem;
 left:5.75rem;
@@ -101,7 +95,8 @@ cursor: pointer;
 }
 #wizard-btn{
     position: absolute;
-    margin-left: 4%;
+    margin-left: auto;
+    margin-right: auto;
     width: 16.375rem;
     height: 3.25rem;
     left: 22.313rem;
@@ -118,6 +113,7 @@ cursor: pointer;
 #wizard-btn:hover{
     background: linear-gradient(0deg, #FDAF17, #FDAF17), #8F8E8E;}
 .t{
+    display: flex;
     position: absolute;
 width: 7rem;
 height: 1.375rem;
