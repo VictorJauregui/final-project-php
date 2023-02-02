@@ -52,7 +52,7 @@ border-radius: 0 0 0.75rem 0.75rem;
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .input--large{
     width: 25rem;
@@ -132,7 +132,7 @@ cursor: pointer;
 color: #B72025;
 }
 .p{
-    position: absolute;
+position: absolute;
 width: 7.625rem;
 height: 2.75rem;
 left: 4.25rem;
@@ -170,6 +170,7 @@ color: #B72025;
 .checkbox-position{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 1rem;
 }
 .second-form--partial{
     display: flex;
@@ -178,9 +179,9 @@ color: #B72025;
     gap: 2rem;
 }
 .form-2nd{
-    box-sizing: border-box;
-    margin-left: 4%;
     position: absolute;
+    box-sizing: border-box;
+    margin-left:auto;
     width: 32.938rem;
     height: 27.75rem;
     left: 5.75rem;
@@ -240,4 +241,7 @@ color: #B72025;
 
 .form-to-access{
     display: block;
+}
+.full-screen{
+    display: flex;
 }
