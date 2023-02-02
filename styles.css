@@ -33,13 +33,28 @@ body{
     display: flex;
     flex-direction: column;
     height: 70vh;
+    display: none;
+}
+.sidebar-student{
+    width: 15%;
+    border-right: 1px solid #B72025 ;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    
 }
 
 .content-area{
     width: 85%;
+    display: none;
+}
+.content-area-student{
+    width: 85%;
+    
 }
 
-.title-and-subjects{
+.title-and-subjects, .div-marks{
     margin: 1rem 3rem;
     margin-right: 1rem;
     color: #B72025;
@@ -70,7 +85,7 @@ body{
 }
 
 
-.title-and-subjects:hover{
+.title-and-subjects:hover , .div-marks:hover{
     background-color: #FDAF17;
 }
 
@@ -366,3 +381,74 @@ body{
   .logo-creation{
     margin-top: 1.5rem;
   }
+
+  /* Student Area */
+  .content-area-student{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+  .content-area-student__title{
+    font-size: 3rem;
+    color: #B72025;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.content-area-student__subtitle{
+    font-size: 1.5rem;
+    color: #B72025;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.work-area-student{
+    background-color: white;
+    background: url("assets/castel.png");
+    background-size: cover;
+    border: 1px solid #FDAF17;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.student-trimesters{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+.student-trimester{
+    background-color:#FDAF17 ;
+    color: #B72025;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 0 2px;
+    font-size: 1.3rem;
+    
+}
+.student-trimester2, .student-trimester3{
+    background-color:#fdb0174a ;
+    
+}
+.mark-calification{
+    display: flex;
+    border-bottom: 0.5px solid #86868647;
+    width: 40%;
+    margin: 0 auto;
+}
+.subject-name{
+    display: flex;
+    justify-content: left;
+}
+.number-score{
+    display: flex;
+    justify-content: end; 
+    width: 100%;
+}
+.all-subjects{
+    margin: 3rem 0 4rem 0;
+}
+.all-subjects p{
+    font-size: 20px;
+    color: #B72025;
+}
+

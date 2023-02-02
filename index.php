@@ -248,6 +248,119 @@
 
 
         </div>
+        <div class="sidebar-student">
+            <div class="div-marks">
+                <h2 class="h2-subject" id="marks">My Marks</h2>
+                <div class="types-of-subjects" id="subjects">
+                    <p class="types-of-subjects__subject" id="astronomy">Astronomy</p>
+                    <p class="types-of-subjects__subject" id="incatations">Incatations</p>
+                    <p class="types-of-subjects__subject" id="dark-arts">Dark arts</p>
+                    <p class="types-of-subjects__subject" id="defense-dark-art">Defense Dark arts</p>
+                    <p class="types-of-subjects__subject" id="flight">Flight</p>
+                    <p class="types-of-subjects__subject" id="herbology">Herbology</p>
+                </div>  
+            </div>
+            <div class="title-and-subjects">
+                <h2 class="h2-sidebar" id="calendary">Calendary</h2>
+            </div>
+            <div class="div-sidebar-bottom">
+                <div class="sidebar-bottom">
+                    <img class="teacher"src="assets/dumbledore.png" alt="dumbledore">
+                    <div>
+                        <p class="name-admin">Dambledor</p>
+                        <p class="type-admin">Teacher</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cuadro de notas -->
+        
+        <div class="content-area-student">
+            <h2 class="content-area-student__title">Hey Student</h2>
+            <h3 class="content-area-student__subtitle">Here, you can find your marks</h3>
+            <div class= "student-trimesters">
+                    <div class="student-trimester student-trimester1">
+                        <p>1st Trimester</p>    
+                    </div>
+                    <div class="student-trimester student-trimester2"> 
+                        <p>2nd Trimester</p>    
+                    </div>
+                    <div class="student-trimester student-trimester3"> 
+                        <p>3rd Trimester</p>    
+                    </div>    
+            </div>
+            <div class="work-area-student">
+                
+                <div class="all-subjects">
+                    <div class="mark-calification">
+                        <div class="subject-name">
+                            <p>Astronomy</p>
+                        </div>
+                        
+                        <div class="number-score"> 
+                            <p>8</p>
+                        </div>
+                        
+                    </div>
+                    <div class="mark-calification">
+                        <div class="subject-name">
+                            <p>Astronomy</p>
+                        </div>
+                        
+                        <div class="number-score"> 
+                            <p>8</p>
+                        </div>
+                        
+                    </div>
+                    <div class="mark-calification">
+                        <div class="subject-name">
+                            <p>Astronomy</p>
+                        </div>
+                        
+                        <div class="number-score"> 
+                            <p>8</p>
+                        </div>
+                        
+                    </div>
+                    <div class="mark-calification">
+                        <div class="subject-name">
+                            <p>Astronomy</p>
+                        </div>
+                        
+                        <div class="number-score"> 
+                            <p>8</p>
+                        </div>
+                        
+                    </div>
+                    <div class="mark-calification">
+                        <div class="subject-name">
+                            <p>Astronomy</p>
+                        </div>
+                        
+                        <div class="number-score"> 
+                            <p>8</p>
+                        </div>
+                        
+                    </div>
+                    <div class="mark-calification">
+                        <div class="subject-name">
+                            <p>Astronomy</p>
+                        </div>
+                        
+                        <div class="number-score"> 
+                            <p>8</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- <div class="div-btn-save">
+                    <button class="btn-save">Save</button>
+                </div> -->
+            </div>
+            
+
+
+        </div>
     </div>
     
 </body>
