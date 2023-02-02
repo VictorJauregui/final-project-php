@@ -46,5 +46,29 @@
    
     </div>
     
+    <div >
+        <form action="">
+            <label >
+                <input type="checkbox">Teacher
+            </label>
+            <label >
+                <input type="checkbox">Future wizard
+            </label>
+            <br>
+            <label >Name*<br>
+                <input type="text"><br>
+            </label>
+            <label >Last Name*<br>
+                <input type="text"><br>
+            </label>
+            <label >Email*<br>
+                <input type="text"><br>
+            </label>
+            <label >Password*<br>
+                <input type="password"><br>
+            </label>
+            <button type="submit">Create account</button>
+        </form>
+    </div>
 </body>
 </html>
