@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Inria+Serif:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
@@ -18,14 +19,14 @@
         <div class="sidebar">
             <div class="title-and-subjects">
                 <h2 class="h2-subject" id="subject">Subjects</h2>
-                <!-- <div class="types-of-subjects">
+                <div class="types-of-subjects" id="subjects">
                     <p class="types-of-subjects__subject" id="astronomy">Astronomy</p>
                     <p class="types-of-subjects__subject" id="incatations">Incatations</p>
                     <p class="types-of-subjects__subject" id="dark-arts">Dark arts</p>
                     <p class="types-of-subjects__subject" id="defense-dark-art">Defense Dark arts</p>
                     <p class="types-of-subjects__subject" id="flight">Flight</p>
                     <p class="types-of-subjects__subject" id="herbology">Herbology</p>
-                </div>   -->
+                </div>  
             </div>
             <div class="title-and-subjects">
                 <h2 class="h2-sidebar" id="calendary">Calendary</h2>
@@ -53,7 +54,7 @@
                     <div class="data-student__info-each-student number-id" id="id-number">
                         <p>1</p>
                     </div>
-                    <div class="data-student__info-each-student" id="student-name">
+                    <div class="data-student__info-each-student student-name" id="student-name">
                         <p>Giorgi</p>
                     </div>
                     <div class="data-student__info-each-student" id="student-lastName">
