@@ -1,8 +1,9 @@
+
 *{
     margin: 0;
     padding: 0;
-   font-family:  'Inria Serif';
 }
+
 body{
     background-color: #F8F8CA;
 }
@@ -153,8 +154,13 @@ color: #B72025;
     cursor: pointer;
 } 
 
-.login-form{
+
+.hidden-login{
     display: none;
+}
+
+.full-screen-1{
+
 }
 
 .input--large-1{
@@ -180,9 +186,35 @@ gap: 2rem;
     width: 32.938rem;
     height: 27.75rem;
     left: 5.75rem;
-    top: 18.063rem;
+    top: 20.063rem;
     
     background: #F8F8CA;
     border: 1px solid #FDAF17;
     border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+    }
+
+.radio-check:hover{
+background-color: #FDAF17;
+    }
+
+.bttn-create-account{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0.5rem 1.188rem;
+    gap: 1.75rem;
+    
+    
+    width: 8.638rem;
+    height: 2.375rem;
+   cursor: pointer;
+   
+    
+    background: #B72025;
+    box-shadow: 0 0.063rem 0.125rem rgba(15, 23, 42, 0.08);
+    border-radius: 0.25rem;
+color: white;
+    }
+    #hidden2{
+        display:none;
     }

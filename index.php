@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style1.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="full-screen">
+    <div class="full-screen ">
         <div class="left-part">
             <img class="img-logo" src="img/logo.png" alt="logo grifindor">
-            <div class="login-form">
+            <div id="login-form">
                 <div class="text">
                     <p class="t">I´m  Teacher </p></div>
                 <div class="text2"><p class="p">Future wizard</p></div>
@@ -34,7 +35,7 @@
                     <button class="bttn">Log in</button>
                 </form><br>
             
-                Are you not register yet?<p class="click__here--btnn" >Click Here</p>
+                Are you not register yet?<p class="click__here--btnn" id="change-to-next-form" >Click Here</p>
                 
                 </div>
             </div>
@@ -46,14 +47,14 @@
    
     </div>
     
-    <div class="full-screen-1" >
+    <div id="hidden2" >
         <form action="" class="form-2nd">
             <div class="checkbox-position">
             <label >
-                <input  type="checkbox" >Teacher
+                <input  type="radio" class="radio-check" name="for__select--one">Teacher
             </label>
             <label >
-                <input type="checkbox" >Future wizard
+                <input type="radio" class="radio-check" name="for__select--one">Future wizard
             </label>
             </div>
             <br>
@@ -70,7 +71,7 @@
             <label >Password*<br>
                 <input type="password" class="input--large-1"><br>
             </label>
-            <button type="submit" class="bttn">Create account</button>
+            <button type="submit" class="bttn-create-account">Create  account</button>
             </div>
         </form>
     </div>
