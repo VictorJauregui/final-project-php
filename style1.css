@@ -84,7 +84,7 @@ border-radius: 0 0 0.75rem 0.75rem;
     border-radius: 0.25rem;
 color: white;
 }
-.text{
+#teacher-btn{
     
     position: absolute;
     margin-left: 4%;
@@ -93,13 +93,13 @@ height: 3.25rem;
 left:5.75rem;
 top: 23.813rem;
 color: #B72025;
-background: linear-gradient(0deg, #FDAF17, #FDAF17), #8F8E8E;
+background:  rgba(255, 169, 0, 0.32);
 border-radius: 0.5rem 0.5rem 0px 0px;
 text-align: center;
 cursor: pointer;
 
 }
-.text2{
+#wizard-btn{
     position: absolute;
     margin-left: 4%;
     width: 16.375rem;
@@ -112,6 +112,11 @@ cursor: pointer;
     text-align: center;
     cursor: pointer;
 }
+#teacher-btn:hover{
+    background:linear-gradient(0deg, #FDAF17, #FDAF17), #8F8E8E; ;
+}
+#wizard-btn:hover{
+    background: linear-gradient(0deg, #FDAF17, #FDAF17), #8F8E8E;}
 .t{
     position: absolute;
 width: 7rem;
@@ -155,12 +160,9 @@ color: #B72025;
 } 
 
 
-.hidden-login{
-    display: none;
-}
 
 .full-screen-1{
-
+    display: block;
 }
 
 .input--large-1{
@@ -174,10 +176,10 @@ color: #B72025;
     justify-content: space-evenly;
 }
 .second-form--partial{
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 .form-2nd{
     box-sizing: border-box;
@@ -191,11 +193,11 @@ gap: 2rem;
     background: #F8F8CA;
     border: 1px solid #FDAF17;
     border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
-    }
+}
 
 .radio-check:hover{
-background-color: #FDAF17;
-    }
+    background-color: #FDAF17;
+}
 
 .bttn-create-account{
     display: flex;
@@ -207,14 +209,23 @@ background-color: #FDAF17;
     
     width: 8.638rem;
     height: 2.375rem;
-   cursor: pointer;
-   
+    cursor: pointer;
+    
     
     background: #B72025;
     box-shadow: 0 0.063rem 0.125rem rgba(15, 23, 42, 0.08);
     border-radius: 0.25rem;
-color: white;
-    }
-    #hidden2{
-        display:none;
-    }
+    color: white;
+}
+#hidden2{
+    display:none;
+}
+#teacher-btn{
+    background-color: #FDAF17 ;
+}
+.hidden-login{
+    display: none;
+}
+#not-hidden{
+    display: block;
+}
