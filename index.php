@@ -15,7 +15,7 @@
                 <div class="text">
                     <p class="t">I´m  Teacher </p></div>
                 <div class="text2"><p class="p">Future wizard</p></div>
-                    <form action="">
+                    <form action="" class="form-login">
                     
                     <div class=div--center>
                     <label >
@@ -47,7 +47,7 @@
     </div>
     
     <div class="full-screen-1" >
-        <form action="">
+        <form action="" class="form-2nd">
             <div class="checkbox-position">
             <label >
                 <input  type="checkbox" >Teacher
@@ -57,6 +57,7 @@
             </label>
             </div>
             <br>
+            <div class="second-form--partial ">
             <label >Name*<br>
                 <input type="text" class="input--large-1"><br>
             </label>
@@ -70,6 +71,7 @@
                 <input type="password" class="input--large-1"><br>
             </label>
             <button type="submit" class="bttn">Create account</button>
+            </div>
         </form>
     </div>
 </body>

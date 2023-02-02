@@ -39,7 +39,7 @@ margin-top: 5%;
 left: 15.25rem;
 top: 3.938rem;
 }
-form{
+.form-login{
 box-sizing: border-box;
 margin-left: 4%;
 position: absolute;
@@ -167,3 +167,22 @@ color: #B72025;
     display: flex;
     justify-content: space-evenly;
 }
+.second-form--partial{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 2rem;
+}
+.form-2nd{
+    box-sizing: border-box;
+    margin-left: 4%;
+    position: absolute;
+    width: 32.938rem;
+    height: 27.75rem;
+    left: 5.75rem;
+    top: 18.063rem;
+    
+    background: #F8F8CA;
+    border: 1px solid #FDAF17;
+    border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+    }
