@@ -22,6 +22,8 @@
 const teacherBtn = document.querySelector("#teacher-btn");//1
 const wizardBtn =  document.querySelector("#wizard-btn");//1
 const clickHere=document.querySelector("#change-to-next-form");//2
+const logInPage=document.querySelector(".form-to-access");
+const registeredForm=document.getElementById("hidden2");
 
 teacherBtn.addEventListener("click",teacherBtnStay);//1
 wizardBtn.addEventListener("click",wizardSelection);//1
@@ -39,14 +41,16 @@ function wizardSelection(){
 
 
 function registerPage(){
-    const logInPage=document.querySelector("#login-form");
-    const registerPage=document.getElementById("hidden2");
     // logInPage.classList.toggle("hidden-login");
     // registerPage.classList.toggle("not-hidden");
    
-    if(logInPage.classList.contains("login-form")) {  
-    logInPage.classList.replace("login-form","login-form-notShow");
+    if(logInPage.classList.contains("form-to-access")) {  
+    logInPage.classList.replace("form-to-access","form-to-access-notShow");
 }
+
+    if(registeredForm.classList.contains("form-registeder-to-griffindor")) {  
+        registeredForm.classList.replace("form-registeder-to-griffindor","form-registeder-to-griffindor-show");
+    }
 
 }
 

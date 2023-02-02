@@ -12,7 +12,7 @@
     <div class="full-screen ">
         <div class="left-part">
             <img class="img-logo" src="img/logo.png" alt="logo grifindor">
-            <div id="login-form">
+            <div class="form-to-access" id="login-form">
                 <div id="teacher-btn">
                     <p class="t">I´m  Teacher </p>
                 </div>
@@ -49,7 +49,7 @@
    
     </div>
     
-    <div id="hidden2" >
+    <div class="form-registeder-to-griffindor"id="hidden2" >
         <form action="" class="form-2nd">
             <div class="checkbox-position">
             <label >

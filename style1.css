@@ -217,21 +217,31 @@ color: #B72025;
     border-radius: 0.25rem;
     color: white;
 }
-#hidden2{
+
+.form-registeder-to-griffindor{
     display:none;
 }
+
+.form-registeder-to-griffindor-show{
+    display: block;
+}
+
 #teacher-btn{
     background-color: #FDAF17 ;
 }
+
 .hidden-login{
     display: none;
 }
+
 #not-hidden{
     display: block;
 }
-.login-form-notShow{ 
+
+.form-to-access-notShow{ 
     display: none;
 }
-#login-form{
+
+.form-to-access{
     display: block;
 }
