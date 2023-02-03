@@ -33,7 +33,6 @@ body{
     display: flex;
     flex-direction: column;
     height: 70vh;
-    display: none;
 }
 .sidebar-student{
     width: 15%;
@@ -42,12 +41,13 @@ body{
     display: flex;
     flex-direction: column;
     height: 70vh;
+    display: none;
     
 }
 
 .content-area{
     width: 85%;
-    display: none;
+
 }
 .content-area-student{
     width: 85%;
@@ -436,6 +436,7 @@ body{
   .content-area-student{
     margin-left: 8rem;
     margin-right: 8rem;
+    display: none;
 }
   .content-area-student__title{
     font-size: 3rem;

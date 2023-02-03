@@ -12,6 +12,7 @@ const secondTrimester = document.querySelector(".student-trimester2");
 const thirdTrimester = document.querySelector(".student-trimester3");
 const logOutBtn = document.querySelector(".btn-logOut");
 const singOutModal = document.querySelector(".modal-sing-out");
+const btnCancelSingOut = document.querySelector(".btn-cancel-modal-sign-out");
 
 btnCancel.addEventListener("click", cancelDelete);
 btnDelete.addEventListener("click", iconDelete);
@@ -20,7 +21,9 @@ btnCW.addEventListener("click", btnCreateWizard);
 closeCreationModal.addEventListener("click", closeModalCreation);
 firstTrimester.addEventListener("click", goToFirstTrimester);
 secondTrimester.addEventListener("click", goToSecondTrimester);
+thirdTrimester.addEventListener("click", goTothirdTrimester);
 logOutBtn.addEventListener("click", singOut);
+btnCancelSingOut.addEventListener("click", cancelSingOut);
 
     
 
@@ -81,18 +84,21 @@ function goToFirstTrimester(){
     firstTrimester.style.backgroundColor = "#FDAF17";
     secondTrimester.style.backgroundColor = "#fdb0174a";
     thirdTrimester.style.backgroundColor = "#fdb0174a";
+
 }
 
 function goToSecondTrimester(){
     firstTrimester.style.backgroundColor = "#fdb0174a";
     secondTrimester.style.backgroundColor = "#FDAF17";
     thirdTrimester.style.backgroundColor = "#fdb0174a";
+
 }
 
 function goTothirdTrimester(){
     firstTrimester.style.backgroundColor = "#fdb0174a";
     secondTrimester.style.backgroundColor = "#fdb0174a";
     thirdTrimester.style.backgroundColor = "#FDAF17";
+
 }
 
 function singOut(){
@@ -104,4 +110,14 @@ function singOut(){
             singOutModal.classList.replace("modal-sing-out", "modal-sing-out-show")
         }
 
+}
+
+function cancelSingOut(){
+    if(fullModal.classList.contains("modal-full-show")){
+        fullModal.classList.replace("modal-full-show", "modal-full")
+    }
+
+    if(singOutModal.classList.contains("modal-sing-out-show")){
+        singOutModal.classList.replace("modal-sing-out-show", "modal-sing-out")
+    }
 }
