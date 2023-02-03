@@ -16,6 +16,26 @@
     require_once ("server.php");
     require_once ("students.php");
 
+
+    // $newStudent = new Students();
+    // $newStudent->name = "Victor";
+    // $newStudent->lastName = "Más tieso";
+    // $newStudent->email = "victormastieso@hotmail.com";
+    // $newStudent->firstTrimester = 10;
+    // $newStudent->secondTrimester = 10;
+    // $newStudent->thirdTrimester = 10;
+    // $newStudent->createStudent();
+
+
+    $editStudent = students::getId(2);
+    $editStudent->name = "Antonio";
+    $editStudent->lastName = "civera";
+    $editStudent->email = "Antonio@hotmail.com";
+    $editStudent->firstTrimester = 1;
+    $editStudent->secondTrimester = 1;
+    $editStudent->thirdTrimester = 3;
+    $editStudent->update();
+    var_dump($editStudent);
 ?>
 
 <!-- MODAL -->
