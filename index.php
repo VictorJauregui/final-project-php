@@ -13,10 +13,9 @@
 </head>
 <body>
 <?php
-    require_once "server.php";
-    require_once "students.php";
-    
-    $newStudent = new createStudent();
+    require_once ("server.php");
+    require_once ("students.php");
+
 ?>
 
 <!-- MODAL -->

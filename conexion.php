@@ -7,3 +7,5 @@
             $this->conn = mysqli_connect("localhost", "root", "", "GriffindorHouse");
         }
     }
+
+    ?>

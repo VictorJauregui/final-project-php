@@ -31,3 +31,4 @@ $con->query($createStudentTable);
 $con->close();
 
 
+?>
