@@ -13,20 +13,42 @@
         // CREATE
         public function createStudent(){
             $this->conectar();
-            $pre = mysqli_prepare($this->conn, "INSERT INTO Students (name, lastName, email, firstTrimester,secondTrimester, thirdTrimester) VALUES (?,?,?,?,?,?)");
+            $pre = mysqli_prepare($this->conn, "INSERT INTO students (name, lastName, email, firstTrimester,secondTrimester, thirdTrimester) VALUES (?,?,?,?,?,?)");
             $pre->bind_param("sssiii", $this->name, $this->lastName, $this->email, $this->firstTrimester, $this->secondTrimester, $this->thirdTrimester);
             $pre->execute();
             
         }
+
+        //READ 
+        public static function allStudents(){
+            $conexion = new Conexion();
+            $conexion->conectar();
+            $pre = mysqli_prepare($conexion->conn, "SELECT * FROM students");
+            $pre->execute();
+            $res = $pre->get_result();
+            $students = [];
+
+            while($student = $res->fetch_object(Students::class))
+                array_push($students, $student);
+                return $students;
+        }
+        
         // UPDATE
         public function update(){
             $this->conectar();
-            $pre = mysqli_prepare($this->conn, "UPDATE Students set name=?, lastName=?, email=?, firstTrimester=?,secondTrimester=?, thirdTrimester=? where id = ?") ;
-            $pre->bind_param("sssiiii", $this->name, $this->lastName, $this->email, $this->firstTrimester, $this->secondTrimester, $this->thirdTrimester,$this->id);
+            $pre = mysqli_prepare($this->conn, "UPDATE students SET name=?, lastName=?, email=?, firstTrimester=?,secondTrimester=?, thirdTrimester=? where id = ?") ;
+            $pre->bind_param("sssiiii", $this->name, $this->lastName, $this->email, $this->firstTrimester, $this->secondTrimester, $this->thirdTrimester, $this->id);
             $pre->execute();
 
         }
-            
+        
+        public function delete(){
+            $this->conectar();
+            $pre = mysqli_prepare($this->conn, "DELETE FROM students WHERE id = ?");
+            $pre->bind_param("i", $this->id);
+            $pre->execute();
+
+        }
 
         public static function getId($id){
             $conexion = new Conexion();
@@ -36,7 +58,7 @@
             $pre->execute();
             $res = $pre -> get_result();
 
-            return $res->fetch_object(students::class);
+            return $res->fetch_object(Students::class);
     }
 }
 

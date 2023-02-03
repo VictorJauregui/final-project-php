@@ -20,12 +20,12 @@ $con->query($useDb);
 
 $createStudentTable = "CREATE TABLE IF NOT EXISTS students  
 (id int unsigned auto_increment not null PRIMARY KEY,
-Name varchar(30) not null,
-LastName varchar(40) not null,
-Email varchar(40) not null,
-firstTrimester float(3) not null,
-secondTrimester float(3) not null,
-thirdTrimester float(3) not null)";
+Name varchar(30) NOT NULL,
+LastName varchar(40) NOT NULL,
+Email varchar(40) NOT NULL,
+firstTrimester int(3) NOT NULL,
+secondTrimester int(3) NOT NULL,
+thirdTrimester int(3) NOT NULL)";
 
 $con->query($createStudentTable);
 $con->close();
