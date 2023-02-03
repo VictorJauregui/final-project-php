@@ -51,35 +51,44 @@
             </div>
 
             <div class="form-registeder-to-griffindor"id="hidden2">
-                <form action="" class="form-2nd">
+                <form action="proces.php" method="POST"  class="form-2nd">
                     <div class="checkbox-position">
                         <label >
-                            <input  type="radio" class="radio-check" name="for__select--one">Teacher
+                            <input  type="radio" class="radio-check" name="for__select--one" value="Teacher">Teacher
                         </label>
                         <label >
-                            <input type="radio" class="radio-check" name="for__select--one">Future wizard
+                            <input type="radio" class="radio-check" name="for__select--one" value="Future-wizard">Future wizard
                         </label>
 
                     </div>
                     <br>
                     <div class="second-form--partial">
                         <label>Name*<br>
-                            <input type="text" class="input--large-1"><br>
+                            <input type="text" class="input--large-1" name="name"><br>
                         </label>
                         <label>Last Name*<br>
-                            <input type="text" class="input--large-1"><br>
+                            <input type="text" class="input--large-1" name="last-name"><br>
 
                         </label>
                         <label>Email*<br>
-                            <input type="text" class="input--large-1"><br>
+                            <input type="text" class="input--large-1" name="email"><br>
 
                         </label>
                         <label>Password*<br>
-                            <input type="password" class="input--large-1"><br>
+                            <input type="password" class="input--large-1" name="pass"><br>
 
                         </label>
                         <button type="submit" class="bttn-create-account">Create  account</button>
-
+<?php
+include_once("./tabla.php");
+$user=new tabla();
+$user->tipo="teacher";
+$user->nombre="sergi";
+$user->apellido="clemente";
+$user->email="s@gmail.com";
+$user->pas="1234";
+$user->create();
+?>
                     </div>
                 </form>
 
