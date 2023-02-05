@@ -126,9 +126,11 @@ body{
 
 .work-area{
     background-color: white;
+    height: 55vh;
     border: 1px solid #FDAF17;
     border-radius: 10px;
     margin: 0 5rem;
+
 
 }
 
@@ -144,6 +146,10 @@ body{
     color: #B72025;
 
 
+}
+.div-data-student{
+    height: 35vh;
+    overflow: scroll;
 }
 
 .data-student{
@@ -194,6 +200,7 @@ body{
 .div-btn-create-wizard{
     display: flex;
     justify-content: center;
+
 }
 
 .btn-create-wizard{

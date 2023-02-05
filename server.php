@@ -11,9 +11,9 @@ if($con->connect_error){
 }
 
 $createBd = "CREATE DATABASE IF NOT EXISTS GriffindorHouse";
-if($con->query($createBd) === TRUE){
-    echo "DB is created";
-}
+// if($con->query($createBd) === TRUE){
+//     echo "DB is created";
+// }
 
 $useDb = "USE GriffindorHouse";
 $con->query($useDb);

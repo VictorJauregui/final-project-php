@@ -1,5 +1,5 @@
 <?php
-    require_once "conexion.php";
+    require_once "./conexion.php";
 
     class Students extends Conexion{
         public $id;
@@ -11,10 +11,10 @@
         public $thirdTrimester;
 
         // CREATE
-        public function createStudent(){
+        public function createStudent($name, $lastName, $email, $firstTrimester, $secondTrimester,$thirdTrimester){
             $this->conectar();
             $pre = mysqli_prepare($this->conn, "INSERT INTO students (name, lastName, email, firstTrimester,secondTrimester, thirdTrimester) VALUES (?,?,?,?,?,?)");
-            $pre->bind_param("sssiii", $this->name, $this->lastName, $this->email, $this->firstTrimester, $this->secondTrimester, $this->thirdTrimester);
+            $pre->bind_param("sssiii", $name, $lastName, $email, $firstTrimester, $secondTrimester, $thirdTrimester);
             $pre->execute();
             
         }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +57,7 @@
             <p>Califications</p>
             <div class="div-califications-for-trimester">
                 <div class="califications-for-trimester">
-                    <div class="trimester trimester-1">
+                    <div class="trimester trimester-1" >
                         <label>1st</label>
                         <input type=text id="calification-1st">
                     </div>
@@ -71,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-create-wizard-2">Create</button>
+            <button class="btn-create-wizard-2" id="btn-creating-wizard-finished">Create</button>
         </div>
 
     <!-- singOutModal -->
@@ -127,32 +127,34 @@
                     <h3 class="subtitles__h3">Email</h3>
                     <h3 class="subtitles__h3">Califications</h3>
                 </div>
-                <div class="data-student">
-                    <div class="data-student__info-each-student number-id" id="id-number">
-                        <p>1</p>
-                    </div>
-                    <div class="data-student__info-each-student student-name" id="student-name">
-                        <p>Giorgi</p>
-                    </div>
-                    <div class="data-student__info-each-student" id="student-lastName">
-                        <p>Potter</p>
-                    </div>
-                    <div class="data-student__info-each-student" id="email">
-                        <p>giorgipotter@hotmail.com</p>
-                    </div>
-                    <div class="data-student__info-each-student califications" id="califications">
-                        <div class="trimester">
-                            <p>8</p>
+                <div class="div-data-student">
+                    <div class="data-student">
+                        <div class="data-student__info-each-student number-id" id="id-number">
+                            <p class="create-wizard-text">1</p>
                         </div>
-                        <div class="trimester">
-                            <p>6</p>
+                        <div class="data-student__info-each-student student-name" id="student-name">
+                            <p>Giorgi</p>
                         </div>
-                        <div class="trimester">
-                            <p>9</p>
+                        <div class="data-student__info-each-student" id="student-lastName">
+                            <p>Potter</p>
                         </div>
-                    </div>
-                    <div class="data-student__info-each-student" id="email">
-                        <img class="icon-trush" src="assets/trush.png" alt="trush">
+                        <div class="data-student__info-each-student" id="email">
+                            <p>giorgipotter@hotmail.com</p>
+                        </div>
+                        <div class="data-student__info-each-student califications" id="califications">
+                            <div class="trimester">
+                                <p>8</p>
+                            </div>
+                            <div class="trimester">
+                                <p>6</p>
+                            </div>
+                            <div class="trimester">
+                                <p>9</p>
+                            </div>
+                        </div>
+                        <div class="data-student__info-each-student">
+                            <img class="icon-trush" src="assets/trush.png" alt="trush">
+                        </div>
                     </div>
                 </div>
                 <div class="div-btn-create-wizard">
