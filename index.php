@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="index.js?v=<?php echo time(); ?>" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,6 +72,47 @@
                 </div>
             </div>
             <button class="btn-create-wizard-2" id="btn-creating-wizard-finished">Create</button>
+        </div>
+
+    <!-- updateModal -->
+        <div class="modal-update">
+            <img class="logo-modal" src="assets/Gryffindor-Logo.png" alt="logo escuela de grifindor">
+            <p class="title-modal-update">What information would you like to change in this wizard?</p>
+            <div class="information-wizard-modal-update">
+                <div class="div-name-update">
+                    <p>Name</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Last name</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Email</p>
+                    <input type="email">
+                </div>
+            </div>
+            <div class="text-califications-modal-update">
+                <p>Califications</p>
+            </div>
+            <div class="califications-modal-update">
+                <div class="califications-trimester-modal-update" >
+                    <label>1st</label>
+                    <input type=text id="calification-1st-update">
+                </div>
+                <div class="califications-trimester-modal-update">
+                    <label>2nd</label>
+                    <input type=text id="calification-2nd-update">
+                </div>
+                <div class="califications-trimester-modal-update">
+                    <label>3rd</label>
+                    <input type=text id="calification-3rd-update">
+                </div>
+            </div>
+            <div class="btns-modal-sign-out">
+                <button class="btn-cancel-modal-update">Cancel</button>
+                <button class="btn-delete-modal-update">Confirm</button>
+            </div>
         </div>
 
     <!-- singOutModal -->
@@ -153,10 +194,12 @@
                             </div>
                         </div>
                         <div class="data-student__info-each-student">
+                            <img class="icon-update" src="assets/pencil.png">
+                        </div>
+                        <div class="data-student__info-each-student">
                             <img class="icon-trush" src="assets/trush.png">
                         </div>
-                    </div>
-                    
+                    </div>       
                 </div>
                 <div class="div-btn-create-wizard">
                     <button class="btn-create-wizard">Create a new Wizard</button>

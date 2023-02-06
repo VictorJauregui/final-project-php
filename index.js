@@ -14,10 +14,14 @@ const logOutBtn = document.querySelector(".btn-logOut");
 const singOutModal = document.querySelector(".modal-sing-out");
 const btnCancelSingOut = document.querySelector(".btn-cancel-modal-sign-out");
 const btnCreateWizardFinish = document.querySelector("#btn-creating-wizard-finished");
-
-
+const btnUpdate = document.querySelectorAll(".icon-update");
+const updateModal = document.querySelector(".modal-update");
+const closeUpdateModal = document.querySelector(".btn-cancel-modal-update");
 
 btnCancel.addEventListener("click", cancelDelete);
+for(i = 0; i < btnUpdate.length; i++){
+    btnUpdate[i].addEventListener("click", iconUpdate);
+}
 for(i = 0; i < btnDelete.length; i++){
     btnDelete[i].addEventListener("click", iconDelete);
 }
@@ -30,6 +34,7 @@ thirdTrimester.addEventListener("click", goTothirdTrimester);
 logOutBtn.addEventListener("click", singOut);
 btnCancelSingOut.addEventListener("click", cancelSingOut);
 btnCreateWizardFinish.addEventListener("click", createNewWizard);
+closeUpdateModal.addEventListener("click", closeModalUpdate);
 
 
 function subjectsSidebar(){
@@ -42,7 +47,28 @@ function subjectsSidebar(){
     }
 }
 
-function iconDelete(e){
+function iconUpdate(){
+    if(fullModal.classList.contains("modal-full")){
+        fullModal.classList.replace("modal-full", "modal-full-show")
+    }
+
+    if(updateModal.classList.contains("modal-update")){
+        updateModal.classList.replace("modal-update", "modal-update-show")
+    }
+
+}
+
+function closeModalUpdate(){
+    if(fullModal.classList.contains("modal-full-show")){
+        fullModal.classList.replace("modal-full-show", "modal-full")
+    }
+
+    if(updateModal.classList.contains("modal-update-show")){
+        updateModal.classList.replace("modal-update-show", "modal-update")
+    }
+}
+
+function iconDelete(){
 
     if(fullModal.classList.contains("modal-full")){
         fullModal.classList.replace("modal-full", "modal-full-show")
@@ -126,7 +152,7 @@ function cancelSingOut(){
 }
 
 function createNewWizard(e){
-    
+
     const divDataStudent = document.querySelector(".div-data-student");
     const inputNameWizard = document.querySelector("#name-wizard");
     const inputLastNameWizard = document.querySelector("#lastName-wizard");
@@ -203,7 +229,7 @@ function createNewWizard(e){
 
             const iconDeleteWizard = document.createElement("img");
             iconDeleteWizard.classList = "icon-trush";
-            iconDeleteWizard.setAttribute("src", "assets/trush.png");
+            iconDeleteWizard.setAttribute("src", "./assets/trush.png");
 
             divDataStudent.appendChild(divAllWizardInformation);
             divAllWizardInformation.appendChild(IdNewWizard);

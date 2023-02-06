@@ -154,7 +154,7 @@ body{
 
 .data-student{
     display: grid;
-    grid-template-columns: 1% 24% 25% 25% 22% 3%;
+    grid-template-columns: 1% 23% 24% 24% 22% 3% 3%;
     color: #868686;
     background-color: white;
     margin: 0 1rem;
@@ -168,7 +168,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .number-id{
@@ -188,6 +187,12 @@ body{
 .trimester p{
     border: 0.1px solid black;
     padding: 0.6rem;
+}
+.icon-update{
+    width: 1.4rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .icon-trush{
@@ -329,7 +334,7 @@ body{
 .btns-modal{
     margin: 1.5rem 0;
 }
-.btn-delete-modal-delete, .btn-delete-modal-sign-out{
+.btn-delete-modal-delete, .btn-delete-modal-sign-out, .btn-delete-modal-update{
     background-color: #B72025;
     color: white;
     padding: 0.5rem 2rem;
@@ -340,7 +345,7 @@ body{
     transition: 0.2s;
 }
 
-.btn-cancel-modal-delete , .btn-cancel-modal-sign-out{
+.btn-cancel-modal-delete , .btn-cancel-modal-sign-out, .btn-cancel-modal-update{
     background-color: #D9D9D9;
     color: white;
     padding: 0.5rem 2rem;
@@ -519,3 +524,79 @@ body{
     color: #B72025;
 }
 
+/* UPDATE-MODAL */
+
+.modal-update {
+    display: none;
+  }
+
+  .modal-update-show {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 800px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #B72025;
+    color: #B72025;
+  }
+.information-wizard-modal-update{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.califications-modal-update{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 30%;
+    margin: 0 auto;
+  }
+
+.text-califications-modal-update{
+    justify-content: center;
+}
+
+.califications-trimester-modal-update{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.information-wizard-modal-update input{
+    background-color: #dcdcdc5e;
+    border: 1px solid #DCDCDC;
+    width: 100%;
+    margin-bottom: 0.6rem;
+    height: 1.5rem;
+    margin-top: 0;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.information-wizard-modal-update p{
+    margin-bottom: 0.3rem;
+}
+
+.califications-trimester-modal-update input{
+    background-color: #dcdcdc5e;
+    border: 1px solid #DCDCDC;
+    width: 30%;
+    margin-bottom: 1rem;
+    height: 1.5rem;
+    margin-top: 0.2rem;
+    border-radius: 2px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .califications-trimester-modal-update label{
+    font-size: 12px;
+  }
+
+  .title-modal-update{
+    font-size: 20px;
+  }
