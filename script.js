@@ -24,11 +24,14 @@ const wizardBtn =  document.querySelector("#wizard-btn");//1
 const clickHere=document.querySelector("#change-to-next-form");//2
 const logInPage=document.querySelector(".form-to-access");
 const registeredForm=document.getElementById("hidden2");
+const inputsRegister=document.querySelector(".input--large-1");
 
 teacherBtn.addEventListener("click",teacherBtnStay);//1
 wizardBtn.addEventListener("click",wizardSelection);//1
 
 clickHere.addEventListener("click",registerPage);//2
+
+inputsRegister.addEventListener("click",deleteValue);
 
 function teacherBtnStay(){
     document.getElementById('teacher-btn').style=" background:linear-gradient(0deg, #FDAF17, #FDAF17), #8F8E8E; ;";
@@ -52,5 +55,9 @@ function registerPage(){
         registeredForm.classList.replace("form-registeder-to-griffindor","form-registeder-to-griffindor-show");
     }
 
+}
+
+function deleteValue(){
+    inputsRegister.value("");
 }
 

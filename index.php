@@ -51,7 +51,7 @@
             </div>
 
             <div class="form-registeder-to-griffindor"id="hidden2">
-                <form action="proces.php" method="POST"  class="form-2nd">
+                <form action="" method="POST"  class="form-2nd">
                     <div class="checkbox-position">
                         <label >
                             <input  type="radio" class="radio-check" name="for__select--one" value="Teacher">Teacher
@@ -75,20 +75,14 @@
 
                         </label>
                         <label>Password*<br>
-                            <input type="password" class="input--large-1" name="pass"><br>
-
+                            <input type="password" class="input--large-1 pass-of-register" name="pass" minlenght=5><br>
+                                <small>error</small>
                         </label>
-                        <button type="submit" class="bttn-create-account">Create  account</button>
-<?php
-include_once("./tabla.php");
-$user=new tabla();
-$user->tipo="teacher";
-$user->nombre="sergi";
-$user->apellido="clemente";
-$user->email="s@gmail.com";
-$user->pas="1234";
-$user->create();
-?>
+                        <button type="submit" class="bttn-create-account" name="register-btn">Create  account</button>
+
+                    <?php
+                    require_once("proces.php");
+                    ?>
                     </div>
                 </form>
 
