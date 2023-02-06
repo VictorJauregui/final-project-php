@@ -26,11 +26,13 @@
 
 ?>
 
-<!-- MODAL -->
+<!-- MODALS -->
 
     <!-- FullModal -->
     
     <div class="modal-full">
+
+    <!-- deleteModal -->
         <div class="modal-delete">
             <img class="logo-modal" src="assets/Gryffindor-Logo.png" alt="logo escuela de grifindor">
             <p>Are you sure that you want to delete this wizard?</p>

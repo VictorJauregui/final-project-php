@@ -1,22 +1,16 @@
 <?php
 require_once("students.php");
 
-$name = $_REQUEST["nameWizardUpdate"];
-$lastName = $_REQUEST["lastNameWizardUpdate"];
-$email = $_REQUEST["emailWizardUpdate"];
-$firstCalification = $_REQUEST["firstCalificationUpdate"];
-$secondCalification = $_REQUEST["secondCalificationUpdate"];
-$thirdCalification = $_REQUEST["thirdCalificationUpdate"];
+$id = $_GET["studentId"];
+$name = $_REQUEST["nameWizard"];
+$lastName = $_REQUEST["lastNameWizard"];
+$email = $_REQUEST["emailWizard"];
+$firstCalification = $_REQUEST["firstCalification"];
+$secondCalification = $_REQUEST["secondCalification"];
+$thirdCalification = $_REQUEST["thirdCalification"];
 
-$newStudent = new Students();
-$newStudent->update($name, $lastName, $email, $firstCalification, $secondCalification,$thirdCalification);
 
-echo json_encode([
-    'ok' => true,
-    'nameWizard' => $name,
-    'lastName' => $lastName,
-    'email' => $email,
-    'firstCalification' => $firstCalification, 
-    'secondCalification' => $secondCalification,
-    'thirdCalification' => $thirdCalification 
-]);
+$newStudent = Students::getId($id);
+$updateStudents = $newStudent->update($name, $lastName, $email, $firstCalification, $secondCalification, $thirdCalification, $id);
+
+echo json_encode($updateStudents);

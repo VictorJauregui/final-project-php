@@ -19,6 +19,8 @@ const updateModal = document.querySelector(".modal-update");
 const closeUpdateModal = document.querySelector(".btn-cancel-modal-update");
 const updateWizard = document.querySelector(".btn-delete-modal-update");
 const teacherAreaCalifications = document.querySelector(".work-area");
+const deleteWizard = document.querySelector(".btn-delete-modal-delete");
+
 
 
 teacherAreaCalifications.addEventListener("load", getAllWizards());
@@ -40,6 +42,8 @@ btnCancelSingOut.addEventListener("click", cancelSingOut);
 btnCreateWizardFinish.addEventListener("click", createNewWizard);
 closeUpdateModal.addEventListener("click", closeModalUpdate);
 updateWizard.addEventListener("click", confirmNewUpdate);
+deleteWizard.addEventListener("click", confirmDeleteWizard);
+
 
 
 
@@ -53,7 +57,10 @@ function subjectsSidebar(){
     }
 }
 
-function iconUpdate(){
+let idUpdate = ""
+
+function iconUpdate(event){
+    idUpdate = event.target.getAttribute("studentId");
     
     if(fullModal.classList.contains("modal-full")){
         fullModal.classList.replace("modal-full", "modal-full-show")
@@ -65,7 +72,43 @@ function iconUpdate(){
 
 }
 
+function confirmNewUpdate(){
+
+    const inputNameWizardUpdate = document.querySelector("#nameWizardUpdate");
+    const inputLastNameWizardUpdate = document.querySelector("#lastNameWizardUpdate");
+    const inputEmailWizardUpdate = document.querySelector("#emailWizardUpdate");
+    const inputFirstCalificationUpdate = document.querySelector("#calification-1st-update");
+    const inputSecondCalificationUpdate = document.querySelector("#calification-2nd-update");
+    const inputThirdCalificationUpdate = document.querySelector("#calification-3rd-update");
+
+    
+    const name = inputNameWizardUpdate.value;
+    const lastName = inputLastNameWizardUpdate.value;
+    const email = inputEmailWizardUpdate.value;
+    const firstCalification = inputFirstCalificationUpdate.value;
+    const secondCalification = inputSecondCalificationUpdate.value;
+    const thirdCalification = inputThirdCalificationUpdate.value;
+
+
+    fetch(`./updateWizard.php?studentId=${idUpdate}nameWizard=${name}&lastNameWizard=${lastName}&emailWizard=${email}&firstCalification=${firstCalification}&secondCalification=${secondCalification}&thirdCalification=${thirdCalification}`, {
+        method: "GET",
+      })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data)
+        })
+
+        if(fullModal.classList.contains("modal-full-show")){
+            fullModal.classList.replace("modal-full-show", "modal-full")
+        }
+    
+        if(updateModal.classList.contains("modal-update-show")){
+            updateModal.classList.replace("modal-update-show", "modal-update")
+        }
+}
+
 function closeModalUpdate(){
+
     if(fullModal.classList.contains("modal-full-show")){
         fullModal.classList.replace("modal-full-show", "modal-full")
     }
@@ -75,9 +118,22 @@ function closeModalUpdate(){
     }
 }
 
+let studentId = "";
+
 function iconDelete(event){
-    const studentId = event.target.getAttribute("studentId")
+    studentId = event.target.getAttribute("studentId");
+    console.log(studentId)
     
+    if(fullModal.classList.contains("modal-full")){
+        fullModal.classList.replace("modal-full", "modal-full-show")
+    }
+
+    if(deleteModal.classList.contains("modal-delete")){
+        deleteModal.classList.replace("modal-delete", "modal-delete-show")
+    }
+}
+
+function confirmDeleteWizard(){
     fetch(`./deleteWizard.php?studentId=${studentId}`, {
         method: "GET",
       })
@@ -86,14 +142,13 @@ function iconDelete(event){
             console.log(data)
         })
 
-        
-    if(fullModal.classList.contains("modal-full")){
-        fullModal.classList.replace("modal-full", "modal-full-show")
-    }
-
-    if(deleteModal.classList.contains("modal-delete")){
-        deleteModal.classList.replace("modal-delete", "modal-delete-show")
-    }
+        if(fullModal.classList.contains("modal-full-show")){
+            fullModal.classList.replace("modal-full-show", "modal-full")
+        }
+    
+        if(deleteModal.classList.contains("modal-delete-show")){
+            deleteModal.classList.replace("modal-delete-show", "modal-delete")
+        }
 }
 
 function cancelDelete(){
@@ -204,7 +259,7 @@ function getAllWizards(){
                             </div>
                         </div>
                         <div class="data-student__info-each-student">
-                            <img class="icon-update" src="assets/pencil.png" onclick="iconUpdate()">
+                            <img class="icon-update" src="assets/pencil.png" studentId=${student.id} onclick="iconUpdate(event)">
                         </div>
                         <div class="data-student__info-each-student">
                             <img class="icon-trush" src="assets/trush.png" studentId=${student.id} onclick="iconDelete(event)">
@@ -216,34 +271,9 @@ function getAllWizards(){
 })
 }
 
-function confirmNewUpdate(){
-
-//     const inputNameWizard = document.querySelector("#nameWizardUpdate");
-//     const inputLastNameWizard = document.querySelector("#lastNameWizardUpdate");
-//     const inputEmailWizard = document.querySelector("#emailWizardUpdate");
-//     const inputFirstCalification = document.querySelector("#calification-1st-update");
-//     const inputSecondCalification = document.querySelector("#calification-2nd-update");
-//     const inputThirdCalification = document.querySelector("#calification-3rd-update");
-
-//     const name = inputNameWizard.value;
-//     const lastName = inputLastNameWizard.value;
-//     const email = inputEmailWizard.value;
-//     const firstCalification = inputFirstCalification.value;
-//     const secondCalification = inputSecondCalification.value;
-//     const thirdCalification = inputThirdCalification.value;
-
-//     fetch(`./updateWizard.php?nameWizardUpdate=${name}&lastNameWizardUpdate=${lastName}&emailWizardUpdate=${email}&firstCalificationUpdate=${firstCalification}&secondCalificationUpdate=${secondCalification}&thirdCalificationUpdate=${thirdCalification}`, {
-//         method: "GET",
-//       })
-//         .then((response) => response.json())
-//         .then((data) => {
-//             console.log(data)
-//         });
-// 
-}
 
 
-function createNewWizard(e){
+function createNewWizard(){
 
     const divDataStudent = document.querySelector(".div-data-student");
     const inputNameWizard = document.querySelector("#name-wizard");
