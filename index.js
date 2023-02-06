@@ -1,6 +1,6 @@
 const typesSubjects = document.querySelector(".title-and-subjects");
 const subjects = document.querySelector(".types-of-subjects");
-const btnDelete = document.querySelector(".icon-trush");
+const btnDelete = document.querySelectorAll(".icon-trush");
 const fullModal = document.querySelector(".modal-full");
 const deleteModal = document.querySelector(".modal-delete");
 const btnCancel = document.querySelector(".btn-cancel-modal-delete");
@@ -14,11 +14,13 @@ const logOutBtn = document.querySelector(".btn-logOut");
 const singOutModal = document.querySelector(".modal-sing-out");
 const btnCancelSingOut = document.querySelector(".btn-cancel-modal-sign-out");
 const btnCreateWizardFinish = document.querySelector("#btn-creating-wizard-finished");
-const divDataStudent = document.querySelector(".div-data-student");
+
 
 
 btnCancel.addEventListener("click", cancelDelete);
-btnDelete.addEventListener("click", iconDelete);
+for(i = 0; i < btnDelete.length; i++){
+    btnDelete[i].addEventListener("click", iconDelete);
+}
 typesSubjects.addEventListener("click", subjectsSidebar);
 btnCW.addEventListener("click", btnCreateWizard);
 closeCreationModal.addEventListener("click", closeModalCreation);
@@ -123,8 +125,9 @@ function cancelSingOut(){
     }
 }
 
-function createNewWizard(){
-    const workArea = document.querySelector(".work-area");
+function createNewWizard(e){
+    
+    const divDataStudent = document.querySelector(".div-data-student");
     const inputNameWizard = document.querySelector("#name-wizard");
     const inputLastNameWizard = document.querySelector("#lastName-wizard");
     const inputEmailWizard = document.querySelector("#email-wizard");
@@ -201,10 +204,6 @@ function createNewWizard(){
             const iconDeleteWizard = document.createElement("img");
             iconDeleteWizard.classList = "icon-trush";
             iconDeleteWizard.setAttribute("src", "assets/trush.png");
-
-
-                
-
 
             divDataStudent.appendChild(divAllWizardInformation);
             divAllWizardInformation.appendChild(IdNewWizard);
