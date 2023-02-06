@@ -17,7 +17,11 @@ const btnCreateWizardFinish = document.querySelector("#btn-creating-wizard-finis
 const btnUpdate = document.querySelectorAll(".icon-update");
 const updateModal = document.querySelector(".modal-update");
 const closeUpdateModal = document.querySelector(".btn-cancel-modal-update");
+const updateWizard = document.querySelector(".btn-delete-modal-update");
+const teacherAreaCalifications = document.querySelector(".work-area");
 
+
+teacherAreaCalifications.addEventListener("load", getAllWizards());
 btnCancel.addEventListener("click", cancelDelete);
 for(i = 0; i < btnUpdate.length; i++){
     btnUpdate[i].addEventListener("click", iconUpdate);
@@ -35,6 +39,8 @@ logOutBtn.addEventListener("click", singOut);
 btnCancelSingOut.addEventListener("click", cancelSingOut);
 btnCreateWizardFinish.addEventListener("click", createNewWizard);
 closeUpdateModal.addEventListener("click", closeModalUpdate);
+updateWizard.addEventListener("click", confirmNewUpdate);
+
 
 
 function subjectsSidebar(){
@@ -151,6 +157,81 @@ function cancelSingOut(){
     }
 }
 
+
+function getAllWizards(){
+    const studentsContainer = document.querySelector(".div-data-student")
+    fetch(`./readAllWizards.php?`, {
+        method: "GET",
+      })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data)
+            data.map((student)=>{
+                studentsContainer.innerHTML += `
+                <div class="data-student">
+                        <div class="data-student__info-each-student number-id" id="id-number">
+                            <p class="create-wizard-text">${student.id}</p>
+                        </div>
+                        <div class="data-student__info-each-student student-name" id="student-name">
+                            <p>${student.Name}</p>
+                        </div>
+                        <div class="data-student__info-each-student" id="student-lastName">
+                            <p>Potter</p>
+                        </div>
+                        <div class="data-student__info-each-student" id="email">
+                            <p>giorgipotter@hotmail.com</p>
+                        </div>
+                        <div class="data-student__info-each-student califications" id="califications">
+                            <div class="trimester">
+                                <p>8</p>
+                            </div>
+                            <div class="trimester">
+                                <p>6</p>
+                            </div>
+                            <div class="trimester">
+                                <p>9</p>
+                            </div>
+                        </div>
+                        <div class="data-student__info-each-student">
+                            <img class="icon-update" src="assets/pencil.png">
+                        </div>
+                        <div class="data-student__info-each-student">
+                            <img class="icon-trush" src="assets/trush.png">
+                        </div>
+                    </div> `
+            })
+            
+            
+})
+}
+
+function confirmNewUpdate(){
+
+//     const inputNameWizard = document.querySelector("#nameWizardUpdate");
+//     const inputLastNameWizard = document.querySelector("#lastNameWizardUpdate");
+//     const inputEmailWizard = document.querySelector("#emailWizardUpdate");
+//     const inputFirstCalification = document.querySelector("#calification-1st-update");
+//     const inputSecondCalification = document.querySelector("#calification-2nd-update");
+//     const inputThirdCalification = document.querySelector("#calification-3rd-update");
+
+//     const name = inputNameWizard.value;
+//     const lastName = inputLastNameWizard.value;
+//     const email = inputEmailWizard.value;
+//     const firstCalification = inputFirstCalification.value;
+//     const secondCalification = inputSecondCalification.value;
+//     const thirdCalification = inputThirdCalification.value;
+
+//     fetch(`./updateWizard.php?nameWizardUpdate=${name}&lastNameWizardUpdate=${lastName}&emailWizardUpdate=${email}&firstCalificationUpdate=${firstCalification}&secondCalificationUpdate=${secondCalification}&thirdCalificationUpdate=${thirdCalification}`, {
+//         method: "GET",
+//       })
+//         .then((response) => response.json())
+//         .then((data) => {
+//             console.log(data)
+//         });
+// 
+}
+
+
 function createNewWizard(e){
 
     const divDataStudent = document.querySelector(".div-data-student");
@@ -229,6 +310,7 @@ function createNewWizard(e){
 
             const iconDeleteWizard = document.createElement("img");
             iconDeleteWizard.classList = "icon-trush";
+            iconDeleteWizard.addEventListener("click", iconDelete);
             iconDeleteWizard.setAttribute("src", "./assets/trush.png");
 
             divDataStudent.appendChild(divAllWizardInformation);
@@ -264,3 +346,4 @@ function createNewWizard(e){
             creationModal.classList.replace("modal-creation-show", "modal-creation")
         }
 }
+

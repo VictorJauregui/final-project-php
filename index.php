@@ -81,15 +81,15 @@
             <div class="information-wizard-modal-update">
                 <div class="div-name-update">
                     <p>Name</p>
-                    <input type="text">
+                    <input id="nameWizardUpdate" type="text">
                 </div>
                 <div>
                     <p>Last name</p>
-                    <input type="text">
+                    <input id="lastNameWizardUpdate" type="text">
                 </div>
                 <div>
                     <p>Email</p>
-                    <input type="email">
+                    <input id="emailWizardUpdate"type="email">
                 </div>
             </div>
             <div class="text-califications-modal-update">
