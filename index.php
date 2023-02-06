@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="index.js?v=<?php echo time(); ?>" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -169,7 +169,7 @@
                     <h3 class="subtitles__h3">Califications</h3>
                 </div>
                 <div class="div-data-student">
-                    <div class="data-student">
+                    <!-- <div class="data-student">
                         <div class="data-student__info-each-student number-id" id="id-number">
                             <p class="create-wizard-text">1</p>
                         </div>
@@ -199,7 +199,7 @@
                         <div class="data-student__info-each-student">
                             <img class="icon-trush" src="assets/trush.png">
                         </div>
-                    </div>       
+                    </div>        -->
                 </div>
                 <div class="div-btn-create-wizard">
                     <button class="btn-create-wizard">Create a new Wizard</button>

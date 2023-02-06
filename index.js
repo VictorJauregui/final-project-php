@@ -54,6 +54,7 @@ function subjectsSidebar(){
 }
 
 function iconUpdate(){
+    
     if(fullModal.classList.contains("modal-full")){
         fullModal.classList.replace("modal-full", "modal-full-show")
     }
@@ -74,8 +75,18 @@ function closeModalUpdate(){
     }
 }
 
-function iconDelete(){
+function iconDelete(event){
+    const studentId = event.target.getAttribute("studentId")
+    
+    fetch(`./deleteWizard.php?studentId=${studentId}`, {
+        method: "GET",
+      })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data)
+        })
 
+        
     if(fullModal.classList.contains("modal-full")){
         fullModal.classList.replace("modal-full", "modal-full-show")
     }
@@ -193,10 +204,10 @@ function getAllWizards(){
                             </div>
                         </div>
                         <div class="data-student__info-each-student">
-                            <img class="icon-update" src="assets/pencil.png">
+                            <img class="icon-update" src="assets/pencil.png" onclick="iconUpdate()">
                         </div>
                         <div class="data-student__info-each-student">
-                            <img class="icon-trush" src="assets/trush.png">
+                            <img class="icon-trush" src="assets/trush.png" studentId=${student.id} onclick="iconDelete(event)">
                         </div>
                     </div> `
             })
@@ -337,10 +348,11 @@ function createNewWizard(e){
             newSecondTrimester.appendChild(textnewSecondTrimester);
             calificationsNewWizard.appendChild(newThirdTrimester);
             newThirdTrimester.appendChild(textnewThirdTrimester);
+            divAllWizardInformation.appendChild(divIconUpdateWizard);
+            divIconUpdateWizard.appendChild(iconUpdateWizard);
             divAllWizardInformation.appendChild(divIconDeleteWizard);
             divIconDeleteWizard.appendChild(iconDeleteWizard);
-
-        
+            
               }
     
         })
