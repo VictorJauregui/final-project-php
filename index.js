@@ -176,20 +176,20 @@ function getAllWizards(){
                             <p>${student.Name}</p>
                         </div>
                         <div class="data-student__info-each-student" id="student-lastName">
-                            <p>Potter</p>
+                            <p>${student.LastName}</p>
                         </div>
                         <div class="data-student__info-each-student" id="email">
-                            <p>giorgipotter@hotmail.com</p>
+                            <p>${student.Email}</p>
                         </div>
                         <div class="data-student__info-each-student califications" id="califications">
                             <div class="trimester">
-                                <p>8</p>
+                                <p>${student.firstTrimester}</p>
                             </div>
                             <div class="trimester">
-                                <p>6</p>
+                                <p>${student.secondTrimester}</p>
                             </div>
                             <div class="trimester">
-                                <p>9</p>
+                                <p>${student.thirdTrimester}</p>
                             </div>
                         </div>
                         <div class="data-student__info-each-student">
@@ -312,6 +312,14 @@ function createNewWizard(e){
             iconDeleteWizard.classList = "icon-trush";
             iconDeleteWizard.addEventListener("click", iconDelete);
             iconDeleteWizard.setAttribute("src", "./assets/trush.png");
+
+            const divIconUpdateWizard = document.createElement("div");
+            divIconUpdateWizard.classList = "data-student__info-each-student";
+
+            const iconUpdateWizard = document.createElement("img");
+            iconUpdateWizard.classList = "icon-update";
+            iconUpdateWizard.addEventListener("click", iconUpdate);
+            iconUpdateWizard.setAttribute("src", "./assets/pencil.png");
 
             divDataStudent.appendChild(divAllWizardInformation);
             divAllWizardInformation.appendChild(IdNewWizard);
