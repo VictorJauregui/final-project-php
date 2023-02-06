@@ -13,21 +13,15 @@
         }
         public function conexion(){
             $con=mysqli_connect($this->server,$this->userName,$this->pass,$this->db);
+            return $con;
         }
         
     }
-    <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $db="userlist"
-    // Create connection
-    $conn = new mysqli($servername, $username, $password,$db);
-    
-    // Check connection
-    if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-    }
-    echo "Connected successfully";
-    ?>
+    // class conexion{
+    //     public $con;
+    //     public function connection(){
+    //         $this->con = mysqli_connect("localhost", "root","","userlist");
+            
+    //     }
+    // }
     ?>

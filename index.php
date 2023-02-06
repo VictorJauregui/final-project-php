@@ -51,7 +51,7 @@
             </div>
 
             <div class="form-registeder-to-griffindor"id="hidden2">
-                <form action="" method="POST"  class="form-2nd">
+                <form action="tabla.php" method="POST"  class="form-2nd">
                     <div class="checkbox-position">
                         <label >
                             <input  type="radio" class="radio-check" name="for__select--one" value="Teacher">Teacher
@@ -80,9 +80,7 @@
                         </label>
                         <button type="submit" class="bttn-create-account" name="register-btn">Create  account</button>
 
-                    <?php
-                    require_once("proces.php");
-                    ?>
+                    
                     </div>
                 </form>
 

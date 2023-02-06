@@ -27,6 +27,10 @@
 //     echo "need one nomber";
 //     return false;
 //  }
+//  else if(!preg_match("@",$email)){
+//     echo"has to be email";
+//  }
 //  else{
 //     return true;
 //  }
+ 
