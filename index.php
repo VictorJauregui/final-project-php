@@ -24,22 +24,22 @@
                     </div>
 
                 </div>
-                <form action="" class="form-login">
+                <form action="login.php" class="form-login">
                     <div class=div--center>
                         <label >
                             User <br>
-                            <input class="input--large" type="text">
+                            <input class="input--large email-login" type="text">
                             <br>
                             <br>
                         </label>
                         <label > 
                             Passwords <br>
-                            <input class="input--large" type="password">
+                            <input class="input--large pass-login" type="password">
                             <br><br>
                             
                         </label>
                         <br>
-                        <button class="bttn">Log in</button><br>
+                        <button class="bttn btn-login">Log in</button><br>
 
                     </div>
                 </form>
