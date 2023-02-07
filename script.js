@@ -19,7 +19,7 @@
 //     selectorTeacherBtnColor.style.backgroundColor="red";
 // }
 
-const teacherBtn = document.querySelector("#teacher-btn");//1
+const teacherBtn = document.querySelector("#teacher-btn")//1
 const wizardBtn =  document.querySelector("#wizard-btn");//1
 const clickHere=document.querySelector("#change-to-next-form");//2
 const logInPage=document.querySelector(".form-to-access");
