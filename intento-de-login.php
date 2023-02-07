@@ -8,7 +8,7 @@
   require 'conexion.php';
 
   if (!empty($_POST['email']) && !empty($_POST['password'])) {
-    $records = $con->prepare('SELECT tipo , nombre ,apellido, email, pas FROM users WHERE email-login = email');
+    $records = $con->prepare('SELECT email, pas FROM users WHERE email-login = email');
     $records->bindParam('email', $_POST['email-login']);
     $records->execute();
     $results = $records->fetch(PDO::FETCH_ASSOC);

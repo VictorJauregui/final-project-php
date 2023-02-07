@@ -1,8 +1,9 @@
 <?php
+require_once("./conexion.php");
 class login extends conexion{
 public $id;
-public function logIn($email,$pas){
-$result=mysqli_query($this->con,"SELECT * FROM userTable WHERE email = $email ");
+public function logIn($usernameemail,$password){
+$result=mysqli_query($this->con,"SELECT * FROM userTable WHERE email = $usernameemail ");
 $row = mysqli_fetch_assoc($result);
 
 if(mysqli_num_rows($result) > 0){
@@ -18,7 +19,7 @@ return 10;
     return 100;
 }
     public function idUser(){
-        return $this-
+        return $this->id;
     }
 }
 

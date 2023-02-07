@@ -1,3 +1,29 @@
+<?php
+require_once("./conexion.php");
+require_once("./login2.php");
+ if(isset($_SESSION["id"])){
+    
+    header('Location: ./test.html');
+ }
+
+$login=new login();
+
+if(isset($_POST["submit"])){
+    $result = $login->login($_POST["usernameemail"]) ($_POST["password"]);
+   
+    if($result==1){
+    $_SESSION["login"]= true;
+    $_SESSION["id"]=$login->idUser();
+    header('Location: ./test.html');
+   } 
+else if($result=10){
+    echo"no se conecta";
+}
+else if($result=100){
+    echo"ya esta creada";
+}
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,25 +50,23 @@
                     </div>
 
                 </div>
-                <form action="login.php" method="POST" class="form-login">
+                <form action="login2.php" method="POST" class="form-login">
                     <div class=div--center>
                         <label >
                             User <br>
-                            <input class="input--large" type="text" name="email-login">
+                            <input class="input--large" type="text" name="usernameemail">
                             <br>
                             <br>
                         </label>
                         <label > 
                             Passwords <br>
-                            <input class="input--large" type="password" name="pass-login">
+                            <input class="input--large" type="password" name="password">
                             <br><br>
                                             
-                    <?php if(!empty($message)): ?>
-                    <p> <?= $message ?></p>
-                    <?php endif; ?>
+                    
                         </label>
                         <br>
-                        <button class="bttn">Log in</button><br>
+                        <button class="bttn" name="submit">Log in</button><br>
 
                     </div>
                 </form>
