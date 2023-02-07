@@ -130,6 +130,7 @@ body{
     border: 1px solid #FDAF17;
     border-radius: 10px;
     margin: 0 5rem;
+    display: none;
 
 
 }
@@ -600,3 +601,45 @@ body{
   .title-modal-update{
     font-size: 20px;
   }
+
+  /* CALENDARY TEACHER */
+
+  .week-calendary{
+    background-color: white;
+    height: 55vh;
+    border: 1px solid #FDAF17;
+    border-radius: 10px;
+    margin: 0 10rem;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    text-align: center;
+    color: #B72025;
+    border-bottom: 1px solid #DADADA;
+  }
+
+
+  .subjects-of-days{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    text-align: center;
+  }
+
+  .div-img-pencil{
+    display: flex;
+    justify-content: end;
+  }
+  .pencil-edit{
+    width: 1rem;
+  }
+
+.hour-and-subjects-of-days{
+    border: 0.5px solid #DADADA;
+}
+
+.monday-first{
+    color: #C8C8C8;
+    font-size: 0.8rem;
+}
