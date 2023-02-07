@@ -159,10 +159,15 @@
                         <p class="type-admin">Teacher</p>
                     </div>
                 </div>
+                <div class="div-btn-logOut">
+                    <button class="btn-logOut">Log out</button>
+                </div>
             </div>
         </div>
+        
         <div class="content-area">
             <h2 class="content-area__title">Score</h2>
+            <!-- Students califications -->
             <div class="work-area">
                 <div class="subtitles">
                     <h3 class="subtitles__h3">Name</h3>
@@ -207,6 +212,7 @@
                     <button class="btn-create-wizard">Create a new Wizard</button>
                 </div>
             </div>
+            <!-- Calendary -->
             
 
 

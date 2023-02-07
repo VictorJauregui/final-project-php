@@ -34,10 +34,10 @@
         }
         
         // UPDATE
-        public function update($name, $lastName, $email, $firstTrimester, $secondTrimester,$thirdTrimester){
+        public function update($name, $lastName, $email, $firstTrimester, $secondTrimester,$thirdTrimester, $id){
             $this->conectar();
-            $pre = mysqli_prepare($this->conn, "UPDATE students SET name=?, lastName=?, email=?, firstTrimester=?,secondTrimester=?, thirdTrimester=? where id = ?") ;
-            $pre->bind_param("sssiiii", $this->name, $this->lastName, $this->email, $this->firstTrimester, $this->secondTrimester, $this->thirdTrimester, $this->id);
+            $pre = mysqli_prepare($this->conn, "UPDATE students SET name=?, lastName=?, email=?, firstTrimester=?,secondTrimester=?, thirdTrimester=? WHERE id = ?") ;
+            $pre->bind_param("sssiiii", $name, $lastName, $email, $firstTrimester, $secondTrimester, $thirdTrimester, $id);
             $pre->execute();
 
         }

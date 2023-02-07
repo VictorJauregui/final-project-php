@@ -10,7 +10,7 @@ const closeCreationModal = document.querySelector(".icon-close-modal");
 const firstTrimester = document.querySelector(".student-trimester1");
 const secondTrimester = document.querySelector(".student-trimester2");
 const thirdTrimester = document.querySelector(".student-trimester3");
-const logOutBtn = document.querySelector(".btn-logOut");
+const logOutBtn = document.querySelectorAll(".btn-logOut");
 const singOutModal = document.querySelector(".modal-sing-out");
 const btnCancelSingOut = document.querySelector(".btn-cancel-modal-sign-out");
 const btnCreateWizardFinish = document.querySelector("#btn-creating-wizard-finished");
@@ -20,7 +20,6 @@ const closeUpdateModal = document.querySelector(".btn-cancel-modal-update");
 const updateWizard = document.querySelector(".btn-delete-modal-update");
 const teacherAreaCalifications = document.querySelector(".work-area");
 const deleteWizard = document.querySelector(".btn-delete-modal-delete");
-
 
 
 teacherAreaCalifications.addEventListener("load", getAllWizards());
@@ -37,7 +36,10 @@ closeCreationModal.addEventListener("click", closeModalCreation);
 firstTrimester.addEventListener("click", goToFirstTrimester);
 secondTrimester.addEventListener("click", goToSecondTrimester);
 thirdTrimester.addEventListener("click", goTothirdTrimester);
-logOutBtn.addEventListener("click", singOut);
+for(i = 0; i < logOutBtn.length; i++){
+    logOutBtn[i].addEventListener("click", singOut);
+}
+
 btnCancelSingOut.addEventListener("click", cancelSingOut);
 btnCreateWizardFinish.addEventListener("click", createNewWizard);
 closeUpdateModal.addEventListener("click", closeModalUpdate);
@@ -90,12 +92,27 @@ function confirmNewUpdate(){
     const thirdCalification = inputThirdCalificationUpdate.value;
 
 
-    fetch(`./updateWizard.php?studentId=${idUpdate}nameWizard=${name}&lastNameWizard=${lastName}&emailWizard=${email}&firstCalification=${firstCalification}&secondCalification=${secondCalification}&thirdCalification=${thirdCalification}`, {
+    fetch(`./updateWizard.php?studentId=${idUpdate}&nameWizardUpdate=${name}&lastNameWizardUpdate=${lastName}&emailWizardUpdate=${email}&firstCalificationUpdate=${firstCalification}&secondCalificationUpdate=${secondCalification}&thirdCalificationUpdate=${thirdCalification}`, {
         method: "GET",
       })
         .then((response) => response.json())
         .then((data) => {
-            console.log(data)
+           if(data.ok){
+            
+            const nameWizardValue = document.querySelector(`#name-${idUpdate}`);
+            const lastNameWizardValue = document.querySelector(`#lastName-${idUpdate}`);
+            const emailWizardValue = document.querySelector(`#email-${idUpdate}`);
+            const firstTrimesterValue = document.querySelector(`#firstTrimester-${idUpdate}`);
+            const secondTrimesterValue = document.querySelector(`#secondTrimester-${idUpdate}`);
+            const thirdTrimesterValue = document.querySelector(`#thirdTrimester-${idUpdate}`);
+            nameWizardValue.textContent = name;
+            lastNameWizardValue.textContent = lastName;
+            emailWizardValue.textContent = email;
+            firstTrimesterValue.textContent = firstCalification;
+            secondTrimesterValue.textContent = secondCalification;
+            thirdTrimesterValue.textContent = thirdCalification;
+
+           }
         })
 
         if(fullModal.classList.contains("modal-full-show")){
@@ -134,12 +151,13 @@ function iconDelete(event){
 }
 
 function confirmDeleteWizard(){
+    const deleteStudent = document.querySelector(`#id-${idUpdate}`);
     fetch(`./deleteWizard.php?studentId=${studentId}`, {
         method: "GET",
       })
         .then((response) => response.json())
         .then((data) => {
-            console.log(data)
+            
         })
 
         if(fullModal.classList.contains("modal-full-show")){
@@ -236,26 +254,26 @@ function getAllWizards(){
                 studentsContainer.innerHTML += `
                 <div class="data-student">
                         <div class="data-student__info-each-student number-id" id="id-number">
-                            <p class="create-wizard-text">${student.id}</p>
+                            <p class="create-wizard-text" id='id-${student.id}'>${student.id}</p>
                         </div>
                         <div class="data-student__info-each-student student-name" id="student-name">
-                            <p>${student.Name}</p>
+                            <p id='name-${student.id}'>${student.Name}</p>
                         </div>
                         <div class="data-student__info-each-student" id="student-lastName">
-                            <p>${student.LastName}</p>
+                            <p id='lastName-${student.id}'>${student.LastName}</p>
                         </div>
                         <div class="data-student__info-each-student" id="email">
-                            <p>${student.Email}</p>
+                            <p id='email-${student.id}'>${student.Email}</p>
                         </div>
                         <div class="data-student__info-each-student califications" id="califications">
                             <div class="trimester">
-                                <p>${student.firstTrimester}</p>
+                                <p id='firstTrimester-${student.id}'>${student.firstTrimester}</p>
                             </div>
                             <div class="trimester">
-                                <p>${student.secondTrimester}</p>
+                                <p id='secondTrimester-${student.id}'>${student.secondTrimester}</p>
                             </div>
                             <div class="trimester">
-                                <p>${student.thirdTrimester}</p>
+                                <p id='thirdTrimester-${student.id}'>${student.thirdTrimester}</p>
                             </div>
                         </div>
                         <div class="data-student__info-each-student">
@@ -274,7 +292,8 @@ function getAllWizards(){
 
 
 function createNewWizard(){
-
+    
+    const idNewWizard = document.querySelector(`#id-${studentId}`);
     const divDataStudent = document.querySelector(".div-data-student");
     const inputNameWizard = document.querySelector("#name-wizard");
     const inputLastNameWizard = document.querySelector("#lastName-wizard");
@@ -289,6 +308,7 @@ function createNewWizard(){
     const firstCalification = inputFirstCalification.value;
     const secondCalification = inputSecondCalification.value;
     const thirdCalification = inputThirdCalification.value;
+    
 
     fetch(`./createWizard.php?nameWizard=${name}&lastNameWizard=${lastName}&emailWizard=${email}&firstCalification=${firstCalification}&secondCalification=${secondCalification}&thirdCalification=${thirdCalification}`, {
         method: "GET",
@@ -297,7 +317,8 @@ function createNewWizard(){
         .then((data) => {
             if (data.ok) {
                 console.log(data);
-        
+                
+            
             const divAllWizardInformation = document.createElement("div");
             divAllWizardInformation.classList = "data-student";
 
@@ -305,7 +326,7 @@ function createNewWizard(){
             IdNewWizard.classList = "data-student__info-each-student";
 
             const textIdNewWizard = document.createElement("p");
-            // textIdNewWizard.textContent = data.nameWizard;
+            textIdNewWizard.textContent = idNewWizard;
 
             const nameNewWizard = document.createElement("div");
             nameNewWizard.classList = "data-student__info-each-student";
