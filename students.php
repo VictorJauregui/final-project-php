@@ -41,6 +41,7 @@
             $pre->execute();
 
         }
+
         
         public function delete(){
             $this->conectar();

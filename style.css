@@ -33,7 +33,9 @@ body{
     display: flex;
     flex-direction: column;
     height: 70vh;
+    display: none;
 }
+
 .sidebar-student{
     width: 15%;
     border-right: 1px solid #B72025 ;
@@ -41,7 +43,6 @@ body{
     display: flex;
     flex-direction: column;
     height: 70vh;
-    display: none;
     
 }
 
@@ -130,7 +131,6 @@ body{
     border: 1px solid #FDAF17;
     border-radius: 10px;
     margin: 0 5rem;
-    display: none;
 
 
 }
@@ -449,7 +449,7 @@ body{
   .content-area-student{
     margin-left: 8rem;
     margin-right: 8rem;
-    display: none;
+
 }
   .content-area-student__title{
     font-size: 3rem;
@@ -507,7 +507,37 @@ body{
     border-bottom: 0.5px solid #86868647;
     width: 40%;
     margin: 0 auto;
+
 }
+
+.mark-calification-notShow{
+    display: none;
+}
+
+.mark-calification-2{
+    display: none;
+}
+
+.mark-calification-2-show{
+    display: flex;
+    border-bottom: 0.5px solid #86868647;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.mark-calification-3{
+    display: none;
+}
+
+.mark-calification-3-show{
+    display: flex;
+    border-bottom: 0.5px solid #86868647;
+    width: 40%;
+    margin: 0 auto;
+}
+
+
+
 .subject-name{
     display: flex;
     justify-content: left;
@@ -610,6 +640,8 @@ body{
     border: 1px solid #FDAF17;
     border-radius: 10px;
     margin: 0 10rem;
+    display: none;
+    
   }
   
   .days {
@@ -625,6 +657,7 @@ body{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     text-align: center;
+
   }
 
   .div-img-pencil{

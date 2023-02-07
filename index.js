@@ -20,8 +20,19 @@ const closeUpdateModal = document.querySelector(".btn-cancel-modal-update");
 const updateWizard = document.querySelector(".btn-delete-modal-update");
 const teacherAreaCalifications = document.querySelector(".work-area");
 const deleteWizard = document.querySelector(".btn-delete-modal-delete");
+const editSubjectCalendary = document.querySelectorAll(".pencil-edit");
+const idNameAdmin = document.querySelector("#admin-name");
+const nameAdmin = idNameAdmin.textContent;
+const globalCalifications = document.querySelector(".global-califications");
+const workAreaStudent = document.querySelector("#workAreaStudent");
+const calificationsGlobalFirst = document.querySelector(".mark-calification");
+const calificationsGlobalSecond = document.querySelector(".mark-calification-2");
+const calificationsGlobalThird = document.querySelector(".mark-calification-3");
 
 
+
+
+workAreaStudent.addEventListener("load", getWizardById());
 teacherAreaCalifications.addEventListener("load", getAllWizards());
 btnCancel.addEventListener("click", cancelDelete);
 for(i = 0; i < btnUpdate.length; i++){
@@ -45,6 +56,8 @@ btnCreateWizardFinish.addEventListener("click", createNewWizard);
 closeUpdateModal.addEventListener("click", closeModalUpdate);
 updateWizard.addEventListener("click", confirmNewUpdate);
 deleteWizard.addEventListener("click", confirmDeleteWizard);
+
+
 
 
 
@@ -114,7 +127,11 @@ function confirmNewUpdate(){
 
            }
         })
-
+        
+        if(email === nameAdmin){
+            globalCalifications.innerHTML = firstCalification;
+        }
+        
         if(fullModal.classList.contains("modal-full-show")){
             fullModal.classList.replace("modal-full-show", "modal-full")
         }
@@ -204,6 +221,18 @@ function goToFirstTrimester(){
     secondTrimester.style.backgroundColor = "#fdb0174a";
     thirdTrimester.style.backgroundColor = "#fdb0174a";
 
+    if(calificationsGlobalFirst.classList.contains("mark-calification-notShow")){
+        calificationsGlobalFirst.classList.replace("mark-calification-notShow", "mark-calification")
+    }
+
+    if(calificationsGlobalSecond.classList.contains("mark-calification-2-show")){
+        calificationsGlobalSecond.classList.replace("mark-calification-2-show", "mark-calification-2")
+    }
+
+    if(calificationsGlobalThird.classList.contains("mark-calification-3-show")){
+        calificationsGlobalThird.classList.replace("mark-calification-3-show", "mark-calification-3")
+    }
+
 }
 
 function goToSecondTrimester(){
@@ -211,12 +240,35 @@ function goToSecondTrimester(){
     secondTrimester.style.backgroundColor = "#FDAF17";
     thirdTrimester.style.backgroundColor = "#fdb0174a";
 
+    if(calificationsGlobalFirst.classList.contains("mark-calification")){
+        calificationsGlobalFirst.classList.replace("mark-calification", "mark-calification-notShow")
+    }
+
+    if(calificationsGlobalSecond.classList.contains("mark-calification-2")){
+        calificationsGlobalSecond.classList.replace("mark-calification-2", "mark-calification-2-show")
+    }
+
+    if(calificationsGlobalThird.classList.contains("mark-calification-3-show")){
+        calificationsGlobalThird.classList.replace("mark-calification-3-show", "mark-calification-3")
+    }
 }
 
 function goTothirdTrimester(){
     firstTrimester.style.backgroundColor = "#fdb0174a";
     secondTrimester.style.backgroundColor = "#fdb0174a";
     thirdTrimester.style.backgroundColor = "#FDAF17";
+
+    if(calificationsGlobalFirst.classList.contains("mark-calification")){
+        calificationsGlobalFirst.classList.replace("mark-calification", "mark-calification-notShow")
+    }
+
+    if(calificationsGlobalSecond.classList.contains("mark-calification-2-show")){
+        calificationsGlobalSecond.classList.replace("mark-calification-2-show", "mark-calification-2")
+    }
+
+    if(calificationsGlobalThird.classList.contains("mark-calification-3")){
+        calificationsGlobalThird.classList.replace("mark-calification-3", "mark-calification-3-show")
+    }
 
 }
 
@@ -409,6 +461,10 @@ function createNewWizard(){
         })
         .catch((err) => console.log("Request: ", err));
 
+        if(email === nameAdmin){
+            globalCalifications.innerHTML = firstCalification;
+        }
+
         if(fullModal.classList.contains("modal-full-show")){
             fullModal.classList.replace("modal-full-show", "modal-full")
         }
@@ -418,3 +474,14 @@ function createNewWizard(){
         }
 }
 
+function getWizardById(){
+    fetch(`./getWizardById.php?`, {
+        method: "GET",
+      })
+        .then((response) => response.json())
+        .then((data) => {
+            globalCalifications.innerHTML = data.firstTrimester;
+            
+        })
+
+}
