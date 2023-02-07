@@ -161,7 +161,7 @@ body{
     align-items: center;
     width: 100%;
     height: 100%;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 #teacher-btn{
@@ -272,6 +272,5 @@ body{
 }
 
 .second-form--partial label input{
-    margin-bottom: 1.5rem;
-    
+    margin-bottom: 1.5rem; 
 }
