@@ -36,7 +36,7 @@ if(isset($_POST["register-btn"])){
         $name=$_POST["name"];
         $lastName=$_POST["last-name"];
         $mail=$_POST["email"];
-        $password=password_hash($_POST["pass"], PASSWORD_DEFAULT);
+        $password=password_hash($_POST["pass"], PASSWORD_DEFAULT);//encriptador de contraseña
         
     
         $user=new tabla();
