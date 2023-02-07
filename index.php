@@ -51,7 +51,7 @@
             </div>
 
             <div class="form-registeder-to-griffindor"id="hidden2">
-                <form action="tabla.php" class="form-2nd">
+                <form action="tabla.php" method="POST" class="form-2nd">
                     <div class="checkbox-position">
                         <label >
                             <input  type="radio" class="radio-check" name="for__select--one">Teacher
