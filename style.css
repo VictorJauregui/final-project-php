@@ -28,36 +28,31 @@ body{
     background-color: #F8F8CA;
 }
 .form-login{
-    width: 32.938rem;
-    height: 14.75rem;
-    left: 5.75rem;
-    top: 27.063rem;
-    
-    background: #F8F8CA;
+    width: 100%;
     border: 1px solid #FDAF17;
     border-radius: 0 0 0.75rem 0.75rem;
 }
 .input--large{
     width: 25rem;
     height: 2rem;
-    border: solid #FDAF17;
-    cursor: pointer;
+    border: 1px solid #FDAF17;
+    border-radius: 5px;
+    margin-top: 0.2rem;
 }
 .bttn{
-    
-    padding: 0.5rem 1.188rem;
-    gap: 1.75rem;
-    
-    
-    width: 4.938rem;
-    height: 2.375rem;
     cursor: pointer;
-    
-    
     background: #B72025;
-    box-shadow: 0 0.063rem 0.125rem rgba(15, 23, 42, 0.08);
-    border-radius: 0.25rem;
+    border: transparent;
+    margin-bottom: 1rem;
     color: white;
+    padding: 0.6rem 2rem;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+
+}
+
+.bttn:hover{
+    box-shadow: 2px 2px 2px #D9D9D9;
 }
 
 #teacher-btn{
@@ -65,7 +60,7 @@ body{
     align-items: center;
     justify-content: center;
         
-    width: 16.563rem;
+    width: 50%;
     height: 3.25rem;
     left:5.75rem;
     top: 23.813rem;
@@ -80,7 +75,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 16.375rem;
+    width: 50%;
     height: 3.25rem;
     left: 22.313rem;
     top: 23.813rem;
@@ -100,7 +95,8 @@ body{
 }
 
 .all-btn{
-    display: flex;      
+    display: flex;  
+    width: 100%;    
  }
 
 .t{    
@@ -142,20 +138,12 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top: 1rem;
-
 }
 
-.bttn{
-    width: 4.938rem;
-    height: 2.375rem;
-    cursor: pointer;
-    
-    
-    background: #B72025;
-    box-shadow: 0 0.063rem 0.125rem rgba(15, 23, 42, 0.08);
-    border-radius: 0.25rem;
-    color: white;
+.div--center label{
+    color: #475569;
 }
+
 
 .click__here--btnn{
     border-bottom:  1px solid  #B72025;
@@ -168,7 +156,12 @@ body{
 }
 
 .form-registeder-to-griffindor-show{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10rem;
 }
 
 #teacher-btn{
@@ -193,9 +186,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
     height: 100%;
-    margin-bottom: 8rem;
+    margin-bottom: 12rem;
+    
 }
 .full-screen{
     display: flex;
@@ -207,60 +201,77 @@ body{
     align-items: center;
 }
 .input--large-1{
-    width: 25rem;
+    width: 100%;
     height: 2rem;
-    border: solid #FDAF17;
-    cursor: pointer;
+    border: 1px solid #FDAF17;
+    border-radius: 3px;
 }
 .checkbox-position{
     display: flex;
     justify-content: space-evenly;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .second-form--partial{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    width: 100%;
+
 }
 
 .bttn-create-account{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0.5rem 1.188rem;
-    gap: 1.75rem;
-    
-    
-    width: 8.638rem;
-    height: 2.375rem;
     cursor: pointer;
-    
-    
     background: #B72025;
-    box-shadow: 0 0.063rem 0.125rem rgba(15, 23, 42, 0.08);
-    border-radius: 0.25rem;
+    border: transparent;
+    margin-bottom: 1rem;
     color: white;
+    padding: 0.6rem 2rem;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
 }
+
+.bttn-create-account:hover{
+    box-shadow: 2px 2px 2px #D9D9D9;
+}
+
+
 .form-2nd{
-   
-    width: 32.938rem;
-    height: 27.75rem;
-    left: 5.75rem;
-    top: 20.063rem;
-    
     background: #F8F8CA;
     border: 1px solid #FDAF17;
     border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+    width: 50%;
 }
 .right-part{
     width: 50%;
     float: right;
 }
-.form-registeder-to-griffindor{
-    width: 50%;
-}
+
 .p-of-register{
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
+}
+
+.user-login{
+    margin-top: 1rem;
+}
+
+.label-input-radio{
+    margin-left: 1rem;
+}
+
+.radio-check{
+    margin-right: 0.8rem;
+}
+
+.second-form--partial label{
+    color: #475569;
+    width: 60%;
+}
+
+.second-form--partial label input{
+    margin-bottom: 1.5rem;
+    
 }

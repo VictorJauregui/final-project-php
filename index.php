@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -23,16 +23,16 @@
                 </div>
                 <form action="login.php" method="POST" class="form-login">
                     <div class=div--center>
-                        <label >
+                        <label class="user-login">
                             User <br>
                             <input class="input--large" type="text" name="email-login">
                             <br>
                             <br>
                         </label>
                         <label > 
-                            Passwords <br>
+                            Password <br>
                             <input class="input--large" type="password" name="pass-login">
-                            <br><br>
+                            <br>
                                             
                     <?php if(!empty($message)): ?>
                     <p> <?= $message ?></p>
@@ -44,22 +44,18 @@
                     </div>
                 </form>
                 <div class="p-of-register">
-                    <p>Are you not register yet?<p class="click__here--btnn" id="change-to-next-form">Click Here</p></p>
-
+                    <p>Are you not register yet? <p class="click__here--btnn" id="change-to-next-form"> Click Here</p></p>
                 </div>
-
             </div>
-
             <div class="form-registeder-to-griffindor" id="hidden2">
                 <form action="tabla.php" method="POST"  class="form-2nd">
                     <div class="checkbox-position">
-                        <label >
+                        <label class="label-input-radio">
                             <input  type="radio" class="radio-check" name="for__select--one" value="Teacher">Teacher
                         </label>
-                        <label >
+                        <label class="label-input-radio">
                             <input type="radio" class="radio-check" name="for__select--one" value="Future-wizard">Future wizard
                         </label>
-
                     </div>
                     <br>
                     <div class="second-form--partial">
@@ -68,15 +64,13 @@
                         </label>
                         <label>Last Name*<br>
                             <input type="text" class="input--large-1" name="last-name"><br>
-
                         </label>
                         <label>Email*<br>
                             <input type="text" class="input--large-1" name="email"><br>
 
                         </label>
                         <label>Password*<br>
-                            <input type="password" class="input--large-1 pass-of-register" name="pass" minlenght=5><br>
-                                <small>error</small>
+                            <input type="password" class="input--large-1 pass-of-register" name="pass" minlenght=5>
                         </label>
                         <button type="submit" class="bttn-create-account" name="register-btn">Create  account</button>
 
