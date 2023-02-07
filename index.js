@@ -24,6 +24,8 @@ const editSubjectCalendary = document.querySelectorAll(".pencil-edit");
 const idNameAdmin = document.querySelector("#admin-name");
 const nameAdmin = idNameAdmin.textContent;
 const globalCalifications = document.querySelector(".global-califications");
+const globalCalifications2 = document.querySelector(".global-califications-2");
+const globalCalifications3 = document.querySelector(".global-califications-3");
 const workAreaStudent = document.querySelector("#workAreaStudent");
 const calificationsGlobalFirst = document.querySelector(".mark-calification");
 const calificationsGlobalSecond = document.querySelector(".mark-calification-2");
@@ -463,6 +465,8 @@ function createNewWizard(){
 
         if(email === nameAdmin){
             globalCalifications.innerHTML = firstCalification;
+            globalCalifications2.innerHTML = secondCalification;
+            globalCalifications3.innerHTML = thirdCalification;
         }
 
         if(fullModal.classList.contains("modal-full-show")){
@@ -480,7 +484,10 @@ function getWizardById(){
       })
         .then((response) => response.json())
         .then((data) => {
+            console.log(data)
             globalCalifications.innerHTML = data.firstTrimester;
+            globalCalifications2.innerHTML = data.secondTrimester;
+            globalCalifications3.innerHTML = data.thirdTrimester;
             
         })
 

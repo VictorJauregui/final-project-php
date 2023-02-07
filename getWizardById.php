@@ -7,5 +7,5 @@ session_start();
 $newStudent = new Students();
 
 
-echo json_encode($newStudent->getId(133));
+echo json_encode($newStudent->getId(137));
 
