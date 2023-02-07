@@ -24,11 +24,11 @@
                     </div>
 
                 </div>
-                <form action="login.php" class="form-login">
+                <form action="login.php" method="POST" class="form-login">
                     <div class=div--center>
                         <label >
                             User <br>
-                            <input class="input--large email-login" type="text" name="mail">
+                            <input class="input--large email-login" type="text" name="email">
                             <br>
                             <br>
                         </label>
