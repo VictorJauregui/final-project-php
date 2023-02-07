@@ -28,13 +28,13 @@
                     <div class=div--center>
                         <label >
                             User <br>
-                            <input class="input--large email-login" type="text">
+                            <input class="input--large email-login" type="text" name="mail">
                             <br>
                             <br>
                         </label>
                         <label > 
                             Passwords <br>
-                            <input class="input--large pass-login" type="password">
+                            <input class="input--large pass-login" type="password" name="password">
                             <br><br>
                             
                         </label>
