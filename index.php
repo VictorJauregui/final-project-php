@@ -24,19 +24,22 @@
                     </div>
 
                 </div>
-                <form action="" class="form-login">
+                <form action="login.php" method="POST" class="form-login">
                     <div class=div--center>
                         <label >
                             User <br>
-                            <input class="input--large" type="text">
+                            <input class="input--large" type="text" name="email-login">
                             <br>
                             <br>
                         </label>
                         <label > 
                             Passwords <br>
-                            <input class="input--large" type="password">
+                            <input class="input--large" type="password" name="pass-login">
                             <br><br>
-                            
+                                            
+                    <?php if(!empty($message)): ?>
+                    <p> <?= $message ?></p>
+                    <?php endif; ?>
                         </label>
                         <br>
                         <button class="bttn">Log in</button><br>
