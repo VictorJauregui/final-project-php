@@ -17,12 +17,9 @@
                     <div id="teacher-btn">
                         <p class="t">I´m  Teacher </p>
                     </div>
-                    
                     <div id="wizard-btn">
                         <p class="p">Future wizard</p>
-
                     </div>
-
                 </div>
                 <form action="login.php" method="POST" class="form-login">
                     <div class=div--center>
@@ -53,7 +50,7 @@
 
             </div>
 
-            <div class="form-registeder-to-griffindor"id="hidden2">
+            <div class="form-registeder-to-griffindor" id="hidden2">
                 <form action="tabla.php" method="POST"  class="form-2nd">
                     <div class="checkbox-position">
                         <label >

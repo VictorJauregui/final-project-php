@@ -15,6 +15,10 @@
 .right-part{
     width: 50%;
 }
+
+.img-logo{
+    margin-top: 10rem;
+}
 .side-img{
     width: 100%;   
     height: 100vh;
@@ -55,96 +59,93 @@ body{
     border-radius: 0.25rem;
     color: white;
 }
-    #teacher-btn{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
+#teacher-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
         
-        width: 16.563rem;
-        height: 3.25rem;
-        left:5.75rem;
-        top: 23.813rem;
-        color: #B72025;
-        background:  rgba(255, 169, 0, 0.32);
-        border-radius: 0.5rem 0.5rem 0px 0px;
-        
-        cursor: pointer;
+    width: 16.563rem;
+    height: 3.25rem;
+    left:5.75rem;
+    top: 23.813rem;
+    color: #B72025;
+    background:  rgba(255, 169, 0, 0.32);
+    border-radius: 0.5rem 0.5rem 0px 0px;
+    cursor: pointer;
         
     }
-    #wizard-btn{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 16.375rem;
-        height: 3.25rem;
-        left: 22.313rem;
-        top: 23.813rem;
-        color: #B72025;
-        background: rgba(255, 169, 0, 0.32);
-        border-radius: 0.5rem 0.5rem 0px 0px;
-        
-        cursor: pointer;
-    }
-    #teacher-btn:hover{
-        background:linear-gradient(0deg, #FDAF17, #FDAF17), #8F8E8E; ;
-    }
-    #wizard-btn:hover{
-        background: linear-gradient(0deg, #FDAF17, #FDAF17), #8F8E8E;}
-        .all-btn{
-            display: flex;
+
+#wizard-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16.375rem;
+    height: 3.25rem;
+    left: 22.313rem;
+    top: 23.813rem;
+    color: #B72025;
+    background: rgba(255, 169, 0, 0.32);
+    border-radius: 0.5rem 0.5rem 0px 0px;
+    cursor: pointer;
+
+}
+
+#teacher-btn:hover{
+    background:linear-gradient(0deg, #FDAF17, #FDAF17), #8F8E8E; ;
+}
+
+#wizard-btn:hover{
+    background: linear-gradient(0deg, #FDAF17, #FDAF17), #8F8E8E;
+}
+
+.all-btn{
+    display: flex;      
+ }
+
+.t{    
+    width: 7rem;
+    height: 1.375rem;
+    left: 4.813rem;
+    top: 0.938rem;  
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.188rem;
+    line-height: 1.375rem;
+    text-align: center;
+    cursor: pointer;
+    color: #B72025;
+}
+
+.p{
+               
+    width: 7rem;
+    height: 1.375rem;
+    left: 4.813rem;
+    top: 0.938rem;
             
-        }
-        .t{
-            
-            
-            width: 7rem;
-            height: 1.375rem;
-            left: 4.813rem;
-            top: 0.938rem;
-            
-            font-family: 'Inria Serif';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1.188rem;
-            line-height: 1.375rem;
-            
-            
-            text-align: center;
-            cursor: pointer;
-            color: #B72025;
-        }
-        .p{
-            
-            
-            width: 7rem;
-            height: 1.375rem;
-            left: 4.813rem;
-            top: 0.938rem;
-            
-            font-family: 'Inria Serif';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1.188rem;
-            line-height: 1.375rem;
-            
-            
-            text-align: center;
-            cursor: pointer;
-            color: #B72025;
-        }
-        
-        .div--center{
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 1rem;
-        }
-        .bttn{
-            
-            
-            
-            
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.188rem;
+    line-height: 1.375rem;
+               
+    text-align: center;
+    cursor: pointer;
+    color: #B72025;
+
+ }
     
+.div--center{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.bttn{
     width: 4.938rem;
     height: 2.375rem;
     cursor: pointer;
@@ -155,6 +156,7 @@ body{
     border-radius: 0.25rem;
     color: white;
 }
+
 .click__here--btnn{
     border-bottom:  1px solid  #B72025;
     color:  #B72025;
@@ -168,9 +170,6 @@ body{
 .form-registeder-to-griffindor-show{
     display: block;
 }
-.full-screen-1{
-    display: block;
-}
 
 #teacher-btn{
     background-color: #FDAF17 ;
@@ -179,6 +178,7 @@ body{
 .hidden-login{
     display: none;
 }
+
 
 #not-hidden{
     display: block;
@@ -189,7 +189,13 @@ body{
 }
 
 .form-to-access{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 8rem;
 }
 .full-screen{
     display: flex;
