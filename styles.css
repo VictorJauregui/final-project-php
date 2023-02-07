@@ -274,3 +274,31 @@ body{
 .second-form--partial label input{
     margin-bottom: 1.5rem; 
 }
+
+.uplade-picture{
+    width: 8rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.uplade-picture:hover{
+    border: 2px solid #FDAF17;
+}
+
+.div-uplade-picture{
+    display: flex;
+    justify-content: center;
+}
+
+.form-disable-file{
+    display: none;
+}
+
+.input-file-disable{
+    display: none;
+}
+
+.btn-disable{
+    display: none;
+}

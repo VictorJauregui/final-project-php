@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -72,9 +72,16 @@
                         <label>Password*<br>
                             <input type="password" class="input--large-1 pass-of-register" name="pass" minlenght=5>
                         </label>
+                        <label for="file-upload">
+                            <div class="div-uplade-picture">
+                                <img class="uplade-picture" src="img/uplade-picture.webp" alt="uplade picure">
+                            </div>
+                         </label>
+                        <form class="form-disable-file" enctype="multipart/form-data">
+                            <input class="input-file-disable" id="file-upload" type="file" name="file-upload">
+                            <button class="btn-disable" type="submit" name="uploadBtn">UPLOAD</button>
+                        </form>
                         <button type="submit" class="bttn-create-account" name="register-btn">Create  account</button>
-
-                    
                     </div>
                 </form>
 
