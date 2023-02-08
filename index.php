@@ -74,7 +74,7 @@
                         </label>
                         <label for="file-upload">
                             <div class="div-uplade-picture">
-                                <img class="uplade-picture" src="img/uplade-picture.webp" alt="uplade picure">
+                                <img class="uplade-picture" src="img/uplade-picture1.png" alt="uplade picure">
                             </div>
                          </label>
                         <form class="form-disable-file" enctype="multipart/form-data">
