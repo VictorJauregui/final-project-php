@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -38,6 +38,12 @@
                             <br><br>
                             
                         </label>
+                        <?php if(isset($_GET["error"])){
+                        echo "<div class='error'>
+                        <p>Tu nombre de usuario o contraseña es incorrecto</p>
+                        </div>";
+                    }
+                    ?>
                         <br>
                         <button class="bttn btn-login">Log in</button><br>
 

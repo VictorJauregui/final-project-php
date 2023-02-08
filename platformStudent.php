@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleWizards.css">
-    <script src="index.js?v=<?php echo time(); ?>" defer></script>
+    <script src="indexStudent.js?v=<?php echo time(); ?>" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Inria+Serif:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
@@ -17,12 +17,6 @@
     require_once ("students.php");
 
     $newStudent = new Students();
-    // $students = Students::allStudents();
-
-    // $newStudent = Students::getId(2);
-    // $newStudent->delete();
-
-    
 
 ?>
 
@@ -136,7 +130,7 @@
 
 <!-- TEACHER VISION -->
 
-        <div class="sidebar">
+        <!-- <div class="sidebar">
             <div class="title-and-subjects">
                 <h2 class="h2-subject" id="subject">Subjects</h2>
                 <div class="types-of-subjects" id="subjects">
@@ -166,16 +160,16 @@
         </div>
         
         <div class="content-area">
-            <h2 class="content-area__title">Score</h2>
+            <h2 class="content-area__title">Score</h2> -->
             <!-- Students califications -->
-            <div class="work-area">
+            <!-- <div class="work-area">
                 <div class="subtitles">
                     <h3 class="subtitles__h3">Name</h3>
                     <h3 class="subtitles__h3">Last Name</h3>
                     <h3 class="subtitles__h3">Email</h3>
                     <h3 class="subtitles__h3">Califications</h3>
                 </div>
-                <div class="div-data-student">
+                <div class="div-data-student"> -->
                     <!-- <div class="data-student">
                         <div class="data-student__info-each-student number-id" id="id-number">
                             <p class="create-wizard-text">1</p>
@@ -207,13 +201,13 @@
                             <img class="icon-trush" src="assets/trush.png">
                         </div>
                     </div>        -->
-                </div>
+                <!-- </div>
                 <div class="div-btn-create-wizard">
                     <button class="btn-create-wizard">Create a new Wizard</button>
                 </div>
-            </div>
+            </div> -->
             <!-- Calendary -->
-            <div class="week-calendary">
+            <!-- <div class="week-calendary">
                 <div class="days">  
                     <p>Monday</p>
                     <p>Tuesday</p>
@@ -445,13 +439,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             
 
 
-        </div>
+        <!-- </div>  -->
 
-<!-- PUPIL VISION -->
+<!-- STUDENT VISION -->
 
         <div class="sidebar-student">
             <div class="div-marks">

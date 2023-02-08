@@ -22,7 +22,7 @@ const teacherAreaCalifications = document.querySelector(".work-area");
 const deleteWizard = document.querySelector(".btn-delete-modal-delete");
 const editSubjectCalendary = document.querySelectorAll(".pencil-edit");
 const idNameAdmin = document.querySelector("#admin-name");
-// const nameAdmin = idNameAdmin.textContent;
+const nameAdmin = idNameAdmin.textContent;
 const globalCalifications = document.querySelector(".global-califications");
 const globalCalifications2 = document.querySelector(".global-califications-2");
 const globalCalifications3 = document.querySelector(".global-califications-3");
@@ -34,8 +34,8 @@ const calificationsGlobalThird = document.querySelector(".mark-calification-3");
 
 
 
-// workAreaStudent.addEventListener("load", getWizardById());
-teacherAreaCalifications.addEventListener("load", getAllWizards());
+workAreaStudent.addEventListener("load", getWizardById());
+// teacherAreaCalifications.addEventListener("load", getAllWizards());
 btnCancel.addEventListener("click", cancelDelete);
 for(i = 0; i < btnUpdate.length; i++){
     btnUpdate[i].addEventListener("click", iconUpdate);
@@ -44,14 +44,14 @@ for(i = 0; i < btnDelete.length; i++){
     btnDelete[i].addEventListener("click", iconDelete);
 }
 typesSubjects.addEventListener("click", subjectsSidebar);
-btnCW.addEventListener("click", btnCreateWizard);
+// btnCW.addEventListener("click", btnCreateWizard);
 closeCreationModal.addEventListener("click", closeModalCreation);
-// firstTrimester.addEventListener("click", goToFirstTrimester);
-// secondTrimester.addEventListener("click", goToSecondTrimester);
-// thirdTrimester.addEventListener("click", goTothirdTrimester);
-// for(i = 0; i < logOutBtn.length; i++){
-//     logOutBtn[i].addEventListener("click", singOut);
-// }
+firstTrimester.addEventListener("click", goToFirstTrimester);
+secondTrimester.addEventListener("click", goToSecondTrimester);
+thirdTrimester.addEventListener("click", goTothirdTrimester);
+for(i = 0; i < logOutBtn.length; i++){
+    logOutBtn[i].addEventListener("click", singOut);
+}
 
 btnCancelSingOut.addEventListener("click", cancelSingOut);
 btnCreateWizardFinish.addEventListener("click", createNewWizard);
@@ -130,9 +130,9 @@ function confirmNewUpdate(){
            }
         })
         
-        // if(email === nameAdmin){
-        //     globalCalifications.innerHTML = firstCalification;
-        // }
+        if(email === nameAdmin){
+            globalCalifications.innerHTML = firstCalification;
+        }
         
         if(fullModal.classList.contains("modal-full-show")){
             fullModal.classList.replace("modal-full-show", "modal-full")
@@ -463,11 +463,11 @@ function createNewWizard(){
         })
         .catch((err) => console.log("Request: ", err));
 
-        // if(email === nameAdmin){
-        //     globalCalifications.innerHTML = firstCalification;
-        //     globalCalifications2.innerHTML = secondCalification;
-        //     globalCalifications3.innerHTML = thirdCalification;
-        // }
+        if(email === nameAdmin){
+            globalCalifications.innerHTML = firstCalification;
+            globalCalifications2.innerHTML = secondCalification;
+            globalCalifications3.innerHTML = thirdCalification;
+        }
 
         if(fullModal.classList.contains("modal-full-show")){
             fullModal.classList.replace("modal-full-show", "modal-full")
@@ -484,10 +484,10 @@ function getWizardById(){
       })
         .then((response) => response.json())
         .then((data) => {
-            console.log(data)
-            globalCalifications.innerHTML = data.firstTrimester;
-            globalCalifications2.innerHTML = data.secondTrimester;
-            globalCalifications3.innerHTML = data.thirdTrimester;
+            // console.log(data)
+            // globalCalifications.innerHTML = data.firstTrimester;
+            // globalCalifications2.innerHTML = data.secondTrimester;
+            // globalCalifications3.innerHTML = data.thirdTrimester;
             
         })
 
