@@ -170,12 +170,14 @@ function iconDelete(event){
 }
 
 function confirmDeleteWizard(){
-    const deleteStudent = document.querySelector(`#id-${idUpdate}`);
+    const deleteStudent = document.querySelector(`#id-${studentId}`);
+    console.log({deleteStudent})
     fetch(`./deleteWizard.php?studentId=${studentId}`, {
         method: "GET",
       })
         .then((response) => response.json())
         .then((data) => {
+            // deleteStudent.remove(data.id)
             
         })
 
@@ -347,7 +349,6 @@ function getAllWizards(){
 
 function createNewWizard(){
     
-    const idNewWizard = document.querySelector(`#id-${studentId}`);
     const divDataStudent = document.querySelector(".div-data-student");
     const inputNameWizard = document.querySelector("#name-wizard");
     const inputLastNameWizard = document.querySelector("#lastName-wizard");
