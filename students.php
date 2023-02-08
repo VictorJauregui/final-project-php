@@ -1,5 +1,5 @@
 <?php
-    require_once "./conexionWizards.php";
+    require_once "./conexions/conexionWizards.php";
 
     class Students extends Conexion{
         public $id;

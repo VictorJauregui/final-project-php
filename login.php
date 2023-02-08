@@ -2,7 +2,7 @@
 
 use function PHPSTORM_META\type;
 
-require_once("conexion.php");
+require_once("conexions/conexion.php");
 class login extends conexion{
   
   public function logIn($email){

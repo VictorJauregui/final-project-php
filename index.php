@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="Javascript/script.js" defer></script>
 </head>
 <body>
     <div class="full-screen">
         <div class="left-part">
-            <img class="img-logo" src="img/logo.png" alt="logo grifindor">
+            <img class="img-logo" src="assets/logo.png" alt="logo grifindor">
             <div class="form-to-access" id="login-form">
                 <div class="all-btn">
                     <div id="teacher-btn">
@@ -92,7 +92,7 @@
             </div>
         </div>
         <div class="right-part">
-            <img class="side-img"src="img/grifndor.png" alt="">
+            <img class="side-img"src="assets/grifndor.png" alt="">
 
         </div>
 

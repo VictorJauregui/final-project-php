@@ -1,6 +1,6 @@
 <?php
  require_once ("./proces.php");
- require_once ("./conexion.php");
+ require_once ("./conexions/conexion.php");
  class tabla extends conexion{
     // public $tipo;
     // public $nombre;
