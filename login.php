@@ -35,7 +35,7 @@ if(isset($_POST["email"])&&($_POST["password"])){
 
   $login=new login();
   $captura=$login->logIn($emailLogin,$passLogin);
-  // header('location:index.php?error=incorrect');
+  header('location:index.php?error=incorrect');
   // echo "usuario db :".$captura["email"]."<br>";
   // echo "     el usario ingresado :".$emailLogin."<br>";
   if($emailLogin===$captura["email"] && password_verify($passLogin, $captura["pas"])) {

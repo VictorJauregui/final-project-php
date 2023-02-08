@@ -82,7 +82,6 @@
                         </label>
                         <label>Password*<br>
                             <input type="password" class="input--large-1 pass-of-register" name="pass" minlenght=5><br>
-                                <small>error</small>
                         </label>
                         <button type="submit" class="bttn-create-account" name="register-btn">Create  account</button>
 
