@@ -1,4 +1,4 @@
-const typesSubjects = document.querySelector(".title-and-subjects");
+// const typesSubjects = document.querySelector(".title-and-subjects");
 const subjects = document.querySelector(".types-of-subjects");
 const btnDelete = document.querySelectorAll(".icon-trush");
 const fullModal = document.querySelector(".modal-full");
@@ -30,8 +30,10 @@ const workAreaStudent = document.querySelector("#workAreaStudent");
 const calificationsGlobalFirst = document.querySelector(".mark-calification");
 const calificationsGlobalSecond = document.querySelector(".mark-calification-2");
 const calificationsGlobalThird = document.querySelector(".mark-calification-3");
-
-
+const weekCalendary = document.querySelector(".week-calendary");
+const btnCalendary = document.querySelector("#calendary");
+const scores = document.querySelector("#scores");
+const TitleTeacherArea = document.querySelector(".content-area__title");
 
 
 // workAreaStudent.addEventListener("load", getWizardById());
@@ -43,36 +45,33 @@ for(i = 0; i < btnUpdate.length; i++){
 for(i = 0; i < btnDelete.length; i++){
     btnDelete[i].addEventListener("click", iconDelete);
 }
-typesSubjects.addEventListener("click", subjectsSidebar);
+// typesSubjects.addEventListener("click", subjectsSidebar);
 btnCW.addEventListener("click", btnCreateWizard);
 closeCreationModal.addEventListener("click", closeModalCreation);
 // firstTrimester.addEventListener("click", goToFirstTrimester);
 // secondTrimester.addEventListener("click", goToSecondTrimester);
 // thirdTrimester.addEventListener("click", goTothirdTrimester);
-// for(i = 0; i < logOutBtn.length; i++){
-//     logOutBtn[i].addEventListener("click", singOut);
-// }
-
+for(i = 0; i < logOutBtn.length; i++){
+    logOutBtn[i].addEventListener("click", singOut);
+}
 btnCancelSingOut.addEventListener("click", cancelSingOut);
 btnCreateWizardFinish.addEventListener("click", createNewWizard);
 closeUpdateModal.addEventListener("click", closeModalUpdate);
 updateWizard.addEventListener("click", confirmNewUpdate);
 deleteWizard.addEventListener("click", confirmDeleteWizard);
+btnCalendary.addEventListener("click", goToCalendary);
+scores.addEventListener("click", goToScores);
 
 
+// function subjectsSidebar(){
 
-
-
-
-function subjectsSidebar(){
-
-    if(subjects.classList.contains("types-of-subjects")){
-        subjects.classList.replace("types-of-subjects", "types-of-subjects-show")
-        typesSubjects.style.backgroundColor = "transparent";
-    } else if(subjects.classList.contains("types-of-subjects-show")){
-        subjects.classList.replace("types-of-subjects-show", "types-of-subjects")
-    }
-}
+//     if(subjects.classList.contains("types-of-subjects")){
+//         subjects.classList.replace("types-of-subjects", "types-of-subjects-show")
+//         typesSubjects.style.backgroundColor = "transparent";
+//     } else if(subjects.classList.contains("types-of-subjects-show")){
+//         subjects.classList.replace("types-of-subjects-show", "types-of-subjects")
+//     }
+// }
 
 let idUpdate = ""
 
@@ -381,7 +380,7 @@ function createNewWizard(){
             IdNewWizard.classList = "data-student__info-each-student";
 
             const textIdNewWizard = document.createElement("p");
-            textIdNewWizard.textContent = idNewWizard;
+            // textIdNewWizard.textContent = idNewWizard;
 
             const nameNewWizard = document.createElement("div");
             nameNewWizard.classList = "data-student__info-each-student";
@@ -492,4 +491,28 @@ function getWizardById(){
             
         })
 
+}
+
+function goToCalendary(){
+    if(weekCalendary.classList.contains("week-calendary")){
+        weekCalendary.classList.replace("week-calendary", "week-calendary-show")
+    }
+    
+    if(teacherAreaCalifications.classList.contains("work-area")){
+        teacherAreaCalifications.classList.replace("work-area", "work-area-notShow")
+    }
+
+    TitleTeacherArea.innerHTML = "Calendary"
+}
+
+function goToScores(){
+    if(weekCalendary.classList.contains("week-calendary-show")){
+        weekCalendary.classList.replace("week-calendary-show", "week-calendary")
+    }
+    
+    if(teacherAreaCalifications.classList.contains("work-area-notShow")){
+        teacherAreaCalifications.classList.replace("work-area-notShow", "work-area")
+    }
+
+    TitleTeacherArea.innerHTML = "Students"
 }

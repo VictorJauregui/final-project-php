@@ -347,7 +347,6 @@ function getAllWizards(){
 
 function createNewWizard(){
     
-    const idNewWizard = document.querySelector(`#id-${studentId}`);
     const divDataStudent = document.querySelector(".div-data-student");
     const inputNameWizard = document.querySelector("#name-wizard");
     const inputLastNameWizard = document.querySelector("#lastName-wizard");
@@ -473,8 +472,8 @@ function createNewWizard(){
             fullModal.classList.replace("modal-full-show", "modal-full")
         }
         
-        if(creationModal.classList.contains("modal-creation-show")){
-            creationModal.classList.replace("modal-creation-show", "modal-creation")
+        if(teacherAreaCalifications.classList.contains("modal-creation-show")){
+            teacherAreaCalifications.classList.replace("modal-creation-show", "modal-creation")
         }
 }
 

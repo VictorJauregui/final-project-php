@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styleWizards.css">
+    <link rel="stylesheet" href="styles/styleWizards1.css">
     <script src="Javascript/indexTeacher.js?v=<?php echo time(); ?>" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -131,16 +131,16 @@
 <!-- TEACHER VISION -->
 
         <div class="sidebar">
-            <div class="title-and-subjects">
-                <h2 class="h2-subject" id="subject">Subjects</h2>
-                <div class="types-of-subjects" id="subjects">
+            <div class="title-and-subjects" id="scores">
+                <h2 class="h2-subject" id="subject">Students</h2>
+                <!-- <div class="types-of-subjects" id="subjects">
                     <p class="types-of-subjects__subject" id="astronomy">Astronomy</p>
                     <p class="types-of-subjects__subject" id="incatations">Incatations</p>
                     <p class="types-of-subjects__subject" id="dark-arts">Dark arts</p>
                     <p class="types-of-subjects__subject" id="defense-dark-art">Defense Dark arts</p>
                     <p class="types-of-subjects__subject" id="flight">Flight</p>
                     <p class="types-of-subjects__subject" id="herbology">Herbology</p>
-                </div>  
+                </div>   -->
             </div>
             <div class="title-and-subjects">
                 <h2 class="h2-sidebar" id="calendary">Calendary</h2>
@@ -160,7 +160,7 @@
         </div>
         
         <div class="content-area">
-            <h2 class="content-area__title">Score</h2>
+            <h2 class="content-area__title">Students</h2>
             <!-- Students califications -->
             <div class="work-area">
                 <div class="subtitles">
@@ -255,72 +255,35 @@
                     </div>
                     <div class="subjects-of-days">
                         <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="monday-first">10:00 - 11:00</p>
                             <p class="subject-type">Astronomy</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="monday-first">10:00 - 11:00</p>
                             <p class="subject-type">Astronomy</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="monday-first">10:00 - 11:00</p>
                             <p class="subject-type">Astronomy</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="monday-first">10:00 - 11:00</p>
                             <p class="subject-type">Astronomy</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
-                            <p class="subject-type">Astronomy</p>
-                            <div class="div-img-pencil">
-                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="subjects-of-days">
-                        <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
-                            <p class="subject-type">Astronomy</p>
-                            <div class="div-img-pencil">
-                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
-                            </div>
-                        </div>
-                        <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
-                            <p class="subject-type">Astronomy</p>
-                            <div class="div-img-pencil">
-                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
-                            </div>
-                        </div>
-                        <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
-                            <p class="subject-type">Astronomy</p>
-                            <div class="div-img-pencil">
-                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
-                            </div>
-                        </div>
-                        <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
-                            <p class="subject-type">Astronomy</p>
-                            <div class="div-img-pencil">
-                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
-                            </div>
-                        </div>
-                        <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="monday-first">10:00 - 11:00</p>
                             <p class="subject-type">Astronomy</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
@@ -329,72 +292,35 @@
                     </div>
                     <div class="subjects-of-days">
                         <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="monday-first">11:00 - 12:00</p>
                             <p class="subject-type">Astronomy</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="monday-first">11:00 - 12:00</p>
                             <p class="subject-type">Astronomy</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="monday-first">11:00 - 12:00</p>
                             <p class="subject-type">Astronomy</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="monday-first">11:00 - 12:00</p>
                             <p class="subject-type">Astronomy</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
-                            <p class="subject-type">Astronomy</p>
-                            <div class="div-img-pencil">
-                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="subjects-of-days">
-                        <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
-                            <p class="subject-type">Astronomy</p>
-                            <div class="div-img-pencil">
-                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
-                            </div>
-                        </div>
-                        <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
-                            <p class="subject-type">Astronomy</p>
-                            <div class="div-img-pencil">
-                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
-                            </div>
-                        </div>
-                        <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
-                            <p class="subject-type">Astronomy</p>
-                            <div class="div-img-pencil">
-                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
-                            </div>
-                        </div>
-                        <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
-                            <p class="subject-type">Astronomy</p>
-                            <div class="div-img-pencil">
-                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
-                            </div>
-                        </div>
-                        <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="monday-first">11:00 - 12:00</p>
                             <p class="subject-type">Astronomy</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
@@ -403,35 +329,109 @@
                     </div>
                     <div class="subjects-of-days">
                         <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="monday-first">12:00 - 13:00</p>
                             <p class="subject-type">Astronomy</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="monday-first">12:00 - 13:00</p>
                             <p class="subject-type">Astronomy</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="monday-first">12:00 - 13:00</p>
                             <p class="subject-type">Astronomy</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="monday-first">12:00 - 13:00</p>
                             <p class="subject-type">Astronomy</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
-                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="monday-first">12:00 - 13:00</p>
+                            <p class="subject-type">Astronomy</p>
+                            <div class="div-img-pencil">
+                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subjects-of-days">
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">16:00 - 17:00</p>
+                            <p class="subject-type">Astronomy</p>
+                            <div class="div-img-pencil">
+                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
+                            </div>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">17:00 - 17:00</p>
+                            <p class="subject-type">Astronomy</p>
+                            <div class="div-img-pencil">
+                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
+                            </div>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">16:00 - 17:00</p>
+                            <p class="subject-type">Astronomy</p>
+                            <div class="div-img-pencil">
+                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
+                            </div>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">16:00 - 17:00</p>
+                            <p class="subject-type">Astronomy</p>
+                            <div class="div-img-pencil">
+                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
+                            </div>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">16:00 - 17:00</p>
+                            <p class="subject-type">Astronomy</p>
+                            <div class="div-img-pencil">
+                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subjects-of-days">
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">17:00 - 18:00</p>
+                            <p class="subject-type">Astronomy</p>
+                            <div class="div-img-pencil">
+                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
+                            </div>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">17:00 - 18:00</p>
+                            <p class="subject-type">Astronomy</p>
+                            <div class="div-img-pencil">
+                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
+                            </div>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">17:00 - 18:00</p>
+                            <p class="subject-type">Astronomy</p>
+                            <div class="div-img-pencil">
+                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
+                            </div>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">17:00 - 18:00</p>
+                            <p class="subject-type">Astronomy</p>
+                            <div class="div-img-pencil">
+                                <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
+                            </div>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">17:00 - 18:00</p>
                             <p class="subject-type">Astronomy</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
