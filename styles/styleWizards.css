@@ -120,8 +120,6 @@ body{
     color: grey;
 }
 
-/* CONTENT AREA */
-
 .content-area__title{
     font-size: 5rem;
     color: #B72025;
@@ -268,8 +266,6 @@ body{
     color: white;
 }
 
-/* MODAL DELETE */
-
 .modal-full {
     display: flex;
     align-items: center;
@@ -333,8 +329,6 @@ body{
     color: #B72025;
   }
 
-
-
 .logo-modal{
     width: 6rem;
 
@@ -343,6 +337,7 @@ body{
 .btns-modal{
     margin: 1.5rem 0;
 }
+
 .btn-delete-modal-delete, .btn-delete-modal-sign-out, .btn-delete-modal-update, .btn-change-subject{
     background-color: #B72025;
     color: white;
@@ -366,8 +361,6 @@ body{
 
 }
 
-
-
 .btn-delete-modal-delete:hover{
     box-shadow: 5px 5px 5px #D9D9D9;;
 }
@@ -375,8 +368,6 @@ body{
 .btn-cancel-modal-delete:hover{
     box-shadow: 5px 5px 5px #D9D9D9;;
 }
-
-/* MODAL CREATION */
 
 .div-icon-close-modal{
     display: flex;
@@ -453,7 +444,6 @@ body{
     margin-top: 1.5rem;
   }
 
-  /* Student Area */
   .content-area-student{
     margin-left: 8rem;
     margin-right: 8rem;
@@ -544,8 +534,6 @@ body{
     margin: 0 auto;
 }
 
-
-
 .subject-name{
     display: flex;
     justify-content: left;
@@ -563,8 +551,6 @@ body{
     color: #B72025;
 }
 
-/* UPDATE-MODAL */
-
 .modal-update {
     display: none;
   }
@@ -580,6 +566,7 @@ body{
     border: 1px solid #B72025;
     color: #B72025;
   }
+
 .information-wizard-modal-update{
     display: flex;
     justify-content: space-between;
@@ -639,8 +626,6 @@ body{
   .title-modal-update{
     font-size: 20px;
   }
-
-  /* CALENDARY TEACHER */
 
   .week-calendary{
         background-color: white;
@@ -722,5 +707,4 @@ body{
     border-radius: 3px;
     text-align: center;
     
-   
   }

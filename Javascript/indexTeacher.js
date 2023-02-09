@@ -1,4 +1,3 @@
-// const typesSubjects = document.querySelector(".title-and-subjects");
 const subjects = document.querySelector(".types-of-subjects");
 const btnDelete = document.querySelectorAll(".icon-trush");
 const fullModal = document.querySelector(".modal-full");
@@ -22,7 +21,6 @@ const teacherAreaCalifications = document.querySelector(".work-area");
 const deleteWizard = document.querySelector(".btn-delete-modal-delete");
 const editSubjectCalendary = document.querySelectorAll(".pencil-edit");
 const idNameAdmin = document.querySelector("#admin-name");
-// const nameAdmin = idNameAdmin.textContent;
 const globalCalifications = document.querySelector(".global-califications");
 const globalCalifications2 = document.querySelector(".global-califications-2");
 const globalCalifications3 = document.querySelector(".global-califications-3");
@@ -39,7 +37,7 @@ const btnChangeSubject = document.querySelector(".btn-change-subject");
 const calendaryModal = document.querySelector(".calendary-modal");
 
 
-// workAreaStudent.addEventListener("load", getWizardById());
+
 teacherAreaCalifications.addEventListener("load", getAllWizards());
 btnCancel.addEventListener("click", cancelDelete);
 for(i = 0; i < btnUpdate.length; i++){
@@ -48,12 +46,8 @@ for(i = 0; i < btnUpdate.length; i++){
 for(i = 0; i < btnDelete.length; i++){
     btnDelete[i].addEventListener("click", iconDelete);
 }
-// typesSubjects.addEventListener("click", subjectsSidebar);
 btnCW.addEventListener("click", btnCreateWizard);
 closeCreationModal.addEventListener("click", closeModalCreation);
-// firstTrimester.addEventListener("click", goToFirstTrimester);
-// secondTrimester.addEventListener("click", goToSecondTrimester);
-// thirdTrimester.addEventListener("click", goTothirdTrimester);
 for(i = 0; i < logOutBtn.length; i++){
     logOutBtn[i].addEventListener("click", singOut);
 }
@@ -70,17 +64,6 @@ for(let i = 0; i < editSubjectCalendary.length; i++){
     editSubjectCalendary[i].addEventListener("click", pencilChangeSubject)
 }
 
-
-
-// function subjectsSidebar(){
-
-//     if(subjects.classList.contains("types-of-subjects")){
-//         subjects.classList.replace("types-of-subjects", "types-of-subjects-show")
-//         typesSubjects.style.backgroundColor = "transparent";
-//     } else if(subjects.classList.contains("types-of-subjects-show")){
-//         subjects.classList.replace("types-of-subjects-show", "types-of-subjects")
-//     }
-// }
 
 let idUpdate = ""
 
@@ -138,10 +121,6 @@ function confirmNewUpdate(){
            }
         })
         
-        // if(email === nameAdmin){
-        //     globalCalifications.innerHTML = firstCalification;
-        // }
-        
         if(fullModal.classList.contains("modal-full-show")){
             fullModal.classList.replace("modal-full-show", "modal-full")
         }
@@ -185,7 +164,6 @@ function confirmDeleteWizard(){
       })
         .then((response) => response.json())
         .then((data) => {
-            // deleteStudent.remove(data.id)
             
         })
 
@@ -471,12 +449,6 @@ function createNewWizard(){
     
         })
         .catch((err) => console.log("Request: ", err));
-
-        // if(email === nameAdmin){
-        //     globalCalifications.innerHTML = firstCalification;
-        //     globalCalifications2.innerHTML = secondCalification;
-        //     globalCalifications3.innerHTML = thirdCalification;
-        // }
 
         if(fullModal.classList.contains("modal-full-show")){
             fullModal.classList.replace("modal-full-show", "modal-full")

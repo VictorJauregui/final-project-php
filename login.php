@@ -31,7 +31,6 @@ class login extends conexion{
 
 }
 
-
 if(isset($_POST["email"])&&($_POST["password"])){
   $emailLogin=$_POST["email"];
   $passLogin=$_POST["password"];
@@ -40,9 +39,9 @@ if(isset($_POST["email"])&&($_POST["password"])){
   $_SESSION['email'] = $emailLogin;
   $login=new login();
   $captura=$login->logIn($emailLogin,$passLogin);
+  
   header('location:index.php?error=incorrect');
-  // echo "usuario db :".$captura["email"]."<br>";
-  // echo "     el usario ingresado :".$emailLogin."<br>";
+
   if($emailLogin===$captura["email"] && password_verify($passLogin, $captura["pas"])) {
     $email = $_SESSION["email"];  
     if($captura["tipo"] === "Teacher"){
@@ -51,10 +50,5 @@ if(isset($_POST["email"])&&($_POST["password"])){
       header("Location:platformStudent.php?email=$email");
     }
     echo "you are inside";
-  // header('Location:indexPlatform.php');
 }
-// if($email = $_POST["email"]){
-//   header('Location: . /test.html');
-  
-// }
 }

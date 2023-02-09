@@ -1,4 +1,3 @@
-// const typesSubjects = document.querySelector(".title-and-subjects");
 const subjects = document.querySelector(".types-of-subjects");
 const btnDelete = document.querySelectorAll(".icon-trush");
 const fullModal = document.querySelector(".modal-full");
@@ -35,37 +34,14 @@ const calendary = document.querySelector("#calendary");
 const contentAreaStudent = document.querySelector(".content-area-student");
 const btnMarks = document.querySelector("#marks");
 const confirmSingOut = document.querySelector(".btn-delete-modal-sign-out");
-
-
-//
 const firstCalificationMark = document.getElementById("firstCalificationMark");
 const secondCalificationMark = document.getElementById("secondCalificationMark");
 const thirdCalificationMark = document.getElementById("thirdCalificationMark");
-
-function getEmail() {
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  const email = urlParams.get("email");
-  console.log(email);
-
-  fetch(`getStudentByEmail.php?email=${email}`)
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data);
-      firstCalificationMark.textContent = data.firstTrimester;
-      secondCalificationMark.textContent = data.secondTrimester;
-      thirdCalificationMark.textContent = data.thirdTrimester;
-    });
-}
-//
-getEmail();
-
 
 
 
 studentModal.addEventListener("load", getStudentInfo());
 workAreaStudent.addEventListener("load", getWizardById());
-// teacherAreaCalifications.addEventListener("load", getAllWizards());
 btnCancel.addEventListener("click", cancelDelete);
 for (i = 0; i < btnUpdate.length; i++) {
   btnUpdate[i].addEventListener("click", iconUpdate);
@@ -73,8 +49,6 @@ for (i = 0; i < btnUpdate.length; i++) {
 for (i = 0; i < btnDelete.length; i++) {
   btnDelete[i].addEventListener("click", iconDelete);
 }
-// typesSubjects.addEventListener("click", subjectsSidebar);
-// btnCW.addEventListener("click", btnCreateWizard);
 closeCreationModal.addEventListener("click", closeModalCreation);
 firstTrimester.addEventListener("click", goToFirstTrimester);
 secondTrimester.addEventListener("click", goToSecondTrimester);
@@ -82,7 +56,6 @@ thirdTrimester.addEventListener("click", goTothirdTrimester);
 for (i = 0; i < logOutBtn.length; i++) {
   logOutBtn[i].addEventListener("click", singOut);
 }
-
 btnCancelSingOut.addEventListener("click", cancelSingOut);
 btnCreateWizardFinish.addEventListener("click", createNewWizard);
 closeUpdateModal.addEventListener("click", closeModalUpdate);
@@ -549,10 +522,7 @@ function getWizardById() {
   })
     .then((response) => response.json())
     .then((data) => {
-      // console.log(data)
-      // globalCalifications.innerHTML = data.firstTrimester;
-      // globalCalifications2.innerHTML = data.secondTrimester;
-      // globalCalifications3.innerHTML = data.thirdTrimester;
+
     });
 }
 
@@ -580,3 +550,21 @@ function goToSingOut(){
             console.log(data)
         })
     }
+
+
+function getEmail() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const email = urlParams.get("email");
+    console.log(email);
+      
+    fetch(`getStudentByEmail.php?email=${email}`)
+        .then((res) => res.json())
+        .then((data) => {
+        console.log(data);
+        firstCalificationMark.textContent = data.firstTrimester;
+        secondCalificationMark.textContent = data.secondTrimester;
+        thirdCalificationMark.textContent = data.thirdTrimester;
+          });
+}
+      getEmail();

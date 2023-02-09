@@ -11,9 +11,6 @@ if($con->connect_error){
 }
 
 $createBd = "CREATE DATABASE IF NOT EXISTS GriffindorHouse";
-// if($con->query($createBd) === TRUE){
-//     echo "DB is created";
-// }
 
 $useDb = "USE GriffindorHouse";
 $con->query($useDb);
@@ -30,5 +27,3 @@ thirdTrimester int(3) NOT NULL)";
 $con->query($createStudentTable);
 $con->close();
 
-
-?>

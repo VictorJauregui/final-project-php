@@ -1,24 +1,3 @@
-// const clickHereBtnn=document.querySelector(".click__here--btnn");
-// const selectorTeacherBtn=document.querySelector(".text");
-
-
-
-// clickHereBtnn.addEventListener("click",passTo2ndFormulary);
-// selectorTeacherBtn.addEventListener("click",selector);
-
-// function passTo2ndFormulary(){
-//     const nextForm=document.getElementById("login-form");
-//     const hidden2nd=document.getElementById("hidden2");
-//     nextForm.classList.toggle("hidden-login");
-//     hidden2nd.classList.toggle("full-screen-1");
-//     console.log("nextForm");
-// }
-
-// function selector(){
-//     const selectorTeacherBtnColor=document.getElementsByClassName("text");
-//     selectorTeacherBtnColor.style.backgroundColor="red";
-// }
-
 const teacherBtn = document.querySelector("#teacher-btn");//1
 const wizardBtn =  document.querySelector("#wizard-btn");//1
 const clickHere=document.querySelector("#change-to-next-form");//2
@@ -44,9 +23,6 @@ function wizardSelection(){
 
 
 function registerPage(){
-    // logInPage.classList.toggle("hidden-login");
-    // registerPage.classList.toggle("not-hidden");
-   
     if(logInPage.classList.contains("form-to-access")) {  
     logInPage.classList.replace("form-to-access","form-to-access-notShow");
 }

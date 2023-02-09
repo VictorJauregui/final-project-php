@@ -33,12 +33,9 @@
                     <div id="teacher-btn">
                         <p class="t">I´m  Teacher </p>
                     </div>
-                    
                     <div id="wizard-btn">
                         <p class="p">Future wizard</p>
-
                     </div>
-
                 </div>
                 <form action="login.php" method="POST" class="form-login">
                     <div class=div--center>
@@ -67,13 +64,9 @@
                 </form>
                 <div class="p-of-register">
                     <p class="text-question-registred">Are you not register yet?</p>&nbsp;<p class="click__here--btnn" id="change-to-next-form">Click Here</p>
-
                 </div>
-
             </div>
-
             <div class="form-registeder-to-griffindor" id="hidden2">
-                <!-- <h2 class="text-registration">Registration</h2> -->
                 <form action="tabla.php" method="POST"  class="form-2nd">
                     <h4 class="text-who-are-you">Tell us who are you</h4>
                     <div class="checkbox-position">
@@ -83,7 +76,6 @@
                         <label >
                             <input type="radio" class="radio-check" name="for__select--one" value="Future-wizard">Future wizard
                         </label>
-
                     </div>
                     <br>
                     <div class="second-form--partial">
@@ -102,19 +94,13 @@
                             <input type="password" class="input--large-1 pass-of-register" name="pass" minlenght=5><br>
                         </label>
                         <button type="submit" class="bttn-create-account" name="register-btn">Create  account</button>
-
-                    
                     </div>
                 </form>
-
             </div>
         </div>
         <div class="right-part">
             <img class="side-img"src="assets/grifndor.png" alt="">
-
         </div>
-
-
     </div>
 </body>
 </html>
