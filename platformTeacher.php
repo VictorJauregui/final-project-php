@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styleWizards1.css">
+    <link rel="stylesheet" href="styles/styleWizards.css">
     <script src="Javascript/indexTeacher.js?v=<?php echo time(); ?>" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,7 @@
 </head>
 <body>
 <?php
+
     require_once ("server.php");
     require_once ("students.php");
 

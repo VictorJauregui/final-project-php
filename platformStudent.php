@@ -13,6 +13,8 @@
 </head>
 <body>
 <?php
+    session_start();
+    echo $_SESSION["email"];
     require_once ("server.php");
     require_once ("students.php");
 
@@ -24,7 +26,7 @@
 
     <!-- FullModal -->
     
-    <div class="modal-full">
+    <div id="studentModal" class="modal-full" loguedStudent="<?php echo $_SESSION["email"]?>">
 
     <!-- deleteModal -->
         <div class="modal-delete">
@@ -499,7 +501,7 @@
                             <p>Global Score</p>
                         </div>
                         <div class="number-score"> 
-                            <p class="global-califications">8</p>
+                            <p class="global-califications" id="firstCalificationMark">8</p>
                         </div>
                     </div>
                     <div class="mark-calification-2">
@@ -507,7 +509,7 @@
                             <p>Global Score2</p>
                         </div>
                         <div class="number-score"> 
-                            <p class="global-califications-2">8</p>
+                            <p class="global-califications-2" id="secondCalificationMark">8</p>
                         </div>  
                     </div>
                     <div class="mark-calification-3">
@@ -515,7 +517,7 @@
                             <p>Global Score3</p>
                         </div>
                         <div class="number-score"> 
-                            <p class="global-califications-3">8</p>
+                            <p class="global-califications-3" id="thirdCalificationMark">8</p>
                         </div>
                         
                     </div>

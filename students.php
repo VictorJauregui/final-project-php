@@ -61,19 +61,17 @@
 
             return $res->fetch_object(Students::class);
     }
+        public function getStudentByEmail($email){
+            $conexion = new Conexion();
+            $conexion->conectar();
+            $pre = mysqli_prepare($conexion->conn, "SELECT * FROM students WHERE email = ?");
+            $pre->bind_param("s", $email);
+            $pre->execute();
+            $res = $pre -> get_result();
+            $result = $res->fetch_assoc();
+            return $result;
+    }
+
+
 }
 
-
-    // $newStudent = new Students();
-    // $newStudent->name = "Victor";
-    // $newStudent->lastName = "Más tieso";
-    // $newStudent->email = "victormastieso@hotmail.com";
-    // $newStudent->firstTrimester = 10;
-    // $newStudent->secondTrimester = 10;
-    // $newStudent->thirdTrimester = 10;
-    // $newStudent->createStudent();
-
-
-
-
-    ?>
