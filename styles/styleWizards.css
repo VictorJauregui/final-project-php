@@ -2,7 +2,7 @@
 *{
     font-family: 'IM Fell Great Primer SC', serif;
     font-family: 'Inria Serif', serif;  
-    cursor: url("assets/cursor.png");
+    cursor: url("assets/cursor.png"), progress;
 }
 
 body{
@@ -50,10 +50,15 @@ body{
     width: 85%;
 
 }
+
 .content-area-student{
     width: 85%;
-    
 }
+
+.content-area-student-notShow{
+    display: none;
+}
+
 
 .title-and-subjects, .div-marks{
     margin: 1rem 3rem;
@@ -107,7 +112,7 @@ body{
     border-radius: 1000px;
     margin-left: 3rem;
     margin-right: 1.5rem;
-    border: 1px solid grey
+    border: 2px solid #B72025;
 
 }
 
@@ -637,6 +642,11 @@ body{
   /* CALENDARY TEACHER */
 
   .week-calendary{
+        background-color: white;
+    height: 55vh;
+    border: 1px solid #FDAF17;
+    border-radius: 10px;
+    margin: 0 10rem;
     display: none;
   }
   
@@ -679,4 +689,8 @@ body{
 .monday-first{
     color: #C8C8C8;
     font-size: 0.8rem;
+}
+
+.calendary-student{
+    text-align: center;
 }

@@ -1,4 +1,4 @@
-const typesSubjects = document.querySelector(".title-and-subjects");
+// const typesSubjects = document.querySelector(".title-and-subjects");
 const subjects = document.querySelector(".types-of-subjects");
 const btnDelete = document.querySelectorAll(".icon-trush");
 const fullModal = document.querySelector(".modal-full");
@@ -13,9 +13,7 @@ const thirdTrimester = document.querySelector(".student-trimester3");
 const logOutBtn = document.querySelectorAll(".btn-logOut");
 const singOutModal = document.querySelector(".modal-sing-out");
 const btnCancelSingOut = document.querySelector(".btn-cancel-modal-sign-out");
-const btnCreateWizardFinish = document.querySelector(
-  "#btn-creating-wizard-finished"
-);
+const btnCreateWizardFinish = document.querySelector("#btn-creating-wizard-finished");
 const btnUpdate = document.querySelectorAll(".icon-update");
 const updateModal = document.querySelector(".modal-update");
 const closeUpdateModal = document.querySelector(".btn-cancel-modal-update");
@@ -30,23 +28,25 @@ const globalCalifications2 = document.querySelector(".global-califications-2");
 const globalCalifications3 = document.querySelector(".global-califications-3");
 const workAreaStudent = document.querySelector("#workAreaStudent");
 const calificationsGlobalFirst = document.querySelector(".mark-calification");
-const calificationsGlobalSecond = document.querySelector(
-  ".mark-calification-2"
-);
+const calificationsGlobalSecond = document.querySelector(".mark-calification-2");
 const calificationsGlobalThird = document.querySelector(".mark-calification-3");
 const studentModal = document.querySelector("#studentModal");
+const calendary = document.querySelector("#calendary");
+const contentAreaStudent = document.querySelector(".content-area-student");
+const btnMarks = document.querySelector("#marks");
+const confirmSingOut = document.querySelector(".btn-delete-modal-sign-out");
+
 
 //
 const firstCalificationMark = document.getElementById("firstCalificationMark");
-const secondCalificationMark = document.getElementById(
-  "secondCalificationMark"
-);
+const secondCalificationMark = document.getElementById("secondCalificationMark");
 const thirdCalificationMark = document.getElementById("thirdCalificationMark");
 
 function getEmail() {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const email = urlParams.get("email");
+  console.log(email);
 
   fetch(`getStudentByEmail.php?email=${email}`)
     .then((res) => res.json())
@@ -60,6 +60,9 @@ function getEmail() {
 //
 getEmail();
 
+
+
+
 studentModal.addEventListener("load", getStudentInfo());
 workAreaStudent.addEventListener("load", getWizardById());
 // teacherAreaCalifications.addEventListener("load", getAllWizards());
@@ -70,7 +73,7 @@ for (i = 0; i < btnUpdate.length; i++) {
 for (i = 0; i < btnDelete.length; i++) {
   btnDelete[i].addEventListener("click", iconDelete);
 }
-typesSubjects.addEventListener("click", subjectsSidebar);
+// typesSubjects.addEventListener("click", subjectsSidebar);
 // btnCW.addEventListener("click", btnCreateWizard);
 closeCreationModal.addEventListener("click", closeModalCreation);
 firstTrimester.addEventListener("click", goToFirstTrimester);
@@ -85,6 +88,12 @@ btnCreateWizardFinish.addEventListener("click", createNewWizard);
 closeUpdateModal.addEventListener("click", closeModalUpdate);
 updateWizard.addEventListener("click", confirmNewUpdate);
 deleteWizard.addEventListener("click", confirmDeleteWizard);
+calendary.addEventListener("click", goToCalendary);
+btnMarks.addEventListener("click", goToMarks);
+confirmSingOut.addEventListener("click", goToSingOut);
+
+
+
 
 function subjectsSidebar() {
   if (subjects.classList.contains("types-of-subjects")) {
@@ -550,3 +559,24 @@ function getWizardById() {
 function getStudentInfo(event) {
   console.log(event);
 }
+
+function goToCalendary(){
+    if (contentAreaStudent.classList.contains("content-area-student")) {
+        contentAreaStudent.classList.replace("content-area-student", "content-area-student-notShow");
+      }
+}
+function goToMarks(){
+    if (contentAreaStudent.classList.contains("content-area-student-notShow")) {
+        contentAreaStudent.classList.replace("content-area-student-notShow", "content-area-student");
+      }
+}
+
+function goToSingOut(){
+    fetch(`./singOut.php?`, {
+        method: "GET",
+      })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data)
+        })
+    }

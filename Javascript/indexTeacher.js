@@ -34,6 +34,7 @@ const weekCalendary = document.querySelector(".week-calendary");
 const btnCalendary = document.querySelector("#calendary");
 const scores = document.querySelector("#scores");
 const TitleTeacherArea = document.querySelector(".content-area__title");
+const confirmSingOut = document.querySelector(".btn-delete-modal-sign-out");
 
 
 // workAreaStudent.addEventListener("load", getWizardById());
@@ -61,6 +62,7 @@ updateWizard.addEventListener("click", confirmNewUpdate);
 deleteWizard.addEventListener("click", confirmDeleteWizard);
 btnCalendary.addEventListener("click", goToCalendary);
 scores.addEventListener("click", goToScores);
+confirmSingOut.addEventListener("click", goToSingOut);
 
 
 // function subjectsSidebar(){
@@ -516,3 +518,13 @@ function goToScores(){
 
     TitleTeacherArea.innerHTML = "Students"
 }
+
+function goToSingOut(){
+        fetch(`./singOut.php?`, {
+            method: "GET",
+          })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data)
+            })
+        }

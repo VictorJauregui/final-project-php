@@ -24,6 +24,10 @@ class login extends conexion{
     return["email"=>$emailv2,"pas"=>$pass,"tipo"=>$type];
     }
 
+    public function singOut($email){
+      session_destroy();
+
+    }
 
 }
 
@@ -31,6 +35,7 @@ class login extends conexion{
 if(isset($_POST["email"])&&($_POST["password"])){
   $emailLogin=$_POST["email"];
   $passLogin=$_POST["password"];
+
   session_start();
   $_SESSION['email'] = $emailLogin;
   $login=new login();

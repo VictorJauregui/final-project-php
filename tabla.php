@@ -30,7 +30,7 @@
 
 if(isset($_POST["register-btn"])){
     if (empty($_POST["for__select--one"])||empty($_POST["name"])||empty($_POST["last-name"])||empty($_POST["email"])||empty($_POST["pass"])){
-        echo "<p>can t be empty </p>";
+        header("location:./index.php");
     }else{
         $type=$_POST["for__select--one"];
         $name=$_POST["name"];

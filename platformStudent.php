@@ -14,7 +14,6 @@
 <body>
 <?php
     session_start();
-    echo $_SESSION["email"];
     require_once ("server.php");
     require_once ("students.php");
 
@@ -117,10 +116,10 @@
 
         <div class="modal-sing-out">
             <img class="logo-modal" src="assets/Gryffindor-Logo.png" alt="logo escuela de grifindor">
-            <p>Would you like to sing?</p>
+            <p>Would you like to sing out?</p>
             <div class="btns-modal-sign-out">
                 <button class="btn-cancel-modal-sign-out">Cancel</button>
-                <button class="btn-delete-modal-sign-out">Confirm</button>
+                <a href="./index.php"> <button class="btn-delete-modal-sign-out" >Confirm</button></a>
             </div>
         </div>
         
@@ -466,9 +465,9 @@
             </div>
             <div class="div-sidebar-bottom">
                 <div class="sidebar-bottom">
-                    <img class="img-user" src="assets/harry-potter.png" alt="dumbledore">
+                    <img class="img-user" src="assets/gorro.webp" alt="dumbledore">
                     <div>
-                        <p id="admin-name" class="name-admin">harrypotter@hotmail.com</p>
+                        <p id="admin-name" class="name-admin"><?php echo $_SESSION['email']?></p>
                         <p class="type-admin">Future Wizard</p>
                     </div>
                     
@@ -479,6 +478,7 @@
             </div>
         </div>
         <!-- Cuadro de notas -->
+
         
         <div class="content-area-student">
             <h2 class="content-area-student__title">Hey Student</h2>
@@ -501,7 +501,7 @@
                             <p>Global Score</p>
                         </div>
                         <div class="number-score"> 
-                            <p class="global-califications" id="firstCalificationMark">8</p>
+                            <p class="global-califications" id="firstCalificationMark"></p>
                         </div>
                     </div>
                     <div class="mark-calification-2">
@@ -509,7 +509,7 @@
                             <p>Global Score2</p>
                         </div>
                         <div class="number-score"> 
-                            <p class="global-califications-2" id="secondCalificationMark">8</p>
+                            <p class="global-califications-2" id="secondCalificationMark"></p>
                         </div>  
                     </div>
                     <div class="mark-calification-3">
@@ -517,68 +517,150 @@
                             <p>Global Score3</p>
                         </div>
                         <div class="number-score"> 
-                            <p class="global-califications-3" id="thirdCalificationMark">8</p>
+                            <p class="global-califications-3" id="thirdCalificationMark"></p>
                         </div>
                         
                     </div>
-                    <!-- <div class="mark-calification">
-                        <div class="subject-name">
-                            <p>Astronomy</p>
-                        </div>
-                        
-                        <div class="number-score"> 
-                            <p>8</p>
-                        </div>
-                        
-                    </div>
-                    <div class="mark-calification">
-                        <div class="subject-name">
-                            <p>Astronomy</p>
-                        </div>
-                        
-                        <div class="number-score"> 
-                            <p>8</p>
-                        </div>
-                        
-                    </div>
-                    <div class="mark-calification">
-                        <div class="subject-name">
-                            <p>Astronomy</p>
-                        </div>
-                        
-                        <div class="number-score"> 
-                            <p>8</p>
-                        </div>
-                        
-                    </div>
-                    <div class="mark-calification">
-                        <div class="subject-name">
-                            <p>Astronomy</p>
-                        </div>
-                        
-                        <div class="number-score"> 
-                            <p>8</p>
-                        </div>
-                        
-                    </div>
-                    <div class="mark-calification">
-                        <div class="subject-name">
-                            <p>Astronomy</p>
-                        </div>
-                        
-                        <div class="number-score"> 
-                            <p>8</p>
-                        </div>
-                        
-                    </div> -->
-                </div>
-                <!-- <div class="div-btn-save">
-                    <button class="btn-save">Save</button>
-                </div> -->
+                </div> 
+                  
             </div>
-            
-
-
+        </div>
+        <div class="week-calendary">
+            <div class="div-subjects-of-days">
+                    <h2 class="calendary-student">Calendary</h2>
+                    <div class="subjects-of-days">
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">09:00 - 10:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                    </div>
+                    <div class="subjects-of-days">
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">10:00 - 11:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">10:00 - 11:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">10:00 - 11:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">10:00 - 11:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">10:00 - 11:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                    </div>
+                    <div class="subjects-of-days">
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">11:00 - 12:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">11:00 - 12:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">11:00 - 12:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">11:00 - 12:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">11:00 - 12:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                    </div>
+                    <div class="subjects-of-days">
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">12:00 - 13:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">12:00 - 13:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">12:00 - 13:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">12:00 - 13:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">12:00 - 13:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                    </div>
+                    <div class="subjects-of-days">
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">16:00 - 17:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">17:00 - 17:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">16:00 - 17:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">16:00 - 17:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">16:00 - 17:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                    </div>
+                    <div class="subjects-of-days">
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">17:00 - 18:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">17:00 - 18:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">17:00 - 18:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">17:00 - 18:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                        <div class="hour-and-subjects-of-days">
+                            <p class="monday-first">17:00 - 18:00</p>
+                            <p class="subject-type">Astronomy</p>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
     

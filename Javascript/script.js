@@ -57,7 +57,4 @@ function registerPage(){
 
 }
 
-function deleteValue(){
-    inputsRegister.value("");
-}
 

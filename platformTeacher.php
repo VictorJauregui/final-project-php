@@ -13,7 +13,7 @@
 </head>
 <body>
 <?php
-
+    session_start();
     require_once ("server.php");
     require_once ("students.php");
 
@@ -116,10 +116,10 @@
 
         <div class="modal-sing-out">
             <img class="logo-modal" src="assets/Gryffindor-Logo.png" alt="logo escuela de grifindor">
-            <p>Would you like to sing?</p>
+            <p>Would you like to sing out?</p>
             <div class="btns-modal-sign-out">
                 <button class="btn-cancel-modal-sign-out">Cancel</button>
-                <button class="btn-delete-modal-sign-out">Confirm</button>
+                <a href="./index.php"> <button class="btn-delete-modal-sign-out" >Confirm</button></a>
             </div>
         </div>
         
@@ -148,9 +148,9 @@
             </div>
             <div class="div-sidebar-bottom">
                 <div class="sidebar-bottom">
-                    <img class="img-user"src="assets/dumbledore.png" alt="dumbledore">
+                    <img class="img-user"src="assets/dambledore.gif" alt="dumbledore">
                     <div>
-                        <p class="name-admin">Dambledor</p>
+                        <p class="name-admin"><?php  echo $_SESSION['email'] ?></p>
                         <p class="type-admin">Teacher</p>
                     </div>
                 </div>
