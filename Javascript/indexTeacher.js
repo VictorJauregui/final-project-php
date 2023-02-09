@@ -35,6 +35,8 @@ const btnCalendary = document.querySelector("#calendary");
 const scores = document.querySelector("#scores");
 const TitleTeacherArea = document.querySelector(".content-area__title");
 const confirmSingOut = document.querySelector(".btn-delete-modal-sign-out");
+const btnChangeSubject = document.querySelector(".btn-change-subject");
+const calendaryModal = document.querySelector(".calendary-modal");
 
 
 // workAreaStudent.addEventListener("load", getWizardById());
@@ -63,6 +65,11 @@ deleteWizard.addEventListener("click", confirmDeleteWizard);
 btnCalendary.addEventListener("click", goToCalendary);
 scores.addEventListener("click", goToScores);
 confirmSingOut.addEventListener("click", goToSingOut);
+btnChangeSubject.addEventListener("click", changeSubjects);
+for(let i = 0; i < editSubjectCalendary.length; i++){
+    editSubjectCalendary[i].addEventListener("click", pencilChangeSubject)
+}
+
 
 
 // function subjectsSidebar(){
@@ -520,11 +527,30 @@ function goToScores(){
 }
 
 function goToSingOut(){
-        fetch(`./singOut.php?`, {
-            method: "GET",
-          })
-            .then((response) => response.json())
-            .then((data) => {
-                console.log(data)
+    fetch(`./singOut.php?`, {
+        method: "GET",
+        })
+        .then((response) => response.json())
+        .then((data) => {
             })
-        }
+}
+
+function changeSubjects(){
+    if(fullModal.classList.contains("modal-full-show")){
+        fullModal.classList.replace("modal-full-show", "modal-full")
+    }
+    
+    if(calendaryModal.classList.contains("calendary-modal-show")){
+        calendaryModal.classList.replace("calendary-modal-show", "calendary-modal")
+    }
+}
+
+function pencilChangeSubject(){
+    if(fullModal.classList.contains("modal-full")){
+        fullModal.classList.replace("modal-full", "modal-full-show")
+    }
+    
+    if(calendaryModal.classList.contains("calendary-modal")){
+        calendaryModal.classList.replace("calendary-modal", "calendary-modal-show")
+    }
+}

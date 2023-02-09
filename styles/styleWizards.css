@@ -282,6 +282,7 @@ body{
     background-color: rgba(0,0,0,0.5);
     z-index: 9999;
     display: none;
+
     
   }
 
@@ -342,7 +343,7 @@ body{
 .btns-modal{
     margin: 1.5rem 0;
 }
-.btn-delete-modal-delete, .btn-delete-modal-sign-out, .btn-delete-modal-update{
+.btn-delete-modal-delete, .btn-delete-modal-sign-out, .btn-delete-modal-update, .btn-change-subject{
     background-color: #B72025;
     color: white;
     padding: 0.5rem 2rem;
@@ -353,7 +354,7 @@ body{
     transition: 0.2s;
 }
 
-.btn-cancel-modal-delete , .btn-cancel-modal-sign-out, .btn-cancel-modal-update{
+.btn-cancel-modal-delete , .btn-cancel-modal-sign-out, .btn-cancel-modal-update,{
     background-color: #D9D9D9;
     color: white;
     padding: 0.5rem 2rem;
@@ -694,3 +695,32 @@ body{
 .calendary-student{
     text-align: center;
 }
+
+.calendary-modal {
+    display: none;
+  }
+
+  .calendary-modal-show {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #B72025;
+    color: #B72025;
+  }
+
+  .change-subjects{
+    height: 1.5rem;
+    width: 40%;
+    background-color: #dcdcdc5d;
+    border: 1px solid #DCDCDC;
+    margin-bottom: 2rem;
+    color: #FDAF17;
+    border-radius: 3px;
+    text-align: center;
+    
+   
+  }

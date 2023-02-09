@@ -122,6 +122,24 @@
                 <a href="./index.php"> <button class="btn-delete-modal-sign-out" >Confirm</button></a>
             </div>
         </div>
+
+    <!-- ModalCalendary -->
+
+        <div class="calendary-modal">
+            <img class="logo-modal" src="assets/Gryffindor-Logo.png" alt="logo escuela de grifindor">
+            <p>What are you going to do in this hour?</p>
+            <select class="change-subjects" name="subjects"><br><br>
+                  <option value="Astronomy">Astronomy</option>
+                  <option value="Incatations">Incatations</option>
+                  <option value="Dark-arts">Dark Arts</option>
+                  <option value="Defense-dark-arts">Defense dark Arts</option>
+                  <option value="Flight">Flight</option>
+                  <option value="Herbology">Herbology</option>
+                </select>
+            <div class="btns-modal-calendary">
+                <button class="btn-change-subject">Confirm</button>
+            </div>
+        </div>
         
     </div>
     <div class="div-logo">

@@ -40,7 +40,7 @@
                         </label>
                         <?php if(isset($_GET["error"])){
                         echo "<div class='error'>
-                        <p>Tu nombre de usuario o contraseña es incorrecto</p>
+                        <p>Prueba de nuevo. Tu varita parece no tener poderes para acceder.. </p>
                         </div>";
                     }
                     ?>
