@@ -30,7 +30,7 @@
 
 if(isset($_POST["register-btn"])){
     if (empty($_POST["for__select--one"])||empty($_POST["name"])||empty($_POST["last-name"])||empty($_POST["email"])||empty($_POST["pass"])){
-        header("location:./index.php");
+        header("location:./index.php?sorry=registeredIncompleted");
     }else{
         $type=$_POST["for__select--one"];
         $name=$_POST["name"];
@@ -45,7 +45,7 @@ if(isset($_POST["register-btn"])){
         if($user->registerConnect($type,$name,$lastName,$mail,$password)){
             
         }else{
-            header("location:./index.php");
+            header("location:./index.php?register=correct");
         }
     }
 }

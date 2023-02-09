@@ -1,8 +1,10 @@
 *{
+    font-family: 'IM Fell Great Primer SC', serif;
+    font-family: 'Inria Serif', serif;  
     margin: 0;
     padding: 0;
-    cursor: url("assets/cursor.png"), progress;
 }
+
 .full-screen{
     display: flex;
 }
@@ -108,7 +110,7 @@ body{
     font-family: 'Inria Serif';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.188rem;
+    font-size: 1rem;
     line-height: 1.375rem;
     text-align: center;
     cursor: pointer;
@@ -120,14 +122,12 @@ body{
     width: 7rem;
     height: 1.375rem;
     left: 4.813rem;
-    top: 0.938rem;
-            
+    top: 0.938rem;       
     font-family: 'Inria Serif';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.188rem;
-    line-height: 1.375rem;
-               
+    font-size: 1rem;
+    line-height: 1.375rem;           
     text-align: center;
     cursor: pointer;
     color: #B72025;
@@ -145,12 +145,27 @@ body{
     color: #475569;
 }
 
+.user-label{
+    margin-top: 1rem;
+}
+
 
 .click__here--btnn{
-    border-bottom:  1px solid  #B72025;
     color:  #B72025;
     cursor: pointer;
 } 
+
+.text-question-registred{
+    color: #475569;
+}
+
+.text-registration{
+    color: #B72025;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 0.3rem 3rem;
+    border-radius: 1px solid #B72025;;
+}
 
 .form-registeder-to-griffindor{
     display:none;
@@ -158,11 +173,11 @@ body{
 
 .form-registeder-to-griffindor-show{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100%;
-    margin-bottom: 5rem;
+    margin-top: 5rem;
 }
 
 #teacher-btn{
@@ -192,6 +207,7 @@ body{
     margin-bottom: 12rem;
     
 }
+
 .full-screen{
     display: flex;
 }
@@ -210,8 +226,9 @@ body{
 .checkbox-position{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-bottom: 1rem;
+    color: #475569;
 }
 .second-form--partial{
     display: flex;
@@ -316,5 +333,56 @@ body{
     font-size: 15px;
     margin-bottom: 10px;
     color: #B72025;
+    height: 3rem;
     
+}
+
+.text-who-are-you{
+    color: #B72025;
+    text-align: center;
+    margin: 0.8rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #FDAF17;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.sorry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgb(252, 201, 201);
+    width: 50%;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #B72025;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+.img-error{
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.correct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #04CD00;
+    background-color: #03cd0028;
+    width: 50%;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #04CD00;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+.img-correct{
+    width: 3rem;
+    margin-right: 1rem;
 }

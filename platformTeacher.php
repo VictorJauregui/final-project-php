@@ -245,28 +245,28 @@
                         </div>
                         <div class="hour-and-subjects-of-days">
                             <p class="monday-first">09:00 - 10:00</p>
-                            <p class="subject-type">Astronomy</p>
+                            <p class="subject-type">Incatations</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
                             <p class="monday-first">09:00 - 10:00</p>
-                            <p class="subject-type">Astronomy</p>
+                            <p class="subject-type">Dark arts</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
                             <p class="monday-first">09:00 - 10:00</p>
-                            <p class="subject-type">Astronomy</p>
+                            <p class="subject-type">Defense Dark arts</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
                             <p class="monday-first">09:00 - 10:00</p>
-                            <p class="subject-type">Astronomy</p>
+                            <p class="subject-type">Flight</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
@@ -275,28 +275,28 @@
                     <div class="subjects-of-days">
                         <div class="hour-and-subjects-of-days">
                             <p class="monday-first">10:00 - 11:00</p>
-                            <p class="subject-type">Astronomy</p>
+                            <p class="subject-type">Herbology</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
                             <p class="monday-first">10:00 - 11:00</p>
-                            <p class="subject-type">Astronomy</p>
+                            <p class="subject-type">Flight</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
                             <p class="monday-first">10:00 - 11:00</p>
-                            <p class="subject-type">Astronomy</p>
+                            <p class="subject-type">Defense dark arts</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
                             <p class="monday-first">10:00 - 11:00</p>
-                            <p class="subject-type">Astronomy</p>
+                            <p class="subject-type">Flight</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
@@ -312,7 +312,7 @@
                     <div class="subjects-of-days">
                         <div class="hour-and-subjects-of-days">
                             <p class="monday-first">11:00 - 12:00</p>
-                            <p class="subject-type">Astronomy</p>
+                            <p class="subject-type">Incatations</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
@@ -326,21 +326,21 @@
                         </div>
                         <div class="hour-and-subjects-of-days">
                             <p class="monday-first">11:00 - 12:00</p>
-                            <p class="subject-type">Astronomy</p>
+                            <p class="subject-type">Herbology</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
                             <p class="monday-first">11:00 - 12:00</p>
-                            <p class="subject-type">Astronomy</p>
+                            <p class="subject-type">Dark arts</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>
                         </div>
                         <div class="hour-and-subjects-of-days">
                             <p class="monday-first">11:00 - 12:00</p>
-                            <p class="subject-type">Astronomy</p>
+                            <p class="subject-type">Incatations</p>
                             <div class="div-img-pencil">
                                 <img class="pencil-edit" src="assets/pencil.png" alt="edit calendary">
                             </div>

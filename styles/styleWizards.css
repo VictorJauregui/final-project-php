@@ -2,7 +2,7 @@
 *{
     font-family: 'IM Fell Great Primer SC', serif;
     font-family: 'Inria Serif', serif;  
-    cursor: url("assets/cursor.png"), progress;
+
 }
 
 body{
@@ -354,7 +354,7 @@ body{
     transition: 0.2s;
 }
 
-.btn-cancel-modal-delete , .btn-cancel-modal-sign-out, .btn-cancel-modal-update,{
+.btn-cancel-modal-delete , .btn-cancel-modal-sign-out, .btn-cancel-modal-update {
     background-color: #D9D9D9;
     color: white;
     padding: 0.5rem 2rem;
