@@ -58,7 +58,6 @@ updateWizard.addEventListener("click", confirmNewUpdate);
 deleteWizard.addEventListener("click", confirmDeleteWizard);
 btnCalendary.addEventListener("click", goToCalendary);
 scores.addEventListener("click", goToScores);
-confirmSingOut.addEventListener("click", goToSingOut);
 btnChangeSubject.addEventListener("click", changeSubjects);
 for(let i = 0; i < editSubjectCalendary.length; i++){
     editSubjectCalendary[i].addEventListener("click", pencilChangeSubject)
