@@ -118,6 +118,7 @@ body{
 
 .type-admin{
     color: grey;
+    font-size: 0.9rem;
 }
 
 .content-area__title{
@@ -707,4 +708,8 @@ body{
     border-radius: 3px;
     text-align: center;
     
+  }
+
+  .name-admin{
+    font-size: 0.9rem;
   }

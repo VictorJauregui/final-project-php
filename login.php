@@ -49,6 +49,6 @@ if(isset($_POST["email"])&&($_POST["password"])){
     } else{
       header("Location:platformStudent.php?email=$email");
     }
-    echo "you are inside";
-}
+
+  } 
 }
