@@ -556,7 +556,6 @@ function getEmail() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const email = urlParams.get("email");
-    console.log(email);
       
     fetch(`getStudentByEmail.php?email=${email}`)
         .then((res) => res.json())

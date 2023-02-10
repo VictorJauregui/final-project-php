@@ -143,6 +143,8 @@ function closeModalUpdate(){
 
 let studentId = "";
 
+
+
 function iconDelete(event){
     studentId = event.target.getAttribute("studentId");
     console.log(studentId)
@@ -164,6 +166,7 @@ function confirmDeleteWizard(){
       })
         .then((response) => response.json())
         .then((data) => {
+            console.log(data)
             
         })
 
@@ -195,143 +198,6 @@ function btnCreateWizard(){
         creationModal.classList.replace("modal-creation", "modal-creation-show")
     }
 }
-
-function closeModalCreation(){
-    if(fullModal.classList.contains("modal-full-show")){
-        fullModal.classList.replace("modal-full-show", "modal-full")
-    }
-
-    if(creationModal.classList.contains("modal-creation-show")){
-        creationModal.classList.replace("modal-creation-show", "modal-creation")
-    }
-}
-
-function goToFirstTrimester(){
-    firstTrimester.style.backgroundColor = "#FDAF17";
-    secondTrimester.style.backgroundColor = "#fdb0174a";
-    thirdTrimester.style.backgroundColor = "#fdb0174a";
-
-    if(calificationsGlobalFirst.classList.contains("mark-calification-notShow")){
-        calificationsGlobalFirst.classList.replace("mark-calification-notShow", "mark-calification")
-    }
-
-    if(calificationsGlobalSecond.classList.contains("mark-calification-2-show")){
-        calificationsGlobalSecond.classList.replace("mark-calification-2-show", "mark-calification-2")
-    }
-
-    if(calificationsGlobalThird.classList.contains("mark-calification-3-show")){
-        calificationsGlobalThird.classList.replace("mark-calification-3-show", "mark-calification-3")
-    }
-
-}
-
-function goToSecondTrimester(){
-    firstTrimester.style.backgroundColor = "#fdb0174a";
-    secondTrimester.style.backgroundColor = "#FDAF17";
-    thirdTrimester.style.backgroundColor = "#fdb0174a";
-
-    if(calificationsGlobalFirst.classList.contains("mark-calification")){
-        calificationsGlobalFirst.classList.replace("mark-calification", "mark-calification-notShow")
-    }
-
-    if(calificationsGlobalSecond.classList.contains("mark-calification-2")){
-        calificationsGlobalSecond.classList.replace("mark-calification-2", "mark-calification-2-show")
-    }
-
-    if(calificationsGlobalThird.classList.contains("mark-calification-3-show")){
-        calificationsGlobalThird.classList.replace("mark-calification-3-show", "mark-calification-3")
-    }
-}
-
-function goTothirdTrimester(){
-    firstTrimester.style.backgroundColor = "#fdb0174a";
-    secondTrimester.style.backgroundColor = "#fdb0174a";
-    thirdTrimester.style.backgroundColor = "#FDAF17";
-
-    if(calificationsGlobalFirst.classList.contains("mark-calification")){
-        calificationsGlobalFirst.classList.replace("mark-calification", "mark-calification-notShow")
-    }
-
-    if(calificationsGlobalSecond.classList.contains("mark-calification-2-show")){
-        calificationsGlobalSecond.classList.replace("mark-calification-2-show", "mark-calification-2")
-    }
-
-    if(calificationsGlobalThird.classList.contains("mark-calification-3")){
-        calificationsGlobalThird.classList.replace("mark-calification-3", "mark-calification-3-show")
-    }
-
-}
-
-function singOut(){
-        if(fullModal.classList.contains("modal-full")){
-            fullModal.classList.replace("modal-full", "modal-full-show")
-        }
-
-        if(singOutModal.classList.contains("modal-sing-out")){
-            singOutModal.classList.replace("modal-sing-out", "modal-sing-out-show")
-        }
-
-}
-
-function cancelSingOut(){
-    if(fullModal.classList.contains("modal-full-show")){
-        fullModal.classList.replace("modal-full-show", "modal-full")
-    }
-
-    if(singOutModal.classList.contains("modal-sing-out-show")){
-        singOutModal.classList.replace("modal-sing-out-show", "modal-sing-out")
-    }
-}
-
-
-function getAllWizards(){
-    const studentsContainer = document.querySelector(".div-data-student")
-    fetch(`./readAllWizards.php?`, {
-        method: "GET",
-      })
-        .then((response) => response.json())
-        .then((data) => {
-            console.log(data)
-            data.map((student)=>{
-                studentsContainer.innerHTML += `
-                <div class="data-student">
-                        <div class="data-student__info-each-student number-id" id="id-number">
-                            <p class="create-wizard-text" id='id-${student.id}'>${student.id}</p>
-                        </div>
-                        <div class="data-student__info-each-student student-name" id="student-name">
-                            <p id='name-${student.id}'>${student.Name}</p>
-                        </div>
-                        <div class="data-student__info-each-student" id="student-lastName">
-                            <p id='lastName-${student.id}'>${student.LastName}</p>
-                        </div>
-                        <div class="data-student__info-each-student" id="email">
-                            <p id='email-${student.id}'>${student.Email}</p>
-                        </div>
-                        <div class="data-student__info-each-student califications" id="califications">
-                            <div class="trimester">
-                                <p id='firstTrimester-${student.id}'>${student.firstTrimester}</p>
-                            </div>
-                            <div class="trimester">
-                                <p id='secondTrimester-${student.id}'>${student.secondTrimester}</p>
-                            </div>
-                            <div class="trimester">
-                                <p id='thirdTrimester-${student.id}'>${student.thirdTrimester}</p>
-                            </div>
-                        </div>
-                        <div class="data-student__info-each-student">
-                            <img class="icon-update" src="assets/pencil.png" studentId=${student.id} onclick="iconUpdate(event)">
-                        </div>
-                        <div class="data-student__info-each-student">
-                            <img class="icon-trush" src="assets/trush.png" studentId=${student.id} onclick="iconDelete(event)">
-                        </div>
-                    </div> `
-            })
-            
-            
-})
-}
-
-
 
 function createNewWizard(){
     
@@ -459,20 +325,141 @@ function createNewWizard(){
         }
 }
 
-function getWizardById(){
-    fetch(`./getWizardById.php?`, {
+function closeModalCreation(){
+    if(fullModal.classList.contains("modal-full-show")){
+        fullModal.classList.replace("modal-full-show", "modal-full")
+    }
+
+    if(creationModal.classList.contains("modal-creation-show")){
+        creationModal.classList.replace("modal-creation-show", "modal-creation")
+    }
+}
+
+function getAllWizards(){
+    const studentsContainer = document.querySelector(".div-data-student")
+    fetch(`./readAllWizards.php?`, {
         method: "GET",
       })
         .then((response) => response.json())
         .then((data) => {
             console.log(data)
-            globalCalifications.innerHTML = data.firstTrimester;
-            globalCalifications2.innerHTML = data.secondTrimester;
-            globalCalifications3.innerHTML = data.thirdTrimester;
+            data.map((student)=>{
+                studentsContainer.innerHTML += `
+                <div class="data-student">
+                        <div class="data-student__info-each-student number-id" id="id-number">
+                            <p class="create-wizard-text" id='id-${student.id}'>${student.id}</p>
+                        </div>
+                        <div class="data-student__info-each-student student-name" id="student-name">
+                            <p id='name-${student.id}'>${student.Name}</p>
+                        </div>
+                        <div class="data-student__info-each-student" id="student-lastName">
+                            <p id='lastName-${student.id}'>${student.LastName}</p>
+                        </div>
+                        <div class="data-student__info-each-student" id="email">
+                            <p id='email-${student.id}'>${student.Email}</p>
+                        </div>
+                        <div class="data-student__info-each-student califications" id="califications">
+                            <div class="trimester">
+                                <p id='firstTrimester-${student.id}'>${student.firstTrimester}</p>
+                            </div>
+                            <div class="trimester">
+                                <p id='secondTrimester-${student.id}'>${student.secondTrimester}</p>
+                            </div>
+                            <div class="trimester">
+                                <p id='thirdTrimester-${student.id}'>${student.thirdTrimester}</p>
+                            </div>
+                        </div>
+                        <div class="data-student__info-each-student">
+                            <img class="icon-update" src="assets/pencil.png" studentId=${student.id} onclick="iconUpdate(event)">
+                        </div>
+                        <div class="data-student__info-each-student">
+                            <img class="icon-trush" src="assets/trush.png" studentId=${student.id} onclick="iconDelete(event)">
+                        </div>
+                    </div> `
+            })
             
-        })
+            
+})
+}
+
+
+function singOut(){
+    if(fullModal.classList.contains("modal-full")){
+        fullModal.classList.replace("modal-full", "modal-full-show")
+    }
+
+    if(singOutModal.classList.contains("modal-sing-out")){
+        singOutModal.classList.replace("modal-sing-out", "modal-sing-out-show")
+    }
 
 }
+
+function cancelSingOut(){
+if(fullModal.classList.contains("modal-full-show")){
+    fullModal.classList.replace("modal-full-show", "modal-full")
+}
+
+if(singOutModal.classList.contains("modal-sing-out-show")){
+    singOutModal.classList.replace("modal-sing-out-show", "modal-sing-out")
+}
+}
+
+function goToFirstTrimester(){
+    firstTrimester.style.backgroundColor = "#FDAF17";
+    secondTrimester.style.backgroundColor = "#fdb0174a";
+    thirdTrimester.style.backgroundColor = "#fdb0174a";
+
+    if(calificationsGlobalFirst.classList.contains("mark-calification-notShow")){
+        calificationsGlobalFirst.classList.replace("mark-calification-notShow", "mark-calification")
+    }
+
+    if(calificationsGlobalSecond.classList.contains("mark-calification-2-show")){
+        calificationsGlobalSecond.classList.replace("mark-calification-2-show", "mark-calification-2")
+    }
+
+    if(calificationsGlobalThird.classList.contains("mark-calification-3-show")){
+        calificationsGlobalThird.classList.replace("mark-calification-3-show", "mark-calification-3")
+    }
+
+}
+
+function goToSecondTrimester(){
+    firstTrimester.style.backgroundColor = "#fdb0174a";
+    secondTrimester.style.backgroundColor = "#FDAF17";
+    thirdTrimester.style.backgroundColor = "#fdb0174a";
+
+    if(calificationsGlobalFirst.classList.contains("mark-calification")){
+        calificationsGlobalFirst.classList.replace("mark-calification", "mark-calification-notShow")
+    }
+
+    if(calificationsGlobalSecond.classList.contains("mark-calification-2")){
+        calificationsGlobalSecond.classList.replace("mark-calification-2", "mark-calification-2-show")
+    }
+
+    if(calificationsGlobalThird.classList.contains("mark-calification-3-show")){
+        calificationsGlobalThird.classList.replace("mark-calification-3-show", "mark-calification-3")
+    }
+}
+
+function goTothirdTrimester(){
+    firstTrimester.style.backgroundColor = "#fdb0174a";
+    secondTrimester.style.backgroundColor = "#fdb0174a";
+    thirdTrimester.style.backgroundColor = "#FDAF17";
+
+    if(calificationsGlobalFirst.classList.contains("mark-calification")){
+        calificationsGlobalFirst.classList.replace("mark-calification", "mark-calification-notShow")
+    }
+
+    if(calificationsGlobalSecond.classList.contains("mark-calification-2-show")){
+        calificationsGlobalSecond.classList.replace("mark-calification-2-show", "mark-calification-2")
+    }
+
+    if(calificationsGlobalThird.classList.contains("mark-calification-3")){
+        calificationsGlobalThird.classList.replace("mark-calification-3", "mark-calification-3-show")
+    }
+
+}
+
 
 function goToCalendary(){
     if(weekCalendary.classList.contains("week-calendary")){
@@ -498,14 +485,6 @@ function goToScores(){
     TitleTeacherArea.innerHTML = "Students"
 }
 
-function goToSingOut(){
-    fetch(`./singOut.php?`, {
-        method: "GET",
-        })
-        .then((response) => response.json())
-        .then((data) => {
-            })
-}
 
 function changeSubjects(){
     if(fullModal.classList.contains("modal-full-show")){
