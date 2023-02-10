@@ -1,0 +1,388 @@
+*{
+    font-family: 'IM Fell Great Primer SC', serif;
+    font-family: 'Inria Serif', serif;  
+    margin: 0;
+    padding: 0;
+}
+
+.full-screen{
+    display: flex;
+}
+.left-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+}
+.right-part{
+    width: 50%;
+}
+
+.img-logo{
+    margin-top: 10rem;
+}
+.side-img{
+    width: 100%;   
+    height: 100vh;
+}
+
+body{
+    background-color: #F8F8CA;
+}
+.form-login{
+    width: 100%;
+    border: 1px solid #FDAF17;
+    border-radius: 0 0 0.75rem 0.75rem;
+}
+.input--large{
+    width: 25rem;
+    height: 2rem;
+    border: 1px solid #FDAF17;
+    border-radius: 5px;
+    margin-top: 0.2rem;
+}
+.bttn{
+    cursor: pointer;
+    background: #B72025;
+    border: transparent;
+    margin-bottom: 1rem;
+    color: white;
+    padding: 0.6rem 2rem;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+
+}
+
+.bttn:hover{
+    box-shadow: 2px 2px 2px #D9D9D9;
+}
+
+#teacher-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+    width: 50%;
+    height: 3.25rem;
+    left:5.75rem;
+    top: 23.813rem;
+    color: #B72025;
+    background:  rgba(255, 169, 0, 0.32);
+    border-radius: 0.5rem 0.5rem 0px 0px;
+    cursor: pointer;
+        
+    }
+
+#wizard-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 3.25rem;
+    left: 22.313rem;
+    top: 23.813rem;
+    color: #B72025;
+    background: rgba(255, 169, 0, 0.32);
+    border-radius: 0.5rem 0.5rem 0px 0px;
+    cursor: pointer;
+
+}
+
+#teacher-btn:hover{
+    background:linear-gradient(0deg, #FDAF17, #FDAF17), #8F8E8E; ;
+}
+
+#wizard-btn:hover{
+    background: linear-gradient(0deg, #FDAF17, #FDAF17), #8F8E8E;
+}
+
+.all-btn{
+    display: flex;  
+    width: 100%;    
+ }
+
+.t{    
+    width: 7rem;
+    height: 1.375rem;
+    left: 4.813rem;
+    top: 0.938rem;  
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    text-align: center;
+    cursor: pointer;
+    color: #B72025;
+}
+
+.p{
+               
+    width: 7rem;
+    height: 1.375rem;
+    left: 4.813rem;
+    top: 0.938rem;       
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.375rem;           
+    text-align: center;
+    cursor: pointer;
+    color: #B72025;
+
+ }
+    
+.div--center{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.div--center label{
+    color: #475569;
+}
+
+.user-label{
+    margin-top: 1rem;
+}
+
+
+.click__here--btnn{
+    color:  #B72025;
+    cursor: pointer;
+} 
+
+.text-question-registred{
+    color: #475569;
+}
+
+.text-registration{
+    color: #B72025;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 0.3rem 3rem;
+    border-radius: 1px solid #B72025;;
+}
+
+.form-registeder-to-griffindor{
+    display:none;
+}
+
+.form-registeder-to-griffindor-show{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+}
+
+#teacher-btn{
+    background-color: #FDAF17 ;
+}
+
+.hidden-login{
+    display: none;
+}
+
+
+#not-hidden{
+    display: block;
+}
+
+.form-to-access-notShow{ 
+    display: none;
+}
+
+.form-to-access{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 12rem;
+    
+}
+
+.full-screen{
+    display: flex;
+}
+
+.full-screen-1{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.input--large-1{
+    width: 100%;
+    height: 2rem;
+    border: 1px solid #FDAF17;
+    border-radius: 3px;
+}
+.checkbox-position{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #475569;
+}
+.second-form--partial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.bttn-create-account{
+    cursor: pointer;
+    background: #B72025;
+    border: transparent;
+    margin-bottom: 1rem;
+    color: white;
+    padding: 0.6rem 2rem;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.bttn-create-account:hover{
+    box-shadow: 2px 2px 2px #D9D9D9;
+}
+
+
+.form-2nd{
+    background: #F8F8CA;
+    border: 1px solid #FDAF17;
+    border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+    width: 50%;
+}
+.right-part{
+    width: 50%;
+    float: right;
+}
+
+.p-of-register{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.user-login{
+    margin-top: 1rem;
+}
+
+.label-input-radio{
+    margin-left: 1rem;
+}
+
+.radio-check{
+    margin-right: 0.8rem;
+}
+
+.second-form--partial label{
+    color: #475569;
+    width: 60%;
+}
+
+.second-form--partial label input{
+    margin-bottom: 1.5rem; 
+}
+
+.uplade-picture{
+    width: 8rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.uplade-picture:hover{
+    border: 2px solid #FDAF17;
+}
+
+.div-uplade-picture{
+    display: flex;
+    justify-content: center;
+}
+
+.form-disable-file{
+    display: none;
+}
+
+.input-file-disable{
+    display: none;
+}
+
+.btn-disable{
+    display: none;
+}
+
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgb(252, 201, 201);
+    width: 72%;
+    height: 2rem;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #B72025;
+    height: 3rem;
+    
+}
+
+.text-who-are-you{
+    color: #B72025;
+    text-align: center;
+    margin: 0.8rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #FDAF17;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.sorry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgb(252, 201, 201);
+    width: 50%;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #B72025;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+.img-error{
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.correct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #04CD00;
+    background-color: #03cd0028;
+    width: 50%;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #04CD00;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+.img-correct{
+    width: 3rem;
+    margin-right: 1rem;
+}
